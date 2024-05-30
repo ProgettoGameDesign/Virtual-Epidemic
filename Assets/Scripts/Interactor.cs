@@ -33,7 +33,7 @@ public class Interactor : MonoBehaviour
             string _tagToSearch = interactable.InteractionPrompt;
             if (interactable != null && Input.GetKeyDown(KeyCode.E)) {
                 interactable.Interact(this); // richiamo il metodo Interact
-                if (_tagToSearch != "Button") {
+                if (_tagToSearch != "Button" && _tagToSearch != "Door") {
                     Debug.Log("ha un panel associato");
                     PanelActivation(_tagToSearch);
                     }
