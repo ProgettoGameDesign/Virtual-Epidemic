@@ -7,7 +7,7 @@ using UnityEngine;
 public class TPM_characterController : MonoBehaviour
 {
     [SerializeField] private Transform _cameraT;
-    [SerializeField] private float _speed = 5f;
+    [SerializeField] private float _speed = 6f;
     [SerializeField] private float _rotationSpeed = 3f;
 
     [SerializeField] private float _gravity = -10f;
@@ -54,10 +54,10 @@ public class TPM_characterController : MonoBehaviour
         //BOOST
         if (Input.GetKey(KeyCode.LeftShift) && _isGrounded)
         {
-            _speed = 10f;
+            _speed = 12f;
         }
         if (Input.GetKeyUp(KeyCode.LeftShift)) {
-            _speed = 5f;
+            _speed = 6f;
         }
         
         
