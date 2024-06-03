@@ -4,31 +4,23 @@ using UnityEngine;
 
 public class LightDoor : MonoBehaviour
 {
-    //public int materialIndexToDisable = 1;
-    private Renderer objectRenderer;
-    private Material[] listMaterials;
-    private Material swapMaterial;
-
+    private Outline _outlinescript;
     void Start()
     {
-        objectRenderer = GetComponent<Renderer>();
-        //objectRenderer.materials[materialIndexToDisable] = null;
-        if (objectRenderer != null) listMaterials = objectRenderer.materials;
+        _outlinescript = gameObject.GetComponent<Outline>();
+        _outlinescript.enabled = false;
          
     }
     private void OnTriggerEnter(Collider other)
     {
-        swapMaterial = listMaterials[0];
-        listMaterials[0] = listMaterials[2];
-        listMaterials[2] = swapMaterial;
+        _outlinescript.enabled = true;
+        
         
     }
 
     private void OnTriggerExit(Collider other)
     {
-        swapMaterial = listMaterials[0];
-        listMaterials[0] = listMaterials[2];
-        listMaterials[2] = swapMaterial;
+        _outlinescript.enabled = false;
         
     }
 }
