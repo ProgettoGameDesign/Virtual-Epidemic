@@ -28,16 +28,15 @@ public class Interactor : MonoBehaviour
     {
         if (Physics.OverlapSphereNonAlloc(_interactPoint.position, _interactRange, _colliders, _interactableMask) != 0)
         {
-            //Debug.Log("Questo oggetto è interagibile");
+            Debug.Log("Questo oggetto è interagibile");
             var interactable = _colliders[0].GetComponent<InteractInterface>(); // acquisisco l'interfaccia dell'oggetto
             string _tagToSearch = interactable.InteractionPrompt;
             if (interactable != null && Input.GetKeyDown(KeyCode.E)) {
                 interactable.Interact(this); // richiamo il metodo Interact
-                /*
-                if (_tagToSearch != "Button" && _tagToSearch != "Door") {
-                    Debug.Log("ha un panel associato");
+                if (_tagToSearch == "Torch") {
+                    //Debug.Log("ha un panel associato");
                     PanelActivation(_tagToSearch);
-                    } */
+                    }
             }
            
         }
