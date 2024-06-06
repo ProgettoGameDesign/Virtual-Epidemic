@@ -1,9 +1,59 @@
 fileFormatVersion: 2
-guid: c1d10f1264b0a0746b85050810b92e1b
+guid: 59ece3b2a3e5f544e85d97381a074834
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cavi
+    second: {fileID: 2100000, guid: 79f147eaf1a47244cb461de6e0b21151, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Esterno
+    second: {fileID: 2100000, guid: 5fa04f5a57184794a94b68f3215ca9d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Luce contatore
+    second: {fileID: 2100000, guid: d531a0fd7d61a944a890f32c1ed00115, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Manopole
+    second: {fileID: 2100000, guid: 78d0730035fe2424a8dbf38238f2a8d6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Marrone
+    second: {fileID: 2100000, guid: 5213fa7267bd2064d881f6d1f1c409d2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metallo scuro
+    second: {fileID: 2100000, guid: 898ee39972f0663419d85ca5cfe0afa0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: display off
+    second: {fileID: 2100000, guid: c2cdfd1c0a46bb04992a1bbe8af0f458, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: display on
+    second: {fileID: 2100000, guid: caa1f3ffb3f70104ba82a39b0804cffb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: greenOff
+    second: {fileID: 2100000, guid: c2ab92c7059b77c4388d5cff13852820, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: redON
+    second: {fileID: 2100000, guid: 71e834d47dfc70e43a91150938cbabf0, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
