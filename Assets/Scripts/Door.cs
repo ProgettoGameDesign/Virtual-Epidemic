@@ -18,6 +18,8 @@ public class Door : MonoBehaviour, InteractInterface
             SceneManager.LoadScene("Aula1_M");}
         else if (_prompt == "Door-M2") {       
             SceneManager.LoadScene("Aula2_M");}
+        else if (_prompt == "Door-M3") {       
+            SceneManager.LoadScene("Aula3_M");}
         else if (_prompt == "Exit") {   
             SceneManager.LoadScene("Ambiente iniziale");}
         else

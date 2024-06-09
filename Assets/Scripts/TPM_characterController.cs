@@ -40,7 +40,7 @@ public class TPM_characterController : MonoBehaviour
             transform.position = playerData.lastPosition_AI;
             _characterController.enabled = true; 
         }
-        if (playerData.lastPosition_AI != Vector3.zero && actualScene == "Corridoio_M") {
+        if (playerData.lastPosition_CorridoioM != Vector3.zero && actualScene == "Corridoio_M") {
             _characterController.enabled = false;
             transform.position = playerData.lastPosition_CorridoioM;
             _characterController.enabled = true; 

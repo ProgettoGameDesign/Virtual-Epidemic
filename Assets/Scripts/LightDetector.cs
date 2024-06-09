@@ -23,7 +23,7 @@ public class LightDetector : MonoBehaviour
         // Esegui un Raycast dalla posizione della torcia nella direzione della sua luce
         Ray ray = new Ray(torchLight.transform.position, torchLight.transform.forward);
         RaycastHit hit;
-
+        
         // Disegna il raggio per il debug
         Debug.DrawRay(ray.origin, ray.direction * torchLight.range, Color.red);
 
@@ -31,7 +31,7 @@ public class LightDetector : MonoBehaviour
         {
 
             // Verifica se il Raycast colpisce il muro
-            if (hit.collider.gameObject == gameObject)
+            if (hit.collider.gameObject == gameObject && torchLight.color == Color.red)
             {
                 Debug.Log("Raggio ha colpito il muro");
                 return true;

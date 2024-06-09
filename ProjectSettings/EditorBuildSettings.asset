@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/AuleM/Aula2_M.unity
     guid: e3208826b81a9bd478da266cdd0caf77
+  - enabled: 1
+    path: Assets/Scenes/AuleM/Aula3_M.unity
+    guid: 7a2bb9a6571e88d48a24238d2410a20b
   m_configObjects: {}
