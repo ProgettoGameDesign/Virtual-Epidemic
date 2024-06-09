@@ -33,10 +33,9 @@ public class Interactor : MonoBehaviour
             string _tagToSearch = interactable.InteractionPrompt;
             if (interactable != null && Input.GetKeyDown(KeyCode.E)) {
                 interactable.Interact(this); // richiamo il metodo Interact
-                if (_tagToSearch == "Torch") {
-                    //Debug.Log("ha un panel associato");
-                    PanelActivation(_tagToSearch);
-                    }
+                //if (_tagToSearch == "Torch") {
+                    //PanelActivation(_tagToSearch);
+                    //}
             }
            
         }
@@ -53,6 +52,7 @@ public class Interactor : MonoBehaviour
             if (t.CompareTag(_tagToSearch))
             {
                 t.gameObject.SetActive(!t.gameObject.activeSelf);
+
             }
         }
     }

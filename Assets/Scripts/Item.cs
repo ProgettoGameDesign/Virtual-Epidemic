@@ -5,6 +5,7 @@ using UnityEngine.UIElements;
 
 public class Item : MonoBehaviour, InteractInterface
 {
+    [SerializeField] private SceneState playerData;
     [SerializeField] private string _prompt;
     public string InteractionPrompt => _prompt;
     public bool Interact(Interactor interactor)
@@ -16,6 +17,10 @@ public class Item : MonoBehaviour, InteractInterface
             if (meshRenderer != null)
             {
                 meshRenderer.enabled = false;
+                if(_prompt == "Torch")               
+                {
+                    playerData._torchActive = true;
+                }
             }
         return true;
         

@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lastPosition_AI: {x: 0, y: 0, z: 0}
   lastPosition_CorridoioM: {x: 0, y: 0, z: 0}
+  _torchActive: 0
