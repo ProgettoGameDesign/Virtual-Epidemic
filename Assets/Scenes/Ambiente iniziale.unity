@@ -2839,6 +2839,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   _jumpHeight: 1
+  playerData: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
 --- !u!143 &1096707631
 CharacterController:
   m_ObjectHideFlags: 0

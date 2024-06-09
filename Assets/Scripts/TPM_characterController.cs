@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 // THIRD PERSON MOVEMENT WITH CHARACTERCONTROLLER
 public class TPM_characterController : MonoBehaviour
@@ -15,6 +16,7 @@ public class TPM_characterController : MonoBehaviour
     [SerializeField] private float _groundDistance = 0.4f;
     [SerializeField] private LayerMask _groundMask;
     [SerializeField] private float _jumpHeight = 3f;
+    [SerializeField] private SceneState playerData;
 
 
     private CharacterController _characterController;
@@ -24,10 +26,25 @@ public class TPM_characterController : MonoBehaviour
 
     private Vector3 _velocity;
     private bool _isGrounded;
+    private string actualScene;
 
+    void Awake()
+    {
+        actualScene = SceneManager.GetActiveScene().name;
+    }
     void Start()
     {
         _characterController = GetComponent<CharacterController>();
+        if (playerData.lastPosition_AI != Vector3.zero && actualScene == "Ambiente iniziale") {
+            _characterController.enabled = false;
+            transform.position = playerData.lastPosition_AI;
+            _characterController.enabled = true; 
+        }
+        if (playerData.lastPosition_AI != Vector3.zero && actualScene == "Corridoio_M") {
+            _characterController.enabled = false;
+            transform.position = playerData.lastPosition_CorridoioM;
+            _characterController.enabled = true; 
+        }
     }
 
     
@@ -44,6 +61,7 @@ public class TPM_characterController : MonoBehaviour
         GatherInput();
         NewOrientation();
         Movement();
+        UpdateLastPosition();
 
         //JUMPING
         if (Input.GetKeyDown(KeyCode.Space) && _isGrounded)
@@ -86,5 +104,11 @@ public class TPM_characterController : MonoBehaviour
         //Move object along forward
         _characterController.Move(transform.forward * _inputSpeed * _speed * Time.deltaTime);
     }
-
+    private void UpdateLastPosition()
+    {
+        if (actualScene == "Ambiente iniziale")
+            playerData.lastPosition_AI = transform.position;
+        if (actualScene == "Corridoio_M")
+            playerData.lastPosition_CorridoioM = transform.position;
+    }
 }
