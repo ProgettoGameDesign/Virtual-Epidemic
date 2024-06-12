@@ -1098,6 +1098,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _torch: {fileID: 1303335054}
+  sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
 --- !u!1 &1361035412 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4303858485014902718, guid: 26f03348b161cc04c8db59a33321b614, type: 3}

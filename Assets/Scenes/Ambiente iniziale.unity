@@ -451,8 +451,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.0898465, y: 3.3067446, z: 1.2485673}
-  m_Center: {x: -0.045896113, y: 1.6393816, z: 0.49618518}
+  m_Size: {x: 2.0687368, y: 3.3067446, z: 1.2485673}
+  m_Center: {x: -0.53534126, y: 1.6393816, z: 0.49618518}
 --- !u!114 &231088338
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -828,8 +828,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.536292, y: 3.3643014, z: 1.2210634}
-  m_Center: {x: -0.6438201, y: -0.00813508, z: -0.1399247}
+  m_Size: {x: 1.536292, y: 3.3643014, z: 2.3064525}
+  m_Center: {x: -0.6438201, y: -0.00813508, z: -0.68261933}
 --- !u!114 &413155414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1776,8 +1776,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.7244818, y: 0.9204652, z: 1.6344825}
-  m_Center: {x: 0.45501912, y: 0.45193994, z: -0.000000029450982}
+  m_Size: {x: 1.6260588, y: 0.9204652, z: 1.6344825}
+  m_Center: {x: 0.905808, y: 0.45193997, z: -0.00000003751413}
 --- !u!114 &841387431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3317,8 +3317,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.0898465, y: 3.3067446, z: 1.2582452}
-  m_Center: {x: -0.045896113, y: 1.6393816, z: 0.501024}
+  m_Size: {x: 2.2534285, y: 3.3067446, z: 1.2582452}
+  m_Center: {x: 0.535895, y: 1.6393816, z: 0.501024}
 --- !u!114 &1500689364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4058,8 +4058,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.7244818, y: 0.9204652, z: 1.6344825}
-  m_Center: {x: 0.45501912, y: 0.45193994, z: -0.000000029450982}
+  m_Size: {x: 1.6457641, y: 0.9204652, z: 1.6344825}
+  m_Center: {x: -0.0056219054, y: 0.4519399, z: -0.0000000212116}
 --- !u!114 &1714304129
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4203,8 +4203,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.536292, y: 3.3643014, z: 1.2210634}
-  m_Center: {x: -0.6438201, y: -0.00813508, z: -0.1399247}
+  m_Size: {x: 1.536292, y: 3.3643014, z: 2.4697518}
+  m_Center: {x: -0.6438201, y: -0.00813508, z: 0.48441947}
 --- !u!64 &1727548388
 MeshCollider:
   m_ObjectHideFlags: 0

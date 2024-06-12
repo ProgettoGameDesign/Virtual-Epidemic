@@ -6,6 +6,7 @@ using UnityEngine;
 public class Torch : MonoBehaviour
 {
     [SerializeField] private Transform _torch;
+    [SerializeField] SceneState sceneState;
     private Light _color;
 
     // Start is called before the first frame update
@@ -18,17 +19,18 @@ public class Torch : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        _color.color = sceneState._currentcolor;
         if (Input.GetKey(KeyCode.Alpha1)) 
         {
-            _color.color = Color.blue;  
+            sceneState._currentcolor = Color.blue; 
         }
         if (Input.GetKey(KeyCode.Alpha2)) 
         {
-            _color.color = Color.green;  
+            sceneState._currentcolor = Color.green;  
         }
         if (Input.GetKey(KeyCode.Alpha3)) 
         {
-            _color.color = Color.red;  
+            sceneState._currentcolor = Color.red;  
         }
     }
 }

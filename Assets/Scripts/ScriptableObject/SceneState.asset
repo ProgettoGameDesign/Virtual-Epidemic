@@ -16,3 +16,4 @@ MonoBehaviour:
   lastPosition_CorridoioM: {x: 0, y: 0, z: 0}
   _torchActive: 0
   _hasKey: 0
+  _currentcolor: {r: 1, g: 1, b: 1, a: 1}
