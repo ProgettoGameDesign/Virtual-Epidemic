@@ -15,8 +15,9 @@ public class TPM_characterController : MonoBehaviour
     [SerializeField] private Transform _groundCheck;
     [SerializeField] private float _groundDistance = 0.4f;
     [SerializeField] private LayerMask _groundMask;
-    [SerializeField] private float _jumpHeight = 3f;
+    //[SerializeField] private float _jumpHeight = 3f;
     [SerializeField] private SceneState playerData;
+    [SerializeField] private Animator _animator;
 
 
     private CharacterController _characterController;
@@ -61,21 +62,25 @@ public class TPM_characterController : MonoBehaviour
         GatherInput();
         NewOrientation();
         Movement();
+        UpdateAnimation();
         UpdateLastPosition();
 
+        /*
         //JUMPING
         if (Input.GetKeyDown(KeyCode.Space) && _isGrounded)
         {
             _velocity.y = Mathf.Sqrt(_jumpHeight * -2 * _gravity);
-        }
+        } */
 
         //BOOST
         if (Input.GetKey(KeyCode.LeftShift) && _isGrounded)
         {
-            _speed = 12f;
+            _animator.SetBool("Run", true);
+            _speed = 10f;
         }
         if (Input.GetKeyUp(KeyCode.LeftShift)) {
-            _speed = 6f;
+            _animator.SetBool("Run", false);
+            _speed = 4f;
         }
         
         
@@ -104,6 +109,12 @@ public class TPM_characterController : MonoBehaviour
         //Move object along forward
         _characterController.Move(transform.forward * _inputSpeed * _speed * Time.deltaTime);
     }
+    private void UpdateAnimation()
+    {
+        _animator.SetFloat("Speed", _inputSpeed);
+
+    }
+
     private void UpdateLastPosition()
     {
         if (actualScene == "Ambiente iniziale")

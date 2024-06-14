@@ -21,6 +21,7 @@ public class ChildActiovation : MonoBehaviour
     }
     private void OnTriggerExit(Collider other)
     {
+        Debug.Log("azzerong");
         // Itera attraverso tutti i figli del GameObject associato a questo script
         foreach (Transform child in transform)
         {
