@@ -496,6 +496,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _prompt: Door
+  _animator: {fileID: 0}
 --- !u!1 &270511028 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2089886735107804440, guid: 266e6885434330f4b85ea3538737fea9, type: 3}
@@ -809,6 +810,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _prompt: Door
+  _animator: {fileID: 0}
 --- !u!65 &413155413
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1821,6 +1823,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _prompt: Door-M
+  _animator: {fileID: 841387434}
+--- !u!95 &841387434
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 841387428}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 206bf675f0b988748b3f0a8feac987b3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &912015567
 GameObject:
   m_ObjectHideFlags: 0
@@ -3298,6 +3322,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _prompt: Door
+  _animator: {fileID: 0}
 --- !u!65 &1500689363
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3362,6 +3387,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _prompt: Door
+  _animator: {fileID: 0}
 --- !u!1 &1520654209
 GameObject:
   m_ObjectHideFlags: 0
@@ -4103,6 +4129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _prompt: Door-M
+  _animator: {fileID: 0}
 --- !u!1 &1727548382
 GameObject:
   m_ObjectHideFlags: 0
@@ -4184,6 +4211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _prompt: Door
+  _animator: {fileID: 0}
 --- !u!65 &1727548387
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5572,6 +5600,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7311576235558050670, guid: 509c6d79f70c299488f3e5b1260e93c9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 841387430}
+    - targetCorrespondingSourceObject: {fileID: 7311576235558050670, guid: 509c6d79f70c299488f3e5b1260e93c9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 841387434}
     - targetCorrespondingSourceObject: {fileID: 6658065080322361330, guid: 509c6d79f70c299488f3e5b1260e93c9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 28071445}
