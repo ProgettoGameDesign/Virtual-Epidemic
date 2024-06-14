@@ -4831,7 +4831,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dda2d782ef5123d4987041cf9c1af3ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactPoint: {fileID: 1177529247}
+  _interactPoint: {fileID: 1829718468}
   _interactRange: 1
   _interactableMask:
     serializedVersion: 2
