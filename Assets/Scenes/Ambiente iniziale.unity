@@ -1749,6 +1749,79 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 2580894567890112901, guid: 2213c81298f505a47afdc0fde4ee671c, type: 3}
+--- !u!1001 &829306605
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 31c6e72ca13213d4f9ecc66ca6db9a43, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.9121786
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 31c6e72ca13213d4f9ecc66ca6db9a43, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.9121786
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 31c6e72ca13213d4f9ecc66ca6db9a43, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.9121786
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 31c6e72ca13213d4f9ecc66ca6db9a43, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -30.28
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 31c6e72ca13213d4f9ecc66ca6db9a43, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.002902031
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 31c6e72ca13213d4f9ecc66ca6db9a43, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 15.49
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 31c6e72ca13213d4f9ecc66ca6db9a43, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5553579
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 31c6e72ca13213d4f9ecc66ca6db9a43, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 31c6e72ca13213d4f9ecc66ca6db9a43, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.83161145
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 31c6e72ca13213d4f9ecc66ca6db9a43, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 31c6e72ca13213d4f9ecc66ca6db9a43, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 31c6e72ca13213d4f9ecc66ca6db9a43, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 112.529
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 31c6e72ca13213d4f9ecc66ca6db9a43, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 31c6e72ca13213d4f9ecc66ca6db9a43, type: 3}
+      propertyPath: m_Name
+      value: aiutante@Crouch Idle 03 Looking Over
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 31c6e72ca13213d4f9ecc66ca6db9a43, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 901bc32592e077f44b7a2428ec51b159, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 31c6e72ca13213d4f9ecc66ca6db9a43, type: 3}
 --- !u!1 &830093776 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2089886735107804440, guid: 266e6885434330f4b85ea3538737fea9, type: 3}
@@ -6143,3 +6216,4 @@ SceneRoots:
   - {fileID: 1631405079}
   - {fileID: 1096707629}
   - {fileID: 2144038776}
+  - {fileID: 829306605}
