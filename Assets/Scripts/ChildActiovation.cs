@@ -15,14 +15,12 @@ public class ChildActiovation : MonoBehaviour
         // Itera attraverso tutti i figli del GameObject associato a questo script
         foreach (Transform child in transform)
         {
-            Debug.Log("entrato");
             // Disattiva ogni GameObject figlio
             child.gameObject.SetActive(true);
         }
     }
     private void OnTriggerExit(Collider other)
     {
-        Debug.Log("uscito");
         // Itera attraverso tutti i figli del GameObject associato a questo script
         foreach (Transform child in transform)
         {
