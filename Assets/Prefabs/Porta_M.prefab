@@ -48,10 +48,50 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -4056919380252462575, guid: 97f723b08554d2b458ea16f18ad1b263, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 7202019439985978107, guid: b02eacf712864d94bae008d1a8082816, type: 3}
+    - target: {fileID: -3175824042118186999, guid: 97f723b08554d2b458ea16f18ad1b263, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.8
+      objectReference: {fileID: 0}
+    - target: {fileID: -3175824042118186999, guid: 97f723b08554d2b458ea16f18ad1b263, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.688
+      objectReference: {fileID: 0}
+    - target: {fileID: -3175824042118186999, guid: 97f723b08554d2b458ea16f18ad1b263, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 12.28
+      objectReference: {fileID: 0}
+    - target: {fileID: -3175824042118186999, guid: 97f723b08554d2b458ea16f18ad1b263, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 97f723b08554d2b458ea16f18ad1b263, type: 3}
       propertyPath: m_Name
       value: Porta_M
       objectReference: {fileID: 0}
+    - target: {fileID: 3874101106835814764, guid: 97f723b08554d2b458ea16f18ad1b263, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.0263
+      objectReference: {fileID: 0}
+    - target: {fileID: 3874101106835814764, guid: 97f723b08554d2b458ea16f18ad1b263, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.169
+      objectReference: {fileID: 0}
+    - target: {fileID: 3874101106835814764, guid: 97f723b08554d2b458ea16f18ad1b263, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 12.383
+      objectReference: {fileID: 0}
+    - target: {fileID: 3874101106835814764, guid: 97f723b08554d2b458ea16f18ad1b263, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8154017157850986752, guid: 97f723b08554d2b458ea16f18ad1b263, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 5082055962157835663, guid: b02eacf712864d94bae008d1a8082816, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
