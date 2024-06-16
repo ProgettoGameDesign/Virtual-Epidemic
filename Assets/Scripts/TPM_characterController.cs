@@ -18,11 +18,11 @@ public class TPM_characterController : MonoBehaviour
     //[SerializeField] private float _jumpHeight = 3f;
     [SerializeField] private SceneState playerData;
     [SerializeField] private Animator _animator;
-
+    [SerializeField] public bool _canmove = true; 
 
     private CharacterController _characterController;
     private Vector3 _inputVector;
-    private float _inputSpeed;
+    public float _inputSpeed;
     private Vector3 _targetDirection;
 
     private Vector3 _velocity;
@@ -58,31 +58,26 @@ public class TPM_characterController : MonoBehaviour
         {
             _velocity.y = -2f;
         }
-
-        GatherInput();
-        NewOrientation();
-        Movement();
         UpdateAnimation();
-        UpdateLastPosition();
-
-        /*
-        //JUMPING
-        if (Input.GetKeyDown(KeyCode.Space) && _isGrounded)
+        if (_canmove)
         {
-            _velocity.y = Mathf.Sqrt(_jumpHeight * -2 * _gravity);
-        } */
+            GatherInput();
+            NewOrientation();
+            Movement();
+            
+            UpdateLastPosition();
 
-        //BOOST
-        if (Input.GetKey(KeyCode.LeftShift) && _isGrounded)
-        {
-            _animator.SetBool("Run", true);
-            _speed = 10f;
+                //BOOST
+            if (Input.GetKey(KeyCode.LeftShift) && _isGrounded)
+            {
+                _animator.SetBool("Run", true);
+                _speed = 10f;
+            }
+            if (Input.GetKeyUp(KeyCode.LeftShift)) {
+                _animator.SetBool("Run", false);
+                _speed = 4f;
+            }
         }
-        if (Input.GetKeyUp(KeyCode.LeftShift)) {
-            _animator.SetBool("Run", false);
-            _speed = 4f;
-        }
-        
         
         //FALLING
         _velocity.y += _gravity * Time.deltaTime;
