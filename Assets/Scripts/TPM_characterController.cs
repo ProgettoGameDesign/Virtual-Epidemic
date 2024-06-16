@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using DialogueEditor;
 
 // THIRD PERSON MOVEMENT WITH CHARACTERCONTROLLER
 public class TPM_characterController : MonoBehaviour
@@ -18,7 +19,8 @@ public class TPM_characterController : MonoBehaviour
     //[SerializeField] private float _jumpHeight = 3f;
     [SerializeField] private SceneState playerData;
     [SerializeField] private Animator _animator;
-    [SerializeField] public bool _canmove = true; 
+    //[SerializeField] NPCConversation _npcconversation;
+    public bool _canmove = true; 
 
     private CharacterController _characterController;
     private Vector3 _inputVector;
@@ -64,21 +66,20 @@ public class TPM_characterController : MonoBehaviour
             GatherInput();
             NewOrientation();
             Movement();
-            
             UpdateLastPosition();
-
-                //BOOST
-            if (Input.GetKey(KeyCode.LeftShift) && _isGrounded)
-            {
-                _animator.SetBool("Run", true);
-                _speed = 10f;
-            }
-            if (Input.GetKeyUp(KeyCode.LeftShift)) {
-                _animator.SetBool("Run", false);
-                _speed = 4f;
-            }
+ 
         }
         
+        //BOOST
+        if (Input.GetKey(KeyCode.LeftShift) && _isGrounded)
+        {
+            _animator.SetBool("Run", true);
+            _speed = 10f;
+        }
+        if (Input.GetKeyUp(KeyCode.LeftShift)) {
+            _animator.SetBool("Run", false);
+            _speed = 4f;
+        }
         //FALLING
         _velocity.y += _gravity * Time.deltaTime;
         _characterController.Move(_velocity * Time.deltaTime);
