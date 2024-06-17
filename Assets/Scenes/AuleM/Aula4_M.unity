@@ -695,6 +695,7 @@ MonoBehaviour:
     m_Bits: 64
   playerData: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
   _animator: {fileID: 0}
+  _inputSpeed: 0
 --- !u!143 &1147985187
 CharacterController:
   m_ObjectHideFlags: 0
@@ -2671,6 +2672,7 @@ MonoBehaviour:
     m_Bits: 64
   playerData: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
   _animator: {fileID: 1402619404}
+  _inputSpeed: 0
 --- !u!143 &1402619409
 CharacterController:
   m_ObjectHideFlags: 0
@@ -2691,7 +2693,7 @@ CharacterController:
   m_Enabled: 1
   serializedVersion: 3
   m_Height: 1.7
-  m_Radius: 0.35
+  m_Radius: 0.3
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
@@ -3716,6 +3718,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36a11c81b8051b84ebeb13512b7cfd8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
 --- !u!114 &6792984009754030880
 MonoBehaviour:
   m_ObjectHideFlags: 0

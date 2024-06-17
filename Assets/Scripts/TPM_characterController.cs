@@ -19,7 +19,6 @@ public class TPM_characterController : MonoBehaviour
     //[SerializeField] private float _jumpHeight = 3f;
     [SerializeField] private SceneState playerData;
     [SerializeField] private Animator _animator;
-    [SerializeField] DialogueManager dialogueManager;
     //[SerializeField] NPCConversation _npcconversation;
 
     private CharacterController _characterController;

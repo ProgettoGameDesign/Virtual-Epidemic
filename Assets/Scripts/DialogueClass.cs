@@ -26,10 +26,12 @@ public class DialogueClass : MonoBehaviour
 {
     [SerializeField] private Transform player; // Riferimento al giocatore
     [SerializeField] private Transform escape; // Riferimento al punto di fuga
-    [SerializeField] private Transform NPC; // Transform dell'NPC
+    [SerializeField] private GameObject NPC; // Transform dell'NPC
     [SerializeField] private float NPCspeed = 4f; // Velocità di movimento
+    [SerializeField] private float rotationSpeed = 5f; // Velocità di rotazione
     [SerializeField] Animator _NPCanimator;
     private float stopDistance = 2.5f;
+    private CharacterController characterController;
     public int NPCtrig = 0;
     public Dialogue dialogue;
     void OnTriggerEnter(Collider other)
@@ -37,6 +39,11 @@ public class DialogueClass : MonoBehaviour
         NPCtrig = 1;
         _NPCanimator.SetBool("trigger", true);
         StartCoroutine(TriggerDialogue());
+    }
+    void Start()
+    {
+        // Ottenere il riferimento al CharacterController
+        characterController = NPC.GetComponent<CharacterController>();
     }
     void Update()
     {
@@ -69,22 +76,25 @@ public class DialogueClass : MonoBehaviour
     {
         
         // Calcola la direzione verso il giocatore
-        Vector3 direction = player.position - NPC.position;
+        Vector3 direction = player.position - NPC.transform.position;
         direction.y = 0; // Mantieni il movimento sul piano orizzontale
 
         // Ruota l'oggetto per rivolgersi verso il giocatore
-        NPC.LookAt(new Vector3(player.position.x, NPC.position.y, player.position.z));
+        //NPC.LookAt(new Vector3(player.position.x, NPC.transform.position.y, player.position.z));
         
         // Controlla la distanza dal giocatore
         if (direction.magnitude > stopDistance)
         {
             Debug.Log("ancora non raggiunto");
+            // Ruotare gradualmente verso la direzione desiderata
+             Quaternion targetRotation = Quaternion.LookRotation(direction);
+            NPC.transform.rotation = Quaternion.Slerp(NPC.transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
             // Normalizza la direzione e calcola il nuovo punto
-            Vector3 moveDirection = direction.normalized;
-            Vector3 targetPosition = player.position - moveDirection * stopDistance;
+            Vector3 moveDirection = direction.normalized * NPCspeed * Time.deltaTime;
+            //Vector3 targetPosition = player.position - moveDirection * stopDistance;
 
             // Sposta l'oggetto verso il target
-            NPC.position = Vector3.MoveTowards(NPC.position, targetPosition, NPCspeed * Time.deltaTime);
+           characterController.Move(moveDirection);
         }
         else
         {
@@ -96,24 +106,30 @@ public class DialogueClass : MonoBehaviour
     public void NpcEscape()
     {
         // Calcola la direzione verso il giocatore
-        Vector3 direction = escape.position - NPC.position;
+        Vector3 direction = escape.position - NPC.transform.position;
         direction.y = 0; // Mantieni il movimento sul piano orizzontale
 
         // Ruota l'oggetto per rivolgersi verso il giocatore
-        NPC.LookAt(new Vector3(escape.position.x, NPC.position.y, escape.position.z));
+        //NPC.LookAt(new Vector3(player.position.x, NPC.transform.position.y, player.position.z));
         
         // Controlla la distanza dal giocatore
         if (direction.magnitude > stopDistance)
         {
             Debug.Log("ancora non raggiunto");
+            Quaternion targetRotation = Quaternion.LookRotation(direction);
+            NPC.transform.rotation = Quaternion.Slerp(NPC.transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
             // Normalizza la direzione e calcola il nuovo punto
-            Vector3 moveDirection = direction.normalized;
-            Vector3 targetPosition = escape.position - moveDirection * stopDistance;
+            Vector3 moveDirection = direction.normalized * NPCspeed * Time.deltaTime;
+            //Vector3 targetPosition = player.position - moveDirection * stopDistance;
 
             // Sposta l'oggetto verso il target
-            NPC.position = Vector3.MoveTowards(NPC.position, targetPosition, NPCspeed * Time.deltaTime);
+           characterController.Move(moveDirection);
         }
-        else _NPCanimator.SetBool("trigger", false);
+        else
+        {
+            _NPCanimator.SetBool("trigger", false);
+            
+        }
     }
 
 
