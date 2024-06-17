@@ -24,9 +24,65 @@ public class Dialogue
 
 public class DialogueClass : MonoBehaviour
 {
+    [SerializeField] private Transform player; // Riferimento al giocatore
+    [SerializeField] private Transform NPC; // Transform dell'NPC
+    [SerializeField] private float NPCspeed = 4f; // Velocità di movimento
+    [SerializeField] Animator _NPCanimator;
+    private float stopDistance = 2.5f;
+    private bool NPCtrig = false;
     public Dialogue dialogue;
-    public void TriggerDialogue()
+    void OnTriggerEnter(Collider other)
     {
+        NPCtrig = true;
+        _NPCanimator.SetBool("trigger", true);
+        StartCoroutine(TriggerDialogue());
+    }
+    void Update()
+    {
+        if(NPCtrig)
+        {
+            NpcApproaching();
+            
+        }
+        if(DialogueManager.Instance.isDialogueActive)
+        {
+            if(Input.GetKeyDown(KeyCode.E))
+            {
+                //Debug.Log("manda avanti il dialogo");
+                DialogueManager.Instance.DisplayNextDialogueLine();
+
+            }
+        }
+    }
+    private IEnumerator TriggerDialogue()
+    {
+        yield return new WaitForSeconds(1);
         DialogueManager.Instance.StartDialogue(dialogue);
     }
+    
+    void  NpcApproaching()
+    {
+        
+        // Calcola la direzione verso il giocatore
+        Vector3 direction = player.position - NPC.position;
+        direction.y = 0; // Mantieni il movimento sul piano orizzontale
+
+        // Ruota l'oggetto per rivolgersi verso il giocatore
+        NPC.LookAt(new Vector3(player.position.x, NPC.position.y, player.position.z));
+        
+        // Controlla la distanza dal giocatore
+        if (direction.magnitude > stopDistance)
+        {
+            Debug.Log("ancora non raggiunto");
+            // Normalizza la direzione e calcola il nuovo punto
+            Vector3 moveDirection = direction.normalized;
+            Vector3 targetPosition = player.position - moveDirection * stopDistance;
+
+            // Sposta l'oggetto verso il target
+            NPC.position = Vector3.MoveTowards(NPC.position, targetPosition, NPCspeed * Time.deltaTime);
+        }
+        else _NPCanimator.SetBool("trigger", false);
+        
+    }
 }
+    

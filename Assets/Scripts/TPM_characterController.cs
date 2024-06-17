@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using DialogueEditor;
+
 
 // THIRD PERSON MOVEMENT WITH CHARACTERCONTROLLER
 public class TPM_characterController : MonoBehaviour
@@ -19,8 +19,8 @@ public class TPM_characterController : MonoBehaviour
     //[SerializeField] private float _jumpHeight = 3f;
     [SerializeField] private SceneState playerData;
     [SerializeField] private Animator _animator;
+    [SerializeField] DialogueManager dialogueManager;
     //[SerializeField] NPCConversation _npcconversation;
-    public bool _canmove = true; 
 
     private CharacterController _characterController;
     private Vector3 _inputVector;
@@ -53,22 +53,27 @@ public class TPM_characterController : MonoBehaviour
     
     void Update()
     {
-        //Ground Check
+        UpdateAnimation();
+        
+        if(DialogueManager.Instance.isDialogueActive)
+        {
+            _inputSpeed = 0;
+            return;
+        }
+
+        //Ground Check 
         _isGrounded = Physics.CheckSphere(_groundCheck.position, _groundDistance, _groundMask);
 
         if (_isGrounded && _velocity.y < 0f)
         {
             _velocity.y = -2f;
         }
-        UpdateAnimation();
-        if (_canmove)
-        {
-            GatherInput();
-            NewOrientation();
-            Movement();
-            UpdateLastPosition();
+        
+        GatherInput();
+        NewOrientation();
+        Movement();
+        UpdateLastPosition();
  
-        }
         
         //BOOST
         if (Input.GetKey(KeyCode.LeftShift) && _isGrounded)

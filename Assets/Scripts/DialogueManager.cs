@@ -1,25 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
-using Microsoft.Unity.VisualStudio.Editor;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
     public static DialogueManager Instance;
 
-    public Sprite characterImage;
+    public Image characterImage;
     public TextMeshProUGUI characterName;
     public TextMeshProUGUI dialogueArea;
     private Queue<DialogueLine> lines;
 
     public bool isDialogueActive = false;
-    public float typingSpeed = 0.2f;
+    public float typingSpeed = 3f;
     //public Animator _animator;
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
-        
+        if (Instance == null)
+            Instance = this;
+ 
+        lines = new Queue<DialogueLine>();
     }
 
     public void StartDialogue(Dialogue dialogue)
@@ -41,7 +43,7 @@ public class DialogueManager : MonoBehaviour
             return;
         }
         DialogueLine currentLine = lines.Dequeue();
-        characterImage = currentLine._character._icon;
+        characterImage.sprite = currentLine._character._icon;
         characterName.name = currentLine._character._name;
 
         StopAllCoroutines();
