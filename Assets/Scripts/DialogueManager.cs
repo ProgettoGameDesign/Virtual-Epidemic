@@ -15,7 +15,8 @@ public class DialogueManager : MonoBehaviour
 
     public bool isDialogueActive = false;
     public float typingSpeed = 3f;
-    //public Animator _animator;
+    public Animator _animator;
+    public DialogueClass dialogueClass;
     private void Awake()
     {
         if (Instance == null)
@@ -27,7 +28,7 @@ public class DialogueManager : MonoBehaviour
     public void StartDialogue(Dialogue dialogue)
     {
         isDialogueActive = true;
-        // _animator.Play("show");
+        _animator.Play("show");
         lines.Clear();
         foreach (DialogueLine dialogueLine in dialogue.dialogueLines)
         {
@@ -63,7 +64,8 @@ public class DialogueManager : MonoBehaviour
     void EndDialogue()
     {
         isDialogueActive = false;
-        // animator.Play("hide");
+        _animator.Play("hide");
+        dialogueClass.NPCtrig = 2;
     }
 
     

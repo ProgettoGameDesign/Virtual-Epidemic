@@ -25,24 +25,29 @@ public class Dialogue
 public class DialogueClass : MonoBehaviour
 {
     [SerializeField] private Transform player; // Riferimento al giocatore
+    [SerializeField] private Transform escape; // Riferimento al punto di fuga
     [SerializeField] private Transform NPC; // Transform dell'NPC
     [SerializeField] private float NPCspeed = 4f; // Velocità di movimento
     [SerializeField] Animator _NPCanimator;
     private float stopDistance = 2.5f;
-    private bool NPCtrig = false;
+    public int NPCtrig = 0;
     public Dialogue dialogue;
     void OnTriggerEnter(Collider other)
     {
-        NPCtrig = true;
+        NPCtrig = 1;
         _NPCanimator.SetBool("trigger", true);
         StartCoroutine(TriggerDialogue());
     }
     void Update()
     {
-        if(NPCtrig)
+        if(NPCtrig==1)
         {
-            NpcApproaching();
-            
+            NpcApproaching();            
+        }
+        if(NPCtrig == 2)
+        {
+             _NPCanimator.SetBool("trigger", true);
+            NpcEscape();            
         }
         if(DialogueManager.Instance.isDialogueActive)
         {
@@ -81,8 +86,36 @@ public class DialogueClass : MonoBehaviour
             // Sposta l'oggetto verso il target
             NPC.position = Vector3.MoveTowards(NPC.position, targetPosition, NPCspeed * Time.deltaTime);
         }
-        else _NPCanimator.SetBool("trigger", false);
+        else
+        {
+            _NPCanimator.SetBool("trigger", false);
+            
+        }
         
     }
+    public void NpcEscape()
+    {
+        // Calcola la direzione verso il giocatore
+        Vector3 direction = escape.position - NPC.position;
+        direction.y = 0; // Mantieni il movimento sul piano orizzontale
+
+        // Ruota l'oggetto per rivolgersi verso il giocatore
+        NPC.LookAt(new Vector3(escape.position.x, NPC.position.y, escape.position.z));
+        
+        // Controlla la distanza dal giocatore
+        if (direction.magnitude > stopDistance)
+        {
+            Debug.Log("ancora non raggiunto");
+            // Normalizza la direzione e calcola il nuovo punto
+            Vector3 moveDirection = direction.normalized;
+            Vector3 targetPosition = escape.position - moveDirection * stopDistance;
+
+            // Sposta l'oggetto verso il target
+            NPC.position = Vector3.MoveTowards(NPC.position, targetPosition, NPCspeed * Time.deltaTime);
+        }
+        else _NPCanimator.SetBool("trigger", false);
+    }
+
+
 }
     
