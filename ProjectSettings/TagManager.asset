@@ -9,6 +9,7 @@ TagManager:
   - ContatoreSpento
   - Gino
   - Surface
+  - Conversazione
   layers:
   - Default
   - TransparentFX

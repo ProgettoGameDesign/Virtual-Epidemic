@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 [System.Serializable]
@@ -36,9 +37,13 @@ public class DialogueClass : MonoBehaviour
     public Dialogue dialogue;
     void OnTriggerEnter(Collider other)
     {
-        NPCtrig = 1;
-        _NPCanimator.SetBool("trigger", true);
-        StartCoroutine(TriggerDialogue());
+        if(!other.CompareTag("Gino"))
+        {
+            NPCtrig = 1;
+            _NPCanimator.SetBool("trigger", true);
+            StartCoroutine(TriggerDialogue());
+        }
+        
     }
     void Start()
     {
