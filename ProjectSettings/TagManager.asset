@@ -8,6 +8,7 @@ TagManager:
   - ContatoreAcceso
   - ContatoreSpento
   - Gino
+  - Surface
   layers:
   - Default
   - TransparentFX
