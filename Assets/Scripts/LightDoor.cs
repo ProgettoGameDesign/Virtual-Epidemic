@@ -16,11 +16,8 @@ public class LightDoor : MonoBehaviour
     {
         if (other.CompareTag("Player"))
             _outlinescript.enabled = true;
-        else
-        {
-            if (other.CompareTag("Gino"))
+        else if (other.CompareTag("Gino"))
                 animator.SetBool("trigger", true);
-        }
         
     }
 
@@ -28,6 +25,7 @@ public class LightDoor : MonoBehaviour
     {
         if (other.CompareTag("Player"))
             _outlinescript.enabled = false;
+        else return;
         
     }
 }
