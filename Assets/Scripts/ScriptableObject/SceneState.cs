@@ -10,6 +10,7 @@ public class SceneState : ScriptableObject
     public bool _torchActive;
     public bool _hasKey;
     public Color _currentcolor;
+    public int NPCtrig1;
     public void ResetData() // imposta la posizione a (0, 0, 0) ogni volta che fa ripartire il gioco
     {
         lastPosition_AI = Vector3.zero; 
@@ -17,5 +18,6 @@ public class SceneState : ScriptableObject
         _torchActive = false;
         _hasKey = false;
         _currentcolor = Color.white;
+        NPCtrig1 = 0;
     }
 }

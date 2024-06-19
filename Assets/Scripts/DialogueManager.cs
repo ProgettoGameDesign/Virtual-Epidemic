@@ -16,7 +16,7 @@ public class DialogueManager : MonoBehaviour
     public bool isDialogueActive = false;
     public float typingSpeed = 3f;
     public Animator _animator;
-    public DialogueClass dialogueClass;
+    public SceneState sceneState;
     private void Awake()
     {
         if (Instance == null)
@@ -65,7 +65,7 @@ public class DialogueManager : MonoBehaviour
     {
         isDialogueActive = false;
         _animator.Play("hide");
-        dialogueClass.NPCtrig = 2;
+        sceneState.NPCtrig1 = 2;
     }
 
     

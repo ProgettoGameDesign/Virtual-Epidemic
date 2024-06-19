@@ -31,19 +31,22 @@ public class DialogueClass : MonoBehaviour
     [SerializeField] private float NPCspeed = 4f; // Velocità di movimento
     [SerializeField] private float rotationSpeed = 5f; // Velocità di rotazione
     [SerializeField] Animator _NPCanimator;
+    [SerializeField] SceneState sceneState;
     private float stopDistance = 2.5f;
     private CharacterController characterController;
-    public int NPCtrig = 0;
+    //public int NPCtrig = 0;
     public Dialogue dialogue;
     void OnTriggerEnter(Collider other)
     {
-        if(!other.CompareTag("Gino"))
+        if(sceneState.NPCtrig1 == 0 )
         {
-            NPCtrig = 1;
+            if(!other.CompareTag("Gino"))
+            {
+            sceneState.NPCtrig1 = 1;
             _NPCanimator.SetBool("trigger", true);
             StartCoroutine(TriggerDialogue());
+            }
         }
-        
     }
     void Start()
     {
@@ -52,11 +55,11 @@ public class DialogueClass : MonoBehaviour
     }
     void Update()
     {
-        if(NPCtrig==1)
+        if(sceneState.NPCtrig1==1)
         {
             NpcApproaching();            
         }
-        if(NPCtrig == 2)
+        if(sceneState.NPCtrig1 == 2)
         {
              _NPCanimator.SetBool("trigger", true);
             NpcEscape();            
@@ -133,6 +136,8 @@ public class DialogueClass : MonoBehaviour
         else
         {
             _NPCanimator.SetBool("trigger", false);
+            NPC.SetActive(false);
+            sceneState.NPCtrig1 = 3;
             
         }
     }

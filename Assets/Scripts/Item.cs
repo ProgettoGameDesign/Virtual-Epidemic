@@ -12,16 +12,16 @@ public class Item : MonoBehaviour, InteractInterface
     {
         Debug.Log("Hai preso l'oggetto!");
         //gameObject.SetActive(false);
-    
+        /*
         MeshRenderer meshRenderer = GetComponent<MeshRenderer>();
             if (meshRenderer != null)
             {
-                meshRenderer.enabled = false;
-                if(_prompt == "Torch")               
-                {
-                    playerData._torchActive = true;
-                }
-            }
+                meshRenderer.enabled = false;}*/
+        if(_prompt == "Torch")               
+        {
+            playerData._torchActive = true;
+        }
+        gameObject.SetActive(false); 
         return true;
         
     }
