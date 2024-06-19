@@ -25,15 +25,14 @@ public class Dialogue
 
 public class DialogueClass : MonoBehaviour
 {
-    [SerializeField] private Transform player; // Riferimento al giocatore
-    [SerializeField] private Transform escape; // Riferimento al punto di fuga
-    [SerializeField] private GameObject NPC; // Transform dell'NPC
-    [SerializeField] private float NPCspeed = 4f; // Velocità di movimento
-    [SerializeField] private float rotationSpeed = 5f; // Velocità di rotazione
+    //[SerializeField] private Transform player; // Riferimento al giocatore
+    //[SerializeField] private Transform escape; // Riferimento al punto di fuga
+    //[SerializeField] private GameObject NPC; // Transform dell'NPC
     [SerializeField] Animator _NPCanimator;
     [SerializeField] SceneState sceneState;
-    private float stopDistance = 2.5f;
-    private CharacterController characterController;
+    [SerializeField] CharacterNavController characterNavController;
+    //private float stopDistance = 2.5f;
+    //private CharacterController characterController;
     //public int NPCtrig = 0;
     public Dialogue dialogue;
     void OnTriggerEnter(Collider other)
@@ -48,21 +47,22 @@ public class DialogueClass : MonoBehaviour
             }
         }
     }
+    /*
     void Start()
     {
         // Ottenere il riferimento al CharacterController
         characterController = NPC.GetComponent<CharacterController>();
-    }
+    } */
     void Update()
     {
         if(sceneState.NPCtrig1==1)
         {
-            NpcApproaching();            
+            characterNavController.NpcApproaching();            
         }
         if(sceneState.NPCtrig1 == 2)
         {
              _NPCanimator.SetBool("trigger", true);
-            NpcEscape();            
+            characterNavController.NpcEscape();            
         }
         if(DialogueManager.Instance.isDialogueActive)
         {
@@ -80,6 +80,7 @@ public class DialogueClass : MonoBehaviour
         DialogueManager.Instance.StartDialogue(dialogue);
     }
     
+    /*
     void  NpcApproaching()
     {
         
@@ -141,7 +142,7 @@ public class DialogueClass : MonoBehaviour
             
         }
     }
-
+    */
 
 }
     

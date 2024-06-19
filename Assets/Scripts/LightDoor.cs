@@ -14,6 +14,7 @@ public class LightDoor : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log("collisione");
         if (other.CompareTag("Player"))
             _outlinescript.enabled = true;
         else if (other.CompareTag("Gino"))
