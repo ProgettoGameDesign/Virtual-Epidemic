@@ -1012,7 +1012,7 @@ Transform:
   m_GameObject: {fileID: 366185922}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.69584554, z: -0, w: 0.7181915}
-  m_LocalPosition: {x: -36.6, y: 1.3223053, z: 12.85}
+  m_LocalPosition: {x: -36.23, y: 1.3223053, z: 12.86}
   m_LocalScale: {x: 11.7686, y: 2.5977376, z: 11.090855}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5388,8 +5388,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.6457641, y: 0.9204652, z: 1.6344825}
-  m_Center: {x: -0.0056219054, y: 0.4519399, z: -0.0000000212116}
+  m_Size: {x: 1.7956034, y: 1.474033, z: 1.6344825}
+  m_Center: {x: 0.87427056, y: 0.7287241, z: -0.000000028122503}
 --- !u!114 &1714304129
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5402,7 +5402,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36a11c81b8051b84ebeb13512b7cfd8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 1714304135}
+  animator: {fileID: 1714304139}
 --- !u!114 &1714304130
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5434,8 +5434,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _prompt: Door-M
-  _animator: {fileID: 0}
---- !u!95 &1714304135
+  _animator: {fileID: 1714304139}
+--- !u!95 &1714304139
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -5445,7 +5445,7 @@ Animator:
   m_GameObject: {fileID: 1714304126}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 5d242972d47558e4a93905ceb9271a68, type: 2}
+  m_Controller: {fileID: 9100000, guid: 830d99d0c7f6cc747a3b003b95545cfe, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -6926,6 +6926,69 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba7f0304ec2ef89409af47953edcad2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &2032740190
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2032740192}
+  - component: {fileID: 2032740191}
+  m_Layer: 0
+  m_Name: NavSurface
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &2032740191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032740190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_GenerateLinks: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.16666667
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 23800000, guid: eb77d614d8623ce4693076e82abb6d16, type: 2}
+  m_BuildHeightMesh: 0
+--- !u!4 &2032740192
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032740190}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2054733832 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7238389923120484527, guid: 81eb0e262cf313f4da83e34f3778892d, type: 3}
@@ -9122,7 +9185,7 @@ PrefabInstance:
       addedObject: {fileID: 1714304128}
     - targetCorrespondingSourceObject: {fileID: 8029080641364124927, guid: 509c6d79f70c299488f3e5b1260e93c9, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1714304135}
+      addedObject: {fileID: 1714304139}
     - targetCorrespondingSourceObject: {fileID: 3330092683616111468, guid: 509c6d79f70c299488f3e5b1260e93c9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1477332273}
@@ -9422,4 +9485,4 @@ SceneRoots:
   - {fileID: 1015895540}
   - {fileID: 366185923}
   - {fileID: 1234228684}
-  - {fileID: 2001754399}
+  - {fileID: 2032740192}
