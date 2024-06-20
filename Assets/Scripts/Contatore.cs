@@ -11,6 +11,7 @@ public class Contatore : MonoBehaviour, InteractInterface
     [SerializeField] GameObject _lightTransition;
     [SerializeField] GameObject _light1;
     [SerializeField] GameObject _light2;
+    [SerializeField] Animator _NPCanimator;
 
     public string InteractionPrompt => _prompt;
 
@@ -44,5 +45,6 @@ public class Contatore : MonoBehaviour, InteractInterface
     private void SwitchTarget()
     {
         cameraSwitchTarget.SwitchToNPCTarget();
+        _NPCanimator.SetBool("trigger", true);
     }
 }

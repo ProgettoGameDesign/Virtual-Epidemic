@@ -19,7 +19,7 @@ public class CameraSwitchTarget : MonoBehaviour
         
 
         // Dopo la durata dell'animazione, torna al player
-        Invoke("SwitchBackToPlayer", 5);
+        Invoke("SwitchBackToPlayer", 8);
     }
 
     private void SwitchBackToPlayer()
