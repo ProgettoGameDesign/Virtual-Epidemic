@@ -22,7 +22,11 @@ public class CharacterNavController : MonoBehaviour
     {
         _navMeshAgent = GetComponent<NavMeshAgent>();
 	}
-
+    /*
+    void Update()
+    {
+        _navMeshAgent.destination = player.position; 
+    }*/
     public void NpcApproaching()
     {
         if (player != null)
@@ -34,7 +38,8 @@ public class CharacterNavController : MonoBehaviour
             if (distanceToTarget > stopDistance)
             {
                 _navMeshAgent.SetDestination(player.position);
-                RotateTowards(player);
+                //RotateTowards(player);
+                
             }
             else
             {
@@ -43,7 +48,6 @@ public class CharacterNavController : MonoBehaviour
                 _NPCanimator.SetBool("trigger", false);
             }
         }
-
 
 
     }
@@ -58,7 +62,7 @@ public class CharacterNavController : MonoBehaviour
             if (distanceToTarget > stopDistance)
             {
                 _navMeshAgent.SetDestination(escape.position);
-                RotateTowards(escape);
+                //RotateTowards(escape);
             }
             else
             {

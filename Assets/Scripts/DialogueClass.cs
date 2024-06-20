@@ -47,17 +47,11 @@ public class DialogueClass : MonoBehaviour
             }
         }
     }
-    /*
-    void Start()
-    {
-        // Ottenere il riferimento al CharacterController
-        characterController = NPC.GetComponent<CharacterController>();
-    } */
     void Update()
     {
         if(sceneState.NPCtrig1==1)
         {
-            characterNavController.NpcApproaching();            
+            characterNavController.NpcApproaching();           
         }
         if(sceneState.NPCtrig1 == 2)
         {
@@ -74,9 +68,10 @@ public class DialogueClass : MonoBehaviour
             }
         }
     }
+    
     private IEnumerator TriggerDialogue()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(3);
         DialogueManager.Instance.StartDialogue(dialogue);
     }
     
