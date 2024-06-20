@@ -4208,13 +4208,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1503390288}
   - component: {fileID: 1503390287}
+  - component: {fileID: 1503390289}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!108 &1503390287
 Light:
   m_ObjectHideFlags: 0
@@ -4222,7 +4223,7 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1503390286}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
@@ -4292,6 +4293,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 54.84, y: 138, z: 0}
+--- !u!114 &1503390289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503390286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7ac5ede92890e3488b1fbdac23081b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
 --- !u!1001 &1518956471
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6086,7 +6100,7 @@ MonoBehaviour:
   isDialogueActive: 0
   typingSpeed: 0.01
   _animator: {fileID: 2050809722}
-  dialogueClass: {fileID: 0}
+  sceneState: {fileID: 0}
 --- !u!114 &2050809724
 MonoBehaviour:
   m_ObjectHideFlags: 0

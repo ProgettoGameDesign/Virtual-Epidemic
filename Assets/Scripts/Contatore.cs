@@ -9,8 +9,6 @@ public class Contatore : MonoBehaviour, InteractInterface
     [SerializeField] Animator _animator;
     [SerializeField] CameraSwitchTarget cameraSwitchTarget;
     [SerializeField] GameObject _lightTransition;
-    [SerializeField] GameObject _light1;
-    [SerializeField] GameObject _light2;
     [SerializeField] Animator _NPCanimator;
 
     public string InteractionPrompt => _prompt;
@@ -39,8 +37,7 @@ public class Contatore : MonoBehaviour, InteractInterface
     }
     private void ActiveLight()
     {
-        _light1.SetActive(true);
-        _light2.SetActive(true);
+        sceneState._lightup = true;
     }
     private void SwitchTarget()
     {

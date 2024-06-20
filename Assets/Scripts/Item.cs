@@ -11,12 +11,7 @@ public class Item : MonoBehaviour, InteractInterface
     public bool Interact(Interactor interactor)
     {
         Debug.Log("Hai preso l'oggetto!");
-        //gameObject.SetActive(false);
-        /*
-        MeshRenderer meshRenderer = GetComponent<MeshRenderer>();
-            if (meshRenderer != null)
-            {
-                meshRenderer.enabled = false;}*/
+        
         if(_prompt == "Torch")               
         {
             playerData._torchActive = true;
