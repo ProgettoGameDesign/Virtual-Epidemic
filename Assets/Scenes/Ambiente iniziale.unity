@@ -6089,7 +6089,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _prompt: Door-M
-  _animator: {fileID: 0}
+  _animator: {fileID: 1714304132}
 --- !u!95 &1714304132
 Animator:
   serializedVersion: 5
