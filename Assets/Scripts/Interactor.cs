@@ -16,6 +16,7 @@ public class Interactor : MonoBehaviour
     private Collider[] _colliders = new Collider[2]; // può avere un massimo di 2 oggetti interagibili alla volta
 
     private Transform[] allTransforms;
+    //private InteractInterface interactable2; // questo servirà nel solo caso ci sia un secondo oggetto interagibile
 
     private void Awake()
     {
@@ -29,10 +30,14 @@ public class Interactor : MonoBehaviour
         if (Physics.OverlapSphereNonAlloc(_interactPoint.position, _interactRange, _colliders, _interactableMask) != 0)
         {
             Debug.Log("Questo oggetto è interagibile");
-            var interactable = _colliders[0].GetComponent<InteractInterface>(); // acquisisco l'interfaccia dell'oggetto
-            string _tagToSearch = interactable.InteractionPrompt;
+            var interactable = _colliders[0].GetComponent<InteractInterface>(); // acquisisco l'interfaccia dell'oggetto 1
+            //if(_colliders.Length > 1)
+              //  interactable2 = _colliders[1].GetComponent<InteractInterface>();
+            //string _tagToSearch = interactable.InteractionPrompt;
             if (interactable != null && Input.GetKeyDown(KeyCode.E)) {
                 interactable.Interact(this); // richiamo il metodo Interact
+                //if (interactable2 != null)
+                //interactable2.Interact(this);
                 //if (_tagToSearch == "Torch") {
                     //PanelActivation(_tagToSearch);
                     //}

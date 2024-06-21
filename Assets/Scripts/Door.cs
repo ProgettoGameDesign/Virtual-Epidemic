@@ -9,7 +9,7 @@ public class Door : MonoBehaviour, InteractInterface
     [SerializeField] Animator _animator;
     public string InteractionPrompt => _prompt;
     //private Vector3 _spawnPosition;
-    //public SceneState _sceneState;
+    public SceneState _sceneState;
 
     public bool Interact(Interactor interactor)
     {
@@ -24,8 +24,11 @@ public class Door : MonoBehaviour, InteractInterface
                 StartCoroutine(LoadNewScene("Aula1_M"));}
             else if (_prompt == "Door-M2") {       
                 StartCoroutine(LoadNewScene("Aula2_M"));}
-            else if (_prompt == "Door-M3") {       
-                StartCoroutine(LoadNewScene("Aula3_M"));}
+            else if (_prompt == "Door-M3") {     
+                if (_sceneState._hasKey == true)  
+                    StartCoroutine(LoadNewScene("Aula3_M"));
+                else
+                    Debug.Log("Trova chiave per entrare");}
             else if (_prompt == "Door-M4") {       
                 StartCoroutine(LoadNewScene("Aula4_M"));}
             else if (_prompt == "Door-M5") {       

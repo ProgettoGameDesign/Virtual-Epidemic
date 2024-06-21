@@ -16,14 +16,9 @@ public class Contatore : MonoBehaviour, InteractInterface
 
     public bool Interact(Interactor interactor)
     {
-        if (_animator.GetBool("key") == false)
+        if (!_animator.GetBool("key"))
         {
-            if (sceneState._hasKey == true)
-        {
-            Debug.Log("Sportello aperto!");
             _animator.SetBool("key", true);
-        } 
-            else Debug.Log("Trova chiave per aprire lo sportello");
         }
         else
         {

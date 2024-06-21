@@ -1118,6 +1118,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _prompt: Door-M1
   _animator: {fileID: 548143783}
+  _sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
 --- !u!114 &548143780
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4304,6 +4305,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _prompt: Exit
   _animator: {fileID: 0}
+  _sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
 --- !u!65 &1567873335
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4585,6 +4587,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _prompt: Door-M2
   _animator: {fileID: 1707925705}
+  _sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
 --- !u!65 &1707925702
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4878,6 +4881,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _prompt: Door-M4
   _animator: {fileID: 1714314633}
+  _sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
 --- !u!95 &1714314633
 Animator:
   serializedVersion: 5
@@ -5099,6 +5103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _prompt: Door-M6
   _animator: {fileID: 1790724645}
+  _sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
 --- !u!65 &1790724642
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5615,6 +5620,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _prompt: Door-M5
   _animator: {fileID: 2028111614}
+  _sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
 --- !u!95 &2028111614
 Animator:
   serializedVersion: 5
@@ -5875,6 +5881,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _prompt: Door-M3
   _animator: {fileID: 2053060247}
+  _sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
 --- !u!95 &2053060247
 Animator:
   serializedVersion: 5
