@@ -18,7 +18,7 @@ public class Footsteps_Character : MonoBehaviour
 
     void Update()
     {
-        if(characterController.isGrounded && characterController.velocity.magnitude > 2f)
+        if(characterController.isGrounded && characterController.velocity.magnitude >= 0.9f)
         {
             int terreno = DetermineSurface();
             PlayFootstepsSound(terreno);
@@ -28,8 +28,9 @@ public class Footsteps_Character : MonoBehaviour
     
     int DetermineSurface()
     {
+        
         RaycastHit hit;
-        if (Physics.Raycast(transform.position, Vector3.down, out hit, 0.25f, groundLayer))
+        if (Physics.Raycast(transform.position, Vector3.down, out hit, 1f, groundLayer))
         {
             Renderer renderer = hit.collider.GetComponent<Renderer>();
             if (renderer != null)
