@@ -5,6 +5,7 @@ using UnityEngine;
 public class DisabilitaPagine : MonoBehaviour
 {
     [SerializeField] private Diario diario;
+    [SerializeField] private SceneState sceneState;
 
     // Update is called once per frame
     void Update()
@@ -24,7 +25,7 @@ public class DisabilitaPagine : MonoBehaviour
                 return;
 
         }
-        else if(diario.Pagina3 == true){
+        else if(sceneState.Pagina3 == true){
             GameObject foundObject = GameObject.Find("Pagina3");
             if (foundObject!=null)
                 foundObject.SetActive(false);

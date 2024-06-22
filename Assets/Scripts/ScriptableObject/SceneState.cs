@@ -12,6 +12,7 @@ public class SceneState : ScriptableObject
     public bool _lightup;
     public Color _currentcolor;
     public int NPCtrig1;
+    public bool Pagina3;
     public void ResetData() // imposta ai valori iniziali ogni volta che fa ripartire il gioco
     {
         lastPosition_AI = Vector3.zero; 
@@ -21,5 +22,6 @@ public class SceneState : ScriptableObject
         _lightup = false;
         _currentcolor = Color.white;
         NPCtrig1 = 0;
+        Pagina3 = false;
     }
 }
