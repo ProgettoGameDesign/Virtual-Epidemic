@@ -7,23 +7,36 @@ public class Contatore : MonoBehaviour, InteractInterface
     [SerializeField] private string _prompt;
     [SerializeField] public SceneState sceneState;
     [SerializeField] Animator _animator;
+    [SerializeField] CameraSwitchTarget cameraSwitchTarget;
+    [SerializeField] GameObject _lightTransition;
+    [SerializeField] Animator _NPCanimator;
+
     public string InteractionPrompt => _prompt;
+
 
     public bool Interact(Interactor interactor)
     {
-        if (_animator.GetBool("key") == false)
+        if (!_animator.GetBool("key"))
         {
-            if (sceneState._hasKey == true)
-        {
-            Debug.Log("Sportello aperto!");
             _animator.SetBool("key", true);
-        } 
-            else Debug.Log("Trova chiave per aprire lo sportello");
         }
         else
         {
             Debug.Log("Hai acceso la luce!");
+            _lightTransition.SetActive(true);
+            Invoke("ActiveLight", 4);
+            Invoke("SwitchTarget",5);
+
         }
         return true;
+    }
+    private void ActiveLight()
+    {
+        sceneState._lightup = true;
+    }
+    private void SwitchTarget()
+    {
+        cameraSwitchTarget.SwitchToNPCTarget();
+        _NPCanimator.SetBool("trigger", true);
     }
 }

@@ -31,6 +31,20 @@ public class ResetScriptableObjectsOnPlay
                     EditorUtility.SetDirty(playerData);
                 }
             }
+            string[] pages = AssetDatabase.FindAssets("t:Diario");
+            foreach (string page in pages)
+            {
+                string path = AssetDatabase.GUIDToAssetPath(page);
+                Diario playerData = AssetDatabase.LoadAssetAtPath<Diario>(path);
+                if (playerData != null)
+                {
+                    // Resetta i dati
+                    playerData.ResetData();
+
+                    // Salva le modifiche nel file dell'asset
+                    EditorUtility.SetDirty(playerData);
+                }
+            }
 
             // Assicura che le modifiche siano scritte su disco
             AssetDatabase.SaveAssets();

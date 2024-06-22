@@ -3,7 +3,22 @@ guid: b02eacf712864d94bae008d1a8082816
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pirulicchi porta
+    second: {fileID: 2100000, guid: 9bcff68d3a5d0a34fa689a1cab3b6057, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Porta_verde
+    second: {fileID: 2100000, guid: 327bf4d3210c6d241ad8316c546c06f0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Vetro porte
+    second: {fileID: 2100000, guid: dca24d946bd8b5e43af7da6a6ca67aec, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
