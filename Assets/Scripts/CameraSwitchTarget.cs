@@ -14,18 +14,18 @@ public class CameraSwitchTarget : MonoBehaviour
     {
         // Cambia il target della camera all'npc
         virtualCamera.Follow = npc;
-        virtualCamera.LookAt = npc;
+        //virtualCamera.LookAt = npc;
 
         
 
         // Dopo la durata dell'animazione, torna al player
-        Invoke("SwitchBackToPlayer", 8);
+        Invoke("SwitchBackToPlayer", 7);
     }
 
     private void SwitchBackToPlayer()
     {
         // Cambia il target della camera al player
         virtualCamera.Follow = player;
-        virtualCamera.LookAt = player;
+        //virtualCamera.LookAt = player;
     }
 }
