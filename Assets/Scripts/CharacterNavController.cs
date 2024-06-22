@@ -67,9 +67,10 @@ public class CharacterNavController : MonoBehaviour
             else
             {
                 // Fermare il movimento se siamo abbastanza vicini
-                _navMeshAgent.ResetPath();
-                _NPCanimator.SetBool("trigger", false);
-                gameObject.SetActive(false);
+                //_navMeshAgent.ResetPath();
+                //_NPCanimator.SetBool("trigger", false);
+                //gameObject.SetActive(false);
+                Destroy(gameObject);
                 sceneState.NPCtrig1 = 3;
             }
         }
