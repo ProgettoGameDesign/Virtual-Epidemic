@@ -12,6 +12,7 @@ public class SceneState : ScriptableObject
     public bool _lightup;
     public Color _currentcolor;
     public int NPCtrig1;
+    public bool tastierino;
     public bool Pagina1;
     public bool Pagina2;
     public bool Pagina3;
@@ -26,6 +27,7 @@ public class SceneState : ScriptableObject
         _lightup = false;
         _currentcolor = Color.white;
         NPCtrig1 = 0;
+        tastierino = false;
         Pagina1 = false;
         Pagina2 = false;
         Pagina3 = false;
