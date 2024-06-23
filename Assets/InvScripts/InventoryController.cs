@@ -62,12 +62,20 @@ namespace Inventory
         }
         private void HandleItemActionRequest(int itemIndex)
         {
+            
             InventoryItem inventoryItem = inventoryData.GetItemAt(itemIndex);
+            
             if (inventoryItem.IsEmpty)
                 return;
 
+            IInspectAction inspectAction = inventoryItem.item as IInspectAction;
+            {
+                inventoryUI.ShowItemAction(itemIndex);
+                inventoryUI.AddAction(inspectAction.ActionName, () => PerformAction(itemIndex));
+            }
+
             IItemAction itemAction = inventoryItem.item as IItemAction;
-            if(itemAction != null)
+            if (itemAction != null)
             {
                 inventoryUI.ShowItemAction(itemIndex);
                 inventoryUI.AddAction(itemAction.ActionName, () => PerformAction(itemIndex));

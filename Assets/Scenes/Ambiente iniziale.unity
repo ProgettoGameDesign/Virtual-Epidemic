@@ -4801,8 +4801,8 @@ MonoBehaviour:
   inventoryUI: {fileID: 597862732}
   inventoryData: {fileID: 11400000, guid: 7c8a5a2af1efac84c8cafb5edf47f58d, type: 2}
   initialItems:
-  - quantity: 2
-    item: {fileID: 11400000, guid: c6d934e76477f9b47aa7994ce36dfba3, type: 2}
+  - quantity: 1
+    item: {fileID: 11400000, guid: ab8d47a8136540645a94e5b0e061842e, type: 2}
     itemState: []
   dropClip: {fileID: 0}
   audioSource: {fileID: 0}

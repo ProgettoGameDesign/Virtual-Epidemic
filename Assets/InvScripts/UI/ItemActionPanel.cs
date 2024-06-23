@@ -13,7 +13,7 @@ namespace Inventory.UI
 
         public void AddButton(string name, Action onClickAction)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
             GameObject button = Instantiate(buttonPrefab, transform);
             button.GetComponent<Button>().onClick.AddListener(() => onClickAction());
             button.GetComponentInChildren<TMPro.TMP_Text>().text = name;

@@ -36,13 +36,19 @@ public class UIInventoryPage : MonoBehaviour
         mouseFollower.Toggle(false);
         itemDescription.ResetDescription();
     }
-
     public void InitializeInventoryUI(int inventorysize)
     {
+
         for (int i = 0; i < inventorysize; i++)
         {
             UIInventoryItem uiItem = Instantiate(itemPrefab, Vector3.zero, Quaternion.identity);
             uiItem.transform.SetParent(contentPanel);
+
+            // Ripristina i parametri della trasformazione
+            uiItem.transform.localPosition = new Vector3(uiItem.transform.localPosition.x, uiItem.transform.localPosition.y, 0);
+            uiItem.transform.localRotation = Quaternion.identity;
+            uiItem.transform.localScale = Vector3.one;
+
             listOfUIItems.Add(uiItem);
             uiItem.OnItemClicked += HandleItemSelection;
             uiItem.OnItemBeginDrag += HandleBeginDrag;
@@ -132,7 +138,10 @@ public class UIInventoryPage : MonoBehaviour
 
     public void AddAction(string actionName, Action performAction)
     {
+        Debug.Log($"AddAction called with actionName: {actionName}");
+        Debug.Log($"AddAction called with performAction: {performAction}");
         actionPanel.AddButton(actionName, performAction);
+        Debug.Log("AddAction completed");
     }
     public void ShowItemAction(int itemIndex)
     {

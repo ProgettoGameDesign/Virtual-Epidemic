@@ -24,6 +24,13 @@ namespace Inventory.Model
         }
     }
 
+    public interface IInspectAction
+    {
+        public string ActionName { get; }
+        public AudioClip actionSFX { get; }
+        bool PerformAction();
+    }
+
     public interface IDestroyableItem
     {
 
