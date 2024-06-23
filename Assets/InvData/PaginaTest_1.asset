@@ -16,6 +16,7 @@ MonoBehaviour:
   <MaxStackSize>k__BackingField: 1
   <Name>k__BackingField: Pagina di test 1
   <Description>k__BackingField: Descrizione della pagina
-  <ItemImage>k__BackingField: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  <ItemImage>k__BackingField: {fileID: 21300000, guid: de255514c2d99d540920cdb0e3888c89, type: 3}
+  <prefab>k__BackingField: {fileID: -8679921383154817045, guid: fe7332cdcc7091343bb1f914582a0bcf, type: 3}
   <DefaultParametersList>k__BackingField: []
   <actionSFX>k__BackingField: {fileID: 0}

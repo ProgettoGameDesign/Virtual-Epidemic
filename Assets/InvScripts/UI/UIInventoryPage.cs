@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using Inventory.UI;
+using Inventory.Model;
 
 public class UIInventoryPage : MonoBehaviour
 {
@@ -58,9 +59,9 @@ public class UIInventoryPage : MonoBehaviour
         }
     }
 
-    internal void UpdateDescription(int itemIndex, Sprite itemImage, string name, string description)
+    internal void UpdateDescription(int itemIndex, Sprite itemImage, ItemSO itemSO, string name, string description)
     {
-        itemDescription.SetDescription(itemImage, name, description);
+        itemDescription.SetDescription(itemImage, itemSO, name, description);
         DeselectAllItems();
         listOfUIItems[itemIndex].Select();
     }

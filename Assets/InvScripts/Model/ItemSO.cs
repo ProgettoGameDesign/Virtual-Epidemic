@@ -25,6 +25,9 @@ namespace Inventory.Model
 
         [field: SerializeField]
         public Sprite ItemImage { get; set; }
+        
+        [field: SerializeField]
+        public Transform prefab { get; set; }
 
         [field: SerializeField]
         public List<ItemParameter> DefaultParametersList { get; set; }
