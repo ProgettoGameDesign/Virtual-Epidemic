@@ -4,19 +4,19 @@ using UnityEngine;
 
 public class DisabilitaPagine : MonoBehaviour
 {
-    [SerializeField] private Diario diario;
+    [SerializeField] private SceneState sceneState;
 
     // Update is called once per frame
     void Update()
     {
-        if(diario.Pagina1 == true){
+        if(sceneState.Pagina1 == true){
             GameObject foundObject = GameObject.Find("Pagina1");
             if (foundObject!=null)
                 foundObject.SetActive(false);
             else
                 return;
         }
-        else if(diario.Pagina2 == true){
+        else if(sceneState.Pagina2 == true){
             GameObject foundObject = GameObject.Find("Pagina2");
             if (foundObject!=null)
                 foundObject.SetActive(false);
@@ -24,7 +24,7 @@ public class DisabilitaPagine : MonoBehaviour
                 return;
 
         }
-        else if(diario.Pagina3 == true){
+        else if(sceneState.Pagina3 == true){
             GameObject foundObject = GameObject.Find("Pagina3");
             if (foundObject!=null)
                 foundObject.SetActive(false);
@@ -32,7 +32,7 @@ public class DisabilitaPagine : MonoBehaviour
                 return;
 
         }
-        else if(diario.Pagina4 == true){
+        else if(sceneState.Pagina4 == true){
             GameObject foundObject = GameObject.Find("Pagina4");
             if (foundObject!=null)
             foundObject.SetActive(false);
@@ -40,7 +40,7 @@ public class DisabilitaPagine : MonoBehaviour
                 return;
 
         }
-        else if(diario.Pagina5 == true){
+        else if(sceneState.Pagina5 == true){
             GameObject foundObject = GameObject.Find("Pagina5");
             if (foundObject!=null)
             foundObject.SetActive(false);
@@ -48,13 +48,6 @@ public class DisabilitaPagine : MonoBehaviour
                 return;
 
         }
-        else if(diario.Pagina6 == true){
-            GameObject foundObject = GameObject.Find("Pagina6");
-            if (foundObject!=null)
-            foundObject.SetActive(false);
-            else
-                return;
-
-        }
+    
     }
 }

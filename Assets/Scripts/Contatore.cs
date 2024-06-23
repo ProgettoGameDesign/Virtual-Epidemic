@@ -6,13 +6,21 @@ public class Contatore : MonoBehaviour, InteractInterface
 {
     [SerializeField] private string _prompt;
     [SerializeField] public SceneState sceneState;
-    [SerializeField] Animator _animator;
-    [SerializeField] CameraSwitchTarget cameraSwitchTarget;
-    [SerializeField] GameObject _lightTransition;
-    [SerializeField] Animator _NPCanimator;
+    [SerializeField] private Animator _animator;
+    [SerializeField] private CameraSwitchTarget cameraSwitchTarget;
+    [SerializeField] private GameObject _lightTransition;
+    [SerializeField] private Animator _NPCanimator;
+    [SerializeField] private GameObject _NPC;
 
     public string InteractionPrompt => _prompt;
-
+    void Awake()
+    {
+        if(sceneState._lightup == true)
+        {
+            _animator.SetBool("key", true);
+            Destroy(_NPC);
+        }
+    }
 
     public bool Interact(Interactor interactor)
     {
