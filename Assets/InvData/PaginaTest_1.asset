@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6908a04ce23371e4bad396acca232399, type: 3}
+  m_Name: PaginaTest_1
+  m_EditorClassIdentifier: 
+  <IsStackable>k__BackingField: 0
+  <MaxStackSize>k__BackingField: 1
+  <Name>k__BackingField: Pagina di test 1
+  <Description>k__BackingField: Descrizione della pagina
+  <ItemImage>k__BackingField: {fileID: 21300000, guid: de255514c2d99d540920cdb0e3888c89, type: 3}
+  <prefab>k__BackingField: {fileID: -8679921383154817045, guid: fe7332cdcc7091343bb1f914582a0bcf, type: 3}
+  <DefaultParametersList>k__BackingField: []
+  <actionSFX>k__BackingField: {fileID: 0}

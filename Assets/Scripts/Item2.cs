@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-public class Item : MonoBehaviour, InteractInterface
+public class Item2 : MonoBehaviour, InteractInterface
 {
     [SerializeField] private SceneState playerData;
     [SerializeField] private string _prompt;
