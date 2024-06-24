@@ -75,69 +75,7 @@ public class DialogueClass : MonoBehaviour
         DialogueManager.Instance.StartDialogue(dialogue);
     }
     
-    /*
-    void  NpcApproaching()
-    {
-        
-        // Calcola la direzione verso il giocatore
-        Vector3 direction = player.position - NPC.transform.position;
-        direction.y = 0; // Mantieni il movimento sul piano orizzontale
-
-        // Ruota l'oggetto per rivolgersi verso il giocatore
-        //NPC.LookAt(new Vector3(player.position.x, NPC.transform.position.y, player.position.z));
-        
-        // Controlla la distanza dal giocatore
-        if (direction.magnitude > stopDistance)
-        {
-            Debug.Log("ancora non raggiunto");
-            // Ruotare gradualmente verso la direzione desiderata
-             Quaternion targetRotation = Quaternion.LookRotation(direction);
-            NPC.transform.rotation = Quaternion.Slerp(NPC.transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
-            // Normalizza la direzione e calcola il nuovo punto
-            Vector3 moveDirection = direction.normalized * NPCspeed * Time.deltaTime;
-            //Vector3 targetPosition = player.position - moveDirection * stopDistance;
-
-            // Sposta l'oggetto verso il target
-           characterController.Move(moveDirection);
-        }
-        else
-        {
-            _NPCanimator.SetBool("trigger", false);
-            
-        }
-        
-    }
-    public void NpcEscape()
-    {
-        // Calcola la direzione verso il giocatore
-        Vector3 direction = escape.position - NPC.transform.position;
-        direction.y = 0; // Mantieni il movimento sul piano orizzontale
-
-        // Ruota l'oggetto per rivolgersi verso il giocatore
-        //NPC.LookAt(new Vector3(player.position.x, NPC.transform.position.y, player.position.z));
-        
-        // Controlla la distanza dal giocatore
-        if (direction.magnitude > stopDistance)
-        {
-            Debug.Log("ancora non raggiunto");
-            Quaternion targetRotation = Quaternion.LookRotation(direction);
-            NPC.transform.rotation = Quaternion.Slerp(NPC.transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
-            // Normalizza la direzione e calcola il nuovo punto
-            Vector3 moveDirection = direction.normalized * NPCspeed * Time.deltaTime;
-            //Vector3 targetPosition = player.position - moveDirection * stopDistance;
-
-            // Sposta l'oggetto verso il target
-           characterController.Move(moveDirection);
-        }
-        else
-        {
-            _NPCanimator.SetBool("trigger", false);
-            NPC.SetActive(false);
-            sceneState.NPCtrig1 = 3;
-            
-        }
-    }
-    */
+    
 
 }
     
