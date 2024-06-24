@@ -3,6 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using FMOD.Studio;
+using UnityEditor.Callbacks;
+using Unity.VisualScripting;
 
 
 // THIRD PERSON MOVEMENT WITH CHARACTERCONTROLLER
@@ -29,10 +32,17 @@ public class TPM_characterController : MonoBehaviour
     private Vector3 _velocity;
     private bool _isGrounded;
     private string actualScene;
+    private EventInstance playerFootsteps;
 
     void Awake()
     {
         actualScene = SceneManager.GetActiveScene().name;
+    }
+    
+    private void StartSound()
+    {
+        playerFootsteps = AudioManager.instance.CreateInstance(FMODEvents.instance.playerFootsteps);
+
     }
     void Start()
     {
@@ -72,6 +82,8 @@ public class TPM_characterController : MonoBehaviour
         NewOrientation();
         Movement();
         UpdateLastPosition();
+        UpdateSound();
+
  
         
         //BOOST
@@ -121,5 +133,23 @@ public class TPM_characterController : MonoBehaviour
             playerData.lastPosition_AI = transform.position;
         if (actualScene == "Corridoio_M")
             playerData.lastPosition_CorridoioM = transform.position;
+    }
+
+    private void UpdateSound()
+    {
+        if (_speed > 0f && _isGrounded)
+        {
+            PLAYBACK_STATE playbackState;
+            playerFootsteps.getPlaybackState(out playbackState);
+            if (playbackState.Equals(PLAYBACK_STATE.STOPPED))
+            {
+                playerFootsteps.start();
+            }
+
+        }
+        else
+        {
+            playerFootsteps.stop(STOP_MODE.ALLOWFADEOUT);
+        }
     }
 }

@@ -6,6 +6,7 @@ using FMOD.Studio;
 
 public class AudioManager : MonoBehaviour
 {
+    private List<EventInstance> eventInstances;
 
     private EventInstance musicEventInstance;
     public static AudioManager instance { get; private set; } 
@@ -17,21 +18,39 @@ public class AudioManager : MonoBehaviour
             Debug.LogError("Found more than one Audio Manager in this scene.");
         }
         instance = this;
+        eventInstances = new List<EventInstance>();
     }
     
-    private void Start()
-    {
-        InitializeMusic(FMODEvents.instance.music);
-    }
-
+   
     public void PlayOneShot(EventReference sound, Vector3 worldPos)
     {
         RuntimeManager.PlayOneShot(sound, worldPos);
     }
 
+    public EventInstance CreateInstance(EventReference eventReference)
+   {
+    EventInstance eventInstance = RuntimeManager.CreateInstance(eventReference);
+    eventInstances.Add(eventInstance); 
+    return eventInstance;
+   }
+
     private void InitializeMusic(EventReference musicEventReference)
     {
         //musicEventInstance = CreateInstance(musicEventReference);
        // musicEventInstance.start();
+    }
+    
+    private void CleanUp()
+    {
+        foreach (EventInstance eventInstance in eventInstances)
+        {
+            eventInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+            eventInstance.release();
+        }
+    }
+
+    private void OnDestroy()
+    {
+        CleanUp();
     }
 }

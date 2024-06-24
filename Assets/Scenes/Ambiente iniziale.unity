@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -181,6 +181,37 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -6093208873287652499, guid: 0e0418513a099534e8e42c380c42b32a, type: 3}
+--- !u!114 &28071446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 28071441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 962676534
+      Data2: 1264757824
+      Data3: 79041726
+      Data4: -1963752606
+    Path: event:/Door_Idle
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &37093191
 GameObject:
   m_ObjectHideFlags: 0
@@ -848,20 +879,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1b615b3484ad410b889f1e22a3e24af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <playerFootsteps>k__BackingField:
+    Guid:
+      Data1: 492108568
+      Data2: 1233790664
+      Data3: -423383389
+      Data4: -473801727
+    Path: event:/Main_Character/footsteps_character
   <openDoor>k__BackingField:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  <music>k__BackingField:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1754503636
+      Data2: 1186071984
+      Data3: -1749474940
+      Data4: 743547299
+    Path: event:/Items/Door_Open_Close
 --- !u!1001 &126592769
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5148,6 +5179,7 @@ GameObject:
   - component: {fileID: 963194227}
   - component: {fileID: 963194229}
   - component: {fileID: 963194230}
+  - component: {fileID: 963194231}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -5269,6 +5301,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attenuationObject: {fileID: 1909789196}
+--- !u!114 &963194231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 653274245
+      Data2: 1224315078
+      Data3: 319193736
+      Data4: -896942756
+    Path: event:/Music/Aule_I_Soundtrack
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params:
+  - Name: Progress
+    Value: 2
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &963278518
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5812,6 +5877,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1027006662}
+  - component: {fileID: 1027006663}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -5835,6 +5901,18 @@ Transform:
   - {fileID: 108562870}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1027006663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1027006660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74e5f3a71ada84e099643845411608e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1035310524
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8711,7 +8789,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1492044388}
   - component: {fileID: 1492044390}
-  - component: {fileID: 1492044389}
   m_Layer: 5
   m_Name: ItemInspectCamera
   m_TagString: Untagged
@@ -8738,14 +8815,6 @@ RectTransform:
   m_AnchoredPosition: {x: 247750.33, y: 321219.5}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!81 &1492044389
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1492044387}
-  m_Enabled: 1
 --- !u!20 &1492044390
 Camera:
   m_ObjectHideFlags: 0
@@ -11282,28 +11351,6 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0.9, z: 0}
---- !u!114 &1909789202
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1909789196}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01b0cbdbaff654fc8ba39afb2070574e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  footstepEvent:
-    Guid:
-      Data1: 492108568
-      Data2: 1233790664
-      Data3: -423383389
-      Data4: -473801727
-    Path: event:/footsteps_character
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 64
 --- !u!1 &1915285435 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7238389923120484527, guid: 81eb0e262cf313f4da83e34f3778892d, type: 3}
@@ -13999,9 +14046,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 87ead3b0a3df7f7409de3146604a62f4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1909789199}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 87ead3b0a3df7f7409de3146604a62f4, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1909789202}
   m_SourcePrefab: {fileID: 100100000, guid: 87ead3b0a3df7f7409de3146604a62f4, type: 3}
 --- !u!1001 &764488981913376120
 PrefabInstance:
@@ -14832,6 +14876,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6658065080322361330, guid: 509c6d79f70c299488f3e5b1260e93c9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 28071445}
+    - targetCorrespondingSourceObject: {fileID: 6658065080322361330, guid: 509c6d79f70c299488f3e5b1260e93c9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 28071446}
     - targetCorrespondingSourceObject: {fileID: 2265301618829570055, guid: 509c6d79f70c299488f3e5b1260e93c9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2116832519}
