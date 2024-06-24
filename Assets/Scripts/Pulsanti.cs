@@ -6,7 +6,7 @@ public class Pulsanti : MonoBehaviour
 {
     public string buttonValue;
     [SerializeField] private ManagerTastierino keypadManager;
-
+    [SerializeField] private Animator animator;
 
 
     void OnMouseDown()
@@ -15,6 +15,7 @@ public class Pulsanti : MonoBehaviour
         {
             //Debug.Log("hai premuto 1");
             keypadManager.AddDigit(buttonValue);
+            animator.SetBool("premuto", true);
         }
     }
     
