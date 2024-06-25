@@ -582,6 +582,7 @@ MonoBehaviour:
   playerData: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
   _prompt: Nerra
   transition: {fileID: 59410824}
+  _animatorNerraSveglio: {fileID: 2023857543}
   dialogue:
     dialogueLines:
     - _character:
@@ -1403,7 +1404,7 @@ MonoBehaviour:
   isDialogueActive: 0
   typingSpeed: 0.01
   _animator: {fileID: 651199086}
-  sceneState: {fileID: 0}
+  sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
 --- !u!114 &651199088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4240,15 +4241,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8703086749936297615, guid: 2c8ec0b58fad8fd428787945f7136ac7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.9660305
+      value: 2.246
       objectReference: {fileID: 0}
     - target: {fileID: 8703086749936297615, guid: 2c8ec0b58fad8fd428787945f7136ac7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.43334898
+      value: 0.468
       objectReference: {fileID: 0}
     - target: {fileID: 8703086749936297615, guid: 2c8ec0b58fad8fd428787945f7136ac7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 11.085554
+      value: 10.816
       objectReference: {fileID: 0}
     - target: {fileID: 8703086749936297615, guid: 2c8ec0b58fad8fd428787945f7136ac7, type: 3}
       propertyPath: m_LocalRotation.w

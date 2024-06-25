@@ -4,15 +4,25 @@ using UnityEngine;
 
 public class TastierinoSulMuro : MonoBehaviour, InteractInterface
 {
-    //[SerializeField] private SceneState playerData;
+    [SerializeField] private SceneState playerData;
     [SerializeField] private string _prompt;
     public string InteractionPrompt => _prompt;
     [SerializeField] GameObject _tastierinotoappear;
     [SerializeField] Animator animator;
     public bool Interact(Interactor interactor)
     {
-        _tastierinotoappear.SetActive(!_tastierinotoappear.activeSelf);
-        animator.Play("show");
+        if (playerData.blockMovementPlayer == false)    
+        {
+            playerData.blockMovementPlayer = true;
+            _tastierinotoappear.SetActive(!_tastierinotoappear.activeSelf);
+            animator.Play("show");
+        }
+        else 
+        {
+            playerData.blockMovementPlayer = false;
+            _tastierinotoappear.SetActive(!_tastierinotoappear.activeSelf);
+            //animator.Play("hide");
+        }
         return true;
     }
     

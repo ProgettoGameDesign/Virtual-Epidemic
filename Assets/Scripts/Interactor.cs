@@ -34,7 +34,7 @@ public class Interactor : MonoBehaviour
             //if(_colliders.Length > 1)
               //  interactable2 = _colliders[1].GetComponent<InteractInterface>();
             //string _tagToSearch = interactable.InteractionPrompt;
-            if (interactable != null && Input.GetKeyDown(KeyCode.E)) {
+            if (interactable != null && Input.GetKeyUp(KeyCode.E)) {
                 interactable.Interact(this); // richiamo il metodo Interact
                 //if (interactable2 != null)
                 //interactable2.Interact(this);

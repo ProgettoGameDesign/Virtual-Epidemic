@@ -65,7 +65,8 @@ public class DialogueManager : MonoBehaviour
     {
         isDialogueActive = false;
         _animator.Play("hide");
-        sceneState.NPCtrig1 = 2;
+        sceneState.blockMovementPlayer = false;
+        //sceneState.NPCtrig1 = 2;
     }
 
     

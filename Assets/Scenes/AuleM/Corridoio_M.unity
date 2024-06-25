@@ -6099,6 +6099,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51cb63caab618bc4ca33349dd23d1c4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerData: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
   _prompt: Tastierino
   _tastierinotoappear: {fileID: 900806828}
   animator: {fileID: 900806831}

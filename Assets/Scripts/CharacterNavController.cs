@@ -10,23 +10,33 @@ public class CharacterNavController : MonoBehaviour
     [SerializeField] Animator _NPCanimator; // Animator del NPC
     [SerializeField] SceneState sceneState;
 
-    //[SerializeField] private Camera _camera;
-    //[SerializeField] private GameObject _targetFeedback;
+    
 
     private NavMeshAgent _navMeshAgent;
     private float stopDistance = 2.5f;
     public float rotationSpeed = 50.0f;
+    
 
     
     void Start ()
     {
         _navMeshAgent = GetComponent<NavMeshAgent>();
 	}
-    /*
+    
     void Update()
     {
-        _navMeshAgent.destination = player.position; 
-    }*/
+        Debug.Log(sceneState.stateOfCutscene1);
+        if (_NPCanimator.GetCurrentAnimatorStateInfo(0).IsName("RunningSpaventato") && sceneState.stateOfCutscene1 == 1 )
+        {
+            NpcApproaching();
+        }
+        if ((DialogueManager.Instance.isDialogueActive == false) && (sceneState.stateOfCutscene1 == 2))
+        {
+            _NPCanimator.SetBool("trigger", true);
+            Debug.Log("ci sta riuscendo");
+            NpcEscape();
+        }
+    }
     public void NpcApproaching()
     {
         if (player != null)
@@ -46,6 +56,8 @@ public class CharacterNavController : MonoBehaviour
                 // Fermare il movimento se siamo abbastanza vicini
                 _navMeshAgent.ResetPath();
                 _NPCanimator.SetBool("trigger", false);
+                //Invoke("AggiornaStato", 0.5f);
+                sceneState.stateOfCutscene1 = 2;
             }
         }
 
@@ -71,9 +83,17 @@ public class CharacterNavController : MonoBehaviour
                 //_NPCanimator.SetBool("trigger", false);
                 //gameObject.SetActive(false);
                 Destroy(gameObject);
-                sceneState.NPCtrig1 = 3;
+                //Invoke("AggiornaStato", 0.5f);
+                sceneState.stateOfCutscene1 = 3;
             }
         }
+    }
+    void AggiornaStato()
+    {
+        Debug.Log("sto aggiornando lo stato");
+        sceneState.stateOfCutscene1 = sceneState.stateOfCutscene1 + 1;
+        
+
     }
     void RotateTowards(Transform target)
     {

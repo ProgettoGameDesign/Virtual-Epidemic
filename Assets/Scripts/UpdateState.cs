@@ -5,11 +5,11 @@ using UnityEngine;
 public class UpdateState : MonoBehaviour
 {
     [SerializeField] private GameObject _NPC;
-    [SerializeField] SceneState sceneState;
+    [SerializeField] private SceneState sceneState;
 
     void Awake()
     {
-        if(sceneState.NPCtrig1 == 3)
+        if(sceneState.stateOfCutscene1 == 3)
         {
             Destroy(_NPC);
         }

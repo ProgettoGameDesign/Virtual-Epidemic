@@ -64,7 +64,7 @@ public class TPM_characterController : MonoBehaviour
     {
         UpdateAnimation();
         
-        if(DialogueManager.Instance.isDialogueActive)
+        if(playerData.blockMovementPlayer)
         {
             _inputSpeed = 0;
             return;

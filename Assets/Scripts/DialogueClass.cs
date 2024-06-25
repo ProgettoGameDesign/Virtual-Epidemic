@@ -37,18 +37,18 @@ public class DialogueClass : MonoBehaviour
     public Dialogue dialogue;
     void OnTriggerEnter(Collider other)
     {
-        if(sceneState.NPCtrig1 == 0 )
+        if(!other.CompareTag("Gino"))
         {
-            if(!other.CompareTag("Gino"))
-            {
-            sceneState.NPCtrig1 = 1;
+            //sceneState.NPCtrig1 = 1;
+            sceneState.blockMovementPlayer = true;
             _NPCanimator.SetBool("trigger", true);
             StartCoroutine(TriggerDialogue());
-            }
         }
+        
     }
     void Update()
     {
+        /*
         if(sceneState.NPCtrig1==1)
         {
             characterNavController.NpcApproaching();           
@@ -57,7 +57,7 @@ public class DialogueClass : MonoBehaviour
         {
              _NPCanimator.SetBool("trigger", true);
             characterNavController.NpcEscape();            
-        }
+        }*/
         if(DialogueManager.Instance.isDialogueActive)
         {
             if(Input.GetKeyDown(KeyCode.E))

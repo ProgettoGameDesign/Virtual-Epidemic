@@ -11,9 +11,10 @@ public class SceneState : ScriptableObject
     public bool _hasKey;
     public bool _lightup;
     public Color _currentcolor;
-    public int NPCtrig1;
+    public int stateOfCutscene1;
     public bool NerraCutscene;
     public bool tastierino;
+    public bool blockMovementPlayer;
     public bool Pagina1;
     public bool Pagina2;
     public bool Pagina3;
@@ -27,9 +28,10 @@ public class SceneState : ScriptableObject
         _hasKey = false;
         _lightup = false;
         _currentcolor = Color.white;
-        NPCtrig1 = 0;
+        stateOfCutscene1 = 1;
         NerraCutscene = false;
         tastierino = false;
+        blockMovementPlayer = false;
         Pagina1 = false;
         Pagina2 = false;
         Pagina3 = false;
