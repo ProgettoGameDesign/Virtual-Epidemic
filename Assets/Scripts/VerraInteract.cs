@@ -8,7 +8,7 @@ public class VerraInteract : MonoBehaviour, InteractInterface
     [SerializeField] private SceneState playerData;
     [SerializeField] private string _prompt;
     [SerializeField] private GameObject transition;
-    [SerializeField] private GameObject NerraAwake;
+    [SerializeField] Animator _animatorNerraSveglio;
     [SerializeField] private Dialogue dialogue;
     public string InteractionPrompt => _prompt;
     public bool Interact(Interactor interactor)
@@ -20,8 +20,8 @@ public class VerraInteract : MonoBehaviour, InteractInterface
     }
     private void LoadNewNerra() 
     {
-        gameObject.SetActive(false);
-        NerraAwake.SetActive(true);
+        playerData.NerraCutscene = true;
+        _animatorNerraSveglio.SetBool("trigger", true);
         
     }
     private void StartDialogue()

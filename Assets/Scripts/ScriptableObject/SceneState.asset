@@ -19,6 +19,7 @@ MonoBehaviour:
   _lightup: 0
   _currentcolor: {r: 1, g: 1, b: 1, a: 1}
   NPCtrig1: 0
+  NerraCutscene: 0
   tastierino: 0
   Pagina1: 0
   Pagina2: 0

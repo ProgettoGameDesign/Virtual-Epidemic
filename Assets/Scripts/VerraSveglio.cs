@@ -7,10 +7,11 @@ public class VerraSveglio : MonoBehaviour
     [SerializeField] Animator animator;
     [SerializeField] Transform target;
     private float rotationSpeed = 3f;
+    /*
     void Awake()
     {
         animator.SetBool("trigger", true);
-    }
+    }*/
     
     // Start is called before the first frame update
     void Start()
