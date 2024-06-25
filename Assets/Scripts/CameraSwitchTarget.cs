@@ -8,7 +8,8 @@ public class CameraSwitchTarget : MonoBehaviour
     public CinemachineVirtualCamera virtualCamera; // La Cinemachine Virtual Camera
     public Transform player; // Il Transform del player
     public Transform npc; // Il Transform dell'npc
-    //public Animator npcAnimator; // L'Animator dell'npc
+    
+    public SceneState sceneState;
 
     public void SwitchToNPCTarget()
     {
@@ -26,6 +27,6 @@ public class CameraSwitchTarget : MonoBehaviour
     {
         // Cambia il target della camera al player
         virtualCamera.Follow = player;
-        //virtualCamera.LookAt = player;
+        sceneState.blockMovementPlayer = false;
     }
 }

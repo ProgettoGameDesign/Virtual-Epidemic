@@ -2,22 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
+using Inventory.Model;
 
 public class Item2 : MonoBehaviour, InteractInterface
 {
     [SerializeField] private SceneState playerData;
     [SerializeField] private string _prompt;
+    [SerializeField] private InventorySO inventoryData;
     public string InteractionPrompt => _prompt;
     public bool Interact(Interactor interactor)
     {
-        Debug.Log("Hai preso l'oggetto!");
-        
-        if(_prompt == "Torch")               
+        Item item = gameObject.GetComponent<Item>();
+        if (item != null )
         {
-            playerData._torchActive = true;
+            inventoryData.AddItem(item.InventoryItem, item.Quantity);
         }
-        gameObject.SetActive(false); 
         return true;
-        
     }
 }

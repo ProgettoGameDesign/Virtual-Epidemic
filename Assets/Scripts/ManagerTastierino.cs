@@ -33,6 +33,7 @@ public class ManagerTastierino : MonoBehaviour
                 _outlineTastierino.enabled = true;
                 _outlineDisplay.OutlineColor = Color.green;
                 _outlineDisplay.enabled = true;
+                sceneState.blockMovementPlayer = false;
                 animator.Play("hide");
                 StartCoroutine(SequenzaGiusta());
                 Debug.Log("Sequenza corretta! La porta si apre.");

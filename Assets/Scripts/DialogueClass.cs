@@ -57,7 +57,7 @@ public class DialogueClass : MonoBehaviour
         {
              _NPCanimator.SetBool("trigger", true);
             characterNavController.NpcEscape();            
-        }*/
+        }*/ 
         if(DialogueManager.Instance.isDialogueActive)
         {
             if(Input.GetKeyDown(KeyCode.E))
@@ -66,7 +66,7 @@ public class DialogueClass : MonoBehaviour
                 DialogueManager.Instance.DisplayNextDialogueLine();
 
             }
-        }
+        } 
     }
     
     private IEnumerator TriggerDialogue()
