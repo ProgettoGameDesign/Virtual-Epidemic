@@ -187,7 +187,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 697f57fb434e44d47a4d78c61d8aebab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <InventoryItem>k__BackingField: {fileID: 11400000, guid: ab8d47a8136540645a94e5b0e061842e, type: 2}
+  <InventoryItem>k__BackingField: {fileID: 11400000, guid: c6d934e76477f9b47aa7994ce36dfba3, type: 2}
   <Quantity>k__BackingField: 1
   audioSource: {fileID: 0}
   duration: 0.3
@@ -205,7 +205,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerData: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
   _prompt: cubodiprova
-  inventoryData: {fileID: 0}
+  inventoryData: {fileID: 11400000, guid: 7c8a5a2af1efac84c8cafb5edf47f58d, type: 2}
 --- !u!65 &13405553
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6892,12 +6892,20 @@ MonoBehaviour:
         _name: Zombie1
         _icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
       _line: ........
-    - _character:
-        _name: Zombie1
-        _icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
-      _line: vattene.
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
+--- !u!114 &1163957174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1163957169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 590392b79368be54383e230e92ce8634, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1180060969
 GameObject:
   m_ObjectHideFlags: 0
@@ -8566,6 +8574,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 349244d6627685a4ebea88865b9eadfc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1163957173}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 349244d6627685a4ebea88865b9eadfc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1163957174}
   m_SourcePrefab: {fileID: 100100000, guid: 349244d6627685a4ebea88865b9eadfc, type: 3}
 --- !u!4 &1430052202 stripped
 Transform:
