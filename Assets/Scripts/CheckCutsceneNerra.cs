@@ -6,6 +6,7 @@ public class CheckCutsceneNerra : MonoBehaviour
 {
     [SerializeField] GameObject NerraScemo;
     [SerializeField] GameObject NerraSveglio;
+    [SerializeField] GameObject visore;
     
     //[SerializeField] Animator _animatorNerraSveglio;
     [SerializeField] SceneState sceneState;
@@ -22,6 +23,7 @@ public class CheckCutsceneNerra : MonoBehaviour
         {
             NerraScemo.SetActive(false);
             NerraSveglio.SetActive(true);
+            visore.SetActive(true);
             //_animatorNerraSveglio.SetBool("trigger", true);
         }
     }

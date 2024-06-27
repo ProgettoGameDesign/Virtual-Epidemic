@@ -39,6 +39,7 @@ public class DialogueClass : MonoBehaviour
     {
         if(!other.CompareTag("Gino"))
         {
+            gameObject.GetComponent<BoxCollider>().enabled = false;
             //sceneState.NPCtrig1 = 1;
             sceneState.blockMovementPlayer = true;
             _NPCanimator.SetBool("trigger", true);
