@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 using FMOD.Studio;
 using UnityEditor.Callbacks;
 using Unity.VisualScripting;
+using System.Diagnostics;
 
 
 // THIRD PERSON MOVEMENT WITH CHARACTERCONTROLLER
@@ -57,13 +58,15 @@ public class TPM_characterController : MonoBehaviour
             transform.position = playerData.lastPosition_CorridoioM;
             _characterController.enabled = true; 
         }
+        
+        StartSound();
     }
 
     
     void Update()
     {
         UpdateAnimation();
-        
+        UpdateSound();
         if(playerData.blockMovementPlayer)
         {
             _inputSpeed = 0;
@@ -82,7 +85,7 @@ public class TPM_characterController : MonoBehaviour
         NewOrientation();
         Movement();
         UpdateLastPosition();
-        UpdateSound();
+       
 
  
         
@@ -137,10 +140,12 @@ public class TPM_characterController : MonoBehaviour
 
     private void UpdateSound()
     {
-        if (_speed > 0f && _isGrounded)
+        if (_inputSpeed > 0f && _isGrounded)
         {
             PLAYBACK_STATE playbackState;
             playerFootsteps.getPlaybackState(out playbackState);
+            
+            
             if (playbackState.Equals(PLAYBACK_STATE.STOPPED))
             {
                 playerFootsteps.start();
@@ -151,5 +156,7 @@ public class TPM_characterController : MonoBehaviour
         {
             playerFootsteps.stop(STOP_MODE.ALLOWFADEOUT);
         }
+        
     }
+    
 }
