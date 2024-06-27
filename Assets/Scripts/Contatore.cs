@@ -30,6 +30,7 @@ public class Contatore : MonoBehaviour, InteractInterface
             Debug.Log("Hai acceso la luce!");
             sceneState.blockMovementPlayer = true;
             _lightTransition.SetActive(true);
+            _lightTransition.GetComponent<Animator>().SetBool("trigger",true);
             Invoke("ActiveLight", 4);
             Invoke("SwitchTarget",5);
 
