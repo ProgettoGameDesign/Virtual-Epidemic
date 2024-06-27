@@ -9,6 +9,7 @@ public class DisabilitaPagine : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         if(sceneState.Pagina1 == true){
             GameObject foundObject = GameObject.Find("Pagina1");
             if (foundObject!=null)

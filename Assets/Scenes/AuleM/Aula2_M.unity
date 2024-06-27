@@ -3553,6 +3553,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerData: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
   _prompt: Torch
+  inventoryData: {fileID: 0}
 --- !u!4 &1473385071 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1901999967819353639, guid: 39ab594c47b5b9c4b9a08fa37a90e608, type: 3}
@@ -4927,7 +4928,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _prompt: Door-M
   _animator: {fileID: 6792984009754030881}
-  _sceneState: {fileID: 0}
+  _sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
 --- !u!95 &6792984009754030881
 Animator:
   serializedVersion: 5

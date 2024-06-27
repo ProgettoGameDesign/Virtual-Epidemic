@@ -1306,7 +1306,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Gino
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1511,7 +1511,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 859411210397597157, guid: 024a082fc68169e4db3ff399f7fa36a3, type: 3}
       propertyPath: m_Size.z
-      value: 1.0664577
+      value: 1.2821808
       objectReference: {fileID: 0}
     - target: {fileID: 859411210397597157, guid: 024a082fc68169e4db3ff399f7fa36a3, type: 3}
       propertyPath: m_Center.x
@@ -1519,7 +1519,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 859411210397597157, guid: 024a082fc68169e4db3ff399f7fa36a3, type: 3}
       propertyPath: m_Center.z
-      value: 0.41879272
+      value: 0.52665424
       objectReference: {fileID: 0}
     - target: {fileID: 859411210397597157, guid: 024a082fc68169e4db3ff399f7fa36a3, type: 3}
       propertyPath: m_IsTrigger
@@ -5291,7 +5291,7 @@ Animator:
   m_GameObject: {fileID: 2026191328}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a84d1b11bcd837e479ad403295279251, type: 2}
+  m_Controller: {fileID: 9100000, guid: 55aedd38d11a4be489cdd177d1f77318, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

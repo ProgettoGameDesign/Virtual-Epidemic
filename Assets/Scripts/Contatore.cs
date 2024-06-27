@@ -10,28 +10,27 @@ public class Contatore : MonoBehaviour, InteractInterface
     [SerializeField] private CameraSwitchTarget cameraSwitchTarget;
     [SerializeField] private GameObject _lightTransition;
     [SerializeField] private Animator _NPCanimator;
-    [SerializeField] private GameObject _NPC;
+    //[SerializeField] private GameObject _NPC;
 
     public string InteractionPrompt => _prompt;
-    void Awake()
-    {
-        if(sceneState._lightup == true)
-        {
-            _animator.SetBool("key", true);
-            Destroy(_NPC);
-        }
-    }
+    
 
     public bool Interact(Interactor interactor)
     {
         if (!_animator.GetBool("key"))
         {
             _animator.SetBool("key", true);
+            gameObject.GetComponent<CanvasActive>().enabled = false;
         }
         else
         {
+            gameObject.layer = 0;
+            gameObject.GetComponent<Outline>().enabled = false;
+            gameObject.GetComponent<LightObject>().enabled = false;
             Debug.Log("Hai acceso la luce!");
+            sceneState.blockMovementPlayer = true;
             _lightTransition.SetActive(true);
+            _lightTransition.GetComponent<Animator>().SetBool("trigger",true);
             Invoke("ActiveLight", 4);
             Invoke("SwitchTarget",5);
 

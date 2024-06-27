@@ -1640,7 +1640,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Gino
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2626,6 +2626,7 @@ GameObject:
   - component: {fileID: 912515515}
   - component: {fileID: 912515514}
   - component: {fileID: 912515513}
+  - component: {fileID: 912515517}
   m_Layer: 0
   m_Name: LightScreenTransition
   m_TagString: Untagged
@@ -2756,6 +2757,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 912515511}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!95 &912515517
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912515511}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 092224feb439c1b488f606dc13524a76, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &914586984
 GameObject:
   m_ObjectHideFlags: 0
@@ -5868,6 +5890,7 @@ MonoBehaviour:
   virtualCamera: {fileID: 1389231441}
   player: {fileID: 13006698}
   npc: {fileID: 257040828}
+  sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
 --- !u!1001 &1431273329
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9537,7 +9560,7 @@ Animator:
   m_GameObject: {fileID: 1900013865}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a84d1b11bcd837e479ad403295279251, type: 2}
+  m_Controller: {fileID: 9100000, guid: 55aedd38d11a4be489cdd177d1f77318, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -10069,6 +10092,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2068840149}
   - component: {fileID: 2068840148}
+  - component: {fileID: 2068840150}
   m_Layer: 0
   m_Name: DisableObject
   m_TagString: Untagged
@@ -10104,6 +10128,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2068840150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2068840147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a674708f8b5e9f04ba84eae127905ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
+  NPC: {fileID: 1482499393}
+  Contatore: {fileID: 6908453356006550722}
 --- !u!1001 &2111080707
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11303,7 +11342,6 @@ MonoBehaviour:
   cameraSwitchTarget: {fileID: 1389231442}
   _lightTransition: {fileID: 912515511}
   _NPCanimator: {fileID: 1482499397}
-  _NPC: {fileID: 1482499393}
 --- !u!114 &6908453356006550727
 MonoBehaviour:
   m_ObjectHideFlags: 0

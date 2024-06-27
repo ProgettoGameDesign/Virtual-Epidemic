@@ -45,7 +45,7 @@ public class DialogueManager : MonoBehaviour
         }
         DialogueLine currentLine = lines.Dequeue();
         characterImage.sprite = currentLine._character._icon;
-        characterName.name = currentLine._character._name;
+        characterName.text = currentLine._character._name;
 
         StopAllCoroutines();
         StartCoroutine(TypeSentence(currentLine));

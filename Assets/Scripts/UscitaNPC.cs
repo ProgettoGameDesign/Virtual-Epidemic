@@ -15,7 +15,8 @@ public class UscitaNPC : MonoBehaviour
     void OnTriggerExit(Collider other)  
     {
         if(other.CompareTag("Gino"))
-        NPC.SetActive(false);
+            NPC.SetActive(false);
+        
 
     }
 }
