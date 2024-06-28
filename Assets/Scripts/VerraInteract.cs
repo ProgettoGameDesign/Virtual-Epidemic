@@ -9,17 +9,24 @@ public class VerraInteract : MonoBehaviour, InteractInterface
     [SerializeField] private string _prompt;
     [SerializeField] private GameObject transition;
     [SerializeField] Animator _animatorNerraSveglio;
+    [SerializeField] private FadeToWhite fadeToWhite;
     [SerializeField] private Dialogue dialogue;
+    
 
     public string InteractionPrompt => _prompt;
     public bool Interact(Interactor interactor)
     {
-        transition.SetActive(true);
         playerData.blockMovementPlayer = true;
+        StartCoroutine(fadeToWhite.FadeToWhiteTransition());
+        Invoke("ColorTransition",1);
         Invoke("LoadNewNerra", 2);
         Invoke("AnimazioneRisveglio",2.3f);
         Invoke("StartDialogue",5);
         return true;
+    }
+    private void ColorTransition()    
+    {
+        transition.SetActive(true);
     }
     private void LoadNewNerra() 
     {
@@ -29,6 +36,7 @@ public class VerraInteract : MonoBehaviour, InteractInterface
     private void StartDialogue()
     {
         DialogueManager.Instance.StartDialogue(dialogue);
+        transition.SetActive(false);
     }
     private void AnimazioneRisveglio() 
     {
