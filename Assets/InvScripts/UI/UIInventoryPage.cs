@@ -4,6 +4,7 @@ using UnityEngine;
 using System;
 using Inventory.UI;
 using Inventory.Model;
+using CGT;
 
 public class UIInventoryPage : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class UIInventoryPage : MonoBehaviour
 
     [SerializeField]
     private MouseFollower mouseFollower;
+    [SerializeField] private InspectorItemMio inspectorItemMio;
 
     List<UIInventoryItem> listOfUIItems = new List<UIInventoryItem>();
 
@@ -30,6 +32,7 @@ public class UIInventoryPage : MonoBehaviour
 
     [SerializeField]
     private ItemActionPanel actionPanel;
+    
 
     private void Awake()
     {
@@ -61,6 +64,7 @@ public class UIInventoryPage : MonoBehaviour
 
     internal void UpdateDescription(int itemIndex, Sprite itemImage, ItemSO itemSO, string name, string description)
     {
+        inspectorItemMio.AcquisisciNome(name);
         itemDescription.SetDescription(itemImage, itemSO, name, description);
         DeselectAllItems();
         listOfUIItems[itemIndex].Select();
