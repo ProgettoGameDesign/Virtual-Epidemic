@@ -3,7 +3,9 @@ guid: 1673f9b61e6e17148bc5a401940292e1
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - <ItemImage>k__BackingField: {instanceID: 0}
+  - <prefab>k__BackingField: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
