@@ -5744,6 +5744,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _prompt: Door-M
   _animator: {fileID: 1378218236}
+  CanvasPorta3: {fileID: 0}
   _sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
 --- !u!114 &1378218235
 MonoBehaviour:
@@ -9535,9 +9536,9 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1900013865}
-  m_LocalRotation: {x: -0.11061588, y: -0.60610884, z: 0.36418688, w: 0.69840115}
-  m_LocalPosition: {x: 0, y: 0, z: 20.253704}
-  m_LocalScale: {x: 0.00092999986, y: 0.0009299999, z: 0.0009299999}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.08}
+  m_LocalScale: {x: 0.0009347185, y: 0.0009347185, z: 0.0009347185}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 848544433}
@@ -9547,7 +9548,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 15.302599, y: 20.296167}
+  m_AnchoredPosition: {x: 0, y: 0.013}
   m_SizeDelta: {x: 1000, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1900013867
@@ -11111,6 +11112,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _prompt: Door-M
   _animator: {fileID: 6792984009754030881}
+  CanvasPorta3: {fileID: 0}
   _sceneState: {fileID: 0}
 --- !u!114 &6792984009754030880
 MonoBehaviour:
