@@ -43,7 +43,7 @@ public class DialogueClass : MonoBehaviour
             //sceneState.NPCtrig1 = 1;
             sceneState.blockMovementPlayer = true;
             _NPCanimator.SetBool("trigger", true);
-            StartCoroutine(TriggerDialogue());
+            //StartCoroutine(TriggerDialogue());
         }
         
     }
@@ -70,9 +70,9 @@ public class DialogueClass : MonoBehaviour
         } 
     }
     
-    private IEnumerator TriggerDialogue()
+    public void TriggerDialogue()
     {
-        yield return new WaitForSeconds(3);
+        
         DialogueManager.Instance.StartDialogue(dialogue);
     }
     

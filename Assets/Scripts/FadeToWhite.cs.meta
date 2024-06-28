@@ -1,11 +1,9 @@
 fileFormatVersion: 2
-guid: 1673f9b61e6e17148bc5a401940292e1
+guid: 9d5099365d79ae246a506d197889bc5c
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences:
-  - <ItemImage>k__BackingField: {instanceID: 0}
-  - <prefab>k__BackingField: {instanceID: 0}
+  defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

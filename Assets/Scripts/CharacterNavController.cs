@@ -9,11 +9,12 @@ public class CharacterNavController : MonoBehaviour
     [SerializeField] private Transform escape; // Riferimento al punto di fuga
     [SerializeField] Animator _NPCanimator; // Animator del NPC
     [SerializeField] SceneState sceneState;
+    [SerializeField] DialogueClass dialogueClass;
 
     
 
     private NavMeshAgent _navMeshAgent;
-    private float stopDistance = 2.5f;
+    private float stopDistance = 3f;
     public float rotationSpeed = 50.0f;
     
 
@@ -43,7 +44,8 @@ public class CharacterNavController : MonoBehaviour
         {
             // Calcolare la distanza attuale dal target
             float distanceToTarget = Vector3.Distance(transform.position, player.position);
-
+            Debug.Log(distanceToTarget);
+            
             // Se la distanza è maggiore della stopDistance, continuare a muoversi verso il target
             if (distanceToTarget > stopDistance)
             {
@@ -57,6 +59,7 @@ public class CharacterNavController : MonoBehaviour
                 _navMeshAgent.ResetPath();
                 _NPCanimator.SetBool("trigger", false);
                 //Invoke("AggiornaStato", 0.5f);
+                dialogueClass.TriggerDialogue();
                 sceneState.stateOfCutscene1 = 2;
             }
         }
