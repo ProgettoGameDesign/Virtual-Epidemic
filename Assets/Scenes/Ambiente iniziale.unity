@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2797,6 +2797,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _prompt: Door
   _animator: {fileID: 0}
+  CanvasPorta3: {fileID: 0}
   _sceneState: {fileID: 0}
 --- !u!4 &231088341 stripped
 Transform:
@@ -3713,17 +3714,47 @@ MonoBehaviour:
   dialogue:
     dialogueLines:
     - _character:
-        _name: Gino
+        _name: Studente
         _icon: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
-      _line: "Questa \xE8 la prima linea di dialogo."
+      _line: "psss\u2026 psss\u2026"
+    - _character:
+        _name: Studente
+        _icon: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
+      _line: "S-sig. G-Gastani Frinzi? Mi \xE8 stato detto di venirle incontro per
+        darle qualche informazione... "
+    - _character:
+        _name: Studente
+        _icon: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
+      _line: M-mi chiamo G-Gino...
     - _character:
         _name: Gino
         _icon: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
-      _line: "Questa \xE8 la seconda linea di dialogo."
+      _line: 'I-Il prof Scottino pare sia rinchiuso nel suo ufficio nelle aule T. '
     - _character:
         _name: Gino
         _icon: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
-      _line: "Questa \xE8 la terza linea di dialogo."
+      _line: P-provi a parlare prima con i professori Nerra e Schiavetti
+    - _character:
+        _name: Gino
+        _icon: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
+      _line: L-loro dovrebbero riuscire a darle una mano
+    - _character:
+        _name: Gino
+        _icon: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
+      _line: "O-ora scappo, la mia copertura \xE8 saltata, non voglio r-rimanere
+        infetto."
+    - _character:
+        _name: Gino
+        _icon: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
+      _line: B-BUONA FORTUNA!
+    - _character:
+        _name: Isp. Gastani Frinzi
+        _icon: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
+      _line: Aspetta un attimo! chi ti ha detto di aiutarmi?
+    - _character:
+        _name: Isp. Gastani Frinzi
+        _icon: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
+      _line: Nessuno dovrebbe sapere della mia presenza qui!
 --- !u!1001 &370135838
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4016,6 +4047,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _prompt: Door
   _animator: {fileID: 0}
+  CanvasPorta3: {fileID: 0}
   _sceneState: {fileID: 0}
 --- !u!65 &413155413
 BoxCollider:
@@ -8176,6 +8208,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _prompt: Door-M
   _animator: {fileID: 841387434}
+  CanvasPorta3: {fileID: 0}
   _sceneState: {fileID: 0}
 --- !u!95 &841387434
 Animator:
@@ -15552,6 +15585,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _prompt: Door
   _animator: {fileID: 0}
+  CanvasPorta3: {fileID: 0}
   _sceneState: {fileID: 0}
 --- !u!65 &1500689363
 BoxCollider:
@@ -15619,6 +15653,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _prompt: Door
   _animator: {fileID: 0}
+  CanvasPorta3: {fileID: 0}
   _sceneState: {fileID: 0}
 --- !u!1001 &1518634229
 PrefabInstance:
@@ -17488,6 +17523,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _prompt: Door-M
   _animator: {fileID: 1714304132}
+  CanvasPorta3: {fileID: 0}
   _sceneState: {fileID: 0}
 --- !u!95 &1714304132
 Animator:
@@ -17593,6 +17629,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _prompt: Door
   _animator: {fileID: 0}
+  CanvasPorta3: {fileID: 0}
   _sceneState: {fileID: 0}
 --- !u!65 &1727548387
 BoxCollider:
