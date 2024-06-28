@@ -5,6 +5,7 @@ using UnityEngine;
 public class UpdateState : MonoBehaviour
 {
     [SerializeField] private GameObject _NPC;
+    [SerializeField] private GameObject _porta;
     [SerializeField] private SceneState sceneState;
     [SerializeField] private BoxCollider colliderConversazione;
 
@@ -16,5 +17,12 @@ public class UpdateState : MonoBehaviour
             colliderConversazione.enabled = false;
         }
     }
+    void Update()
+    {
+        if(sceneState.tastierinoServetti)
+        {
+            _porta.layer = 7;
 
+        }
+    }
 }

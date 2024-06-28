@@ -14,6 +14,7 @@ public class SceneState : ScriptableObject
     public int stateOfCutscene1;
     public bool NerraCutscene;
     public bool tastierino;
+    public bool tastierinoServetti;
     public bool blockMovementPlayer;
     public bool Pagina1;
     public bool Pagina2;
@@ -31,6 +32,7 @@ public class SceneState : ScriptableObject
         stateOfCutscene1 = 1;
         NerraCutscene = false;
         tastierino = false;
+        tastierinoServetti = false;
         blockMovementPlayer = false;
         Pagina1 = false;
         Pagina2 = false;
