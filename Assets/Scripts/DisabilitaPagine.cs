@@ -8,29 +8,39 @@ public class DisabilitaPagine : MonoBehaviour
     [SerializeField] private GameObject paginaToDisable;
 
     // Update is called once per frame
-    void Update()
+    void Awake()
     {
         
         if(sceneState.Pagina1 == true){
-            paginaToDisable.SetActive(false);
+            Disabilita("Pagina1");
         }
         else if(sceneState.Pagina5 == true){
-            paginaToDisable.SetActive(false);
+            Disabilita("Pagina_schema");
 
         }
         else if(sceneState.Pagina2 == true){
-            paginaToDisable.SetActive(false);
+            Disabilita("Pagina2");
 
         }
         else if(sceneState.Pagina3 == true){
-            paginaToDisable.SetActive(false);
+            Disabilita("Pagina3");
 
         }
         else if(sceneState.Pagina4 == true){
-            paginaToDisable.SetActive(false);
+            Disabilita("Pagina4");
 
         }
         
     
+    }
+    void Disabilita(string nome)
+    {
+        GameObject obj = GameObject.Find(nome);
+
+        if (obj != null)
+        {
+            obj.SetActive(false);
+        }
+
     }
 }
