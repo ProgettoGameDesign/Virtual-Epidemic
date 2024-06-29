@@ -427,6 +427,7 @@ GameObject:
   - component: {fileID: 35116543}
   - component: {fileID: 35116544}
   - component: {fileID: 35116546}
+  - component: {fileID: 35116547}
   m_Layer: 0
   m_Name: InspectCamera
   m_TagString: Untagged
@@ -523,6 +524,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5aae4210f23df5042b000eb18fff82f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &35116547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 35116542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90d31bd15a87357469dfa41a1a4c32aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 63808965}
 --- !u!1 &37093191
 GameObject:
   m_ObjectHideFlags: 0
@@ -1364,6 +1378,7 @@ MonoBehaviour:
   minFOV: 20
   maxFOV: 75
   initialPosition: {x: 0.0000324434, y: 32.493275, z: 279.16357}
+  chiudiApriInventario: {fileID: 0}
 --- !u!1 &84172370 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8162697604729299090, guid: cc7af5080192a2747ad07691ae21b24d, type: 3}
@@ -16279,13 +16294,25 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 35116546}
+        m_TargetAssemblyTypeName: InspectorItemMio, Assembly-CSharp
+        m_MethodName: IspezionaElemento
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 35116547}
+        m_TargetAssemblyTypeName: ChiudiApriInventario, Assembly-CSharp
+        m_MethodName: SwitchActive
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -20667,6 +20694,7 @@ MonoBehaviour:
   minFOV: 20
   maxFOV: 75
   initialPosition: {x: -0, y: -0, z: -0}
+  chiudiApriInventario: {fileID: 35116547}
 --- !u!1 &1909789196 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 87ead3b0a3df7f7409de3146604a62f4, type: 3}
@@ -21621,6 +21649,7 @@ MonoBehaviour:
   minFOV: 20
   maxFOV: 75
   initialPosition: {x: 14.583711, y: 269.99994, z: 0.00000088219724}
+  chiudiApriInventario: {fileID: 0}
 --- !u!95 &1993220812 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 31c6e72ca13213d4f9ecc66ca6db9a43, type: 3}

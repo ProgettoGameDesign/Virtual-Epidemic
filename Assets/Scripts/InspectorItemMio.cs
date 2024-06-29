@@ -11,20 +11,26 @@ public class InspectorItemMio : MonoBehaviour
     {
         nomeItem = nome;
         Debug.Log(nomeItem);
-        IspezionaElemento();
+        //IspezionaElemento();
 
     }
     public void IspezionaElemento()
     {
-        foreach (Transform child in gameObject.transform)
+        if(nomeItem == null)
+        return;
+        else  
         {
-            if (child.gameObject.name == nomeItem)
-            {
-                inspectObject = child.GetComponent<InspectObject>();
-                InspectManager.instance.StartInspecting(inspectObject);
-                return;
-            }
+            foreach (Transform child in gameObject.transform)
+                {
+                    if (child.gameObject.name == nomeItem)
+                    {
+                        inspectObject = child.GetComponent<InspectObject>();
+                        InspectManager.instance.StartInspecting(inspectObject);
+                        return;
+                    }
 
+                }
         }
+        
     }
 }

@@ -20,7 +20,8 @@ namespace CGT
         public float maxFOV = 75;
 
         [HideInInspector]
-        public Vector3 initialPosition;        
+        public Vector3 initialPosition;    
+        [SerializeField] ChiudiApriInventario chiudiApriInventario;    
 
         void Start()
         {                        
@@ -65,6 +66,7 @@ namespace CGT
             {
                 transform.localEulerAngles = initialPosition;
                 InspectManager.instance.StopInspecting();
+                chiudiApriInventario.SwitchActive();
             }
 
             if (Input.GetAxis("Mouse ScrollWheel") < 0)
