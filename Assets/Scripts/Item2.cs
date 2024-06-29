@@ -9,13 +9,16 @@ public class Item2 : MonoBehaviour, InteractInterface
     [SerializeField] private SceneState playerData;
     [SerializeField] private string _prompt;
     [SerializeField] private InventorySO inventoryData;
+    [SerializeField] private Item item1;
     public string InteractionPrompt => _prompt;
     public bool Interact(Interactor interactor)
     {
-        Item item = gameObject.GetComponent<Item>();
-        if (item != null )
+        //Item item1 = gameObject.GetComponent<Item>();
+        Debug.Log(item1);
+        if (item1 != null )
         {
-            inventoryData.AddItem(item.InventoryItem, item.Quantity);
+            Debug.Log("prova");
+            inventoryData.AddItem(item1.InventoryItem, item1.Quantity);
         }
         return true;
     }
