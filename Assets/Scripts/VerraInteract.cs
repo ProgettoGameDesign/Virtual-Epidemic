@@ -18,6 +18,16 @@ public class VerraInteract : MonoBehaviour, InteractInterface
     {
         playerData.blockMovementPlayer = true;
         StartCoroutine(fadeToWhite.FadeToWhiteTransition());
+        // Disattiva tutti i volumi di post-processing dopo ColorTransition
+        if (PostProcessingManager.Instance != null)
+        {
+            Debug.Log("Disattiva i volumi di post-processing");
+            PostProcessingManager.Instance.DisableAllVolumes();
+        }
+        else
+        {
+            Debug.LogError("PostProcessingManager instance is null.");
+        }
         Invoke("ColorTransition",1);
         Invoke("LoadNewNerra", 2);
         Invoke("AnimazioneRisveglio",2.3f);

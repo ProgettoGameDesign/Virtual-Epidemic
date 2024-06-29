@@ -21,7 +21,7 @@ public class FadeToWhite : MonoBehaviour
 
     public IEnumerator FadeToWhiteTransition()
     {
-         float elapsedTime = 0.0f;
+        float elapsedTime = 0.0f;
         Color panelColor = fadePanel.color;
 
         while (elapsedTime < fadeDuration)
