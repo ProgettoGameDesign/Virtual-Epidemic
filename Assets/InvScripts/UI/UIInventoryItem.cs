@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 using System;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 namespace Inventory.UI
 {
@@ -24,8 +25,11 @@ namespace Inventory.UI
 
         public void Awake()
         {
-            ResetData();
-            Deselect();
+            
+                ResetData();
+                Deselect();
+            
+            
         }
         public void ResetData()
         {

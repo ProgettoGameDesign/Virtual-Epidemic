@@ -14,12 +14,14 @@ public class Item2 : MonoBehaviour, InteractInterface
     public bool Interact(Interactor interactor)
     {
         //Item item1 = gameObject.GetComponent<Item>();
-        Debug.Log(item1);
+        //Debug.Log(item1);
+        gameObject.SetActive(false); 
         if (item1 != null )
         {
-            Debug.Log("prova");
+            //Debug.Log("prova");
             inventoryData.AddItem(item1.InventoryItem, item1.Quantity);
         }
+        
         return true;
     }
 }

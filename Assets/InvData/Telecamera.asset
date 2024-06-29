@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6908a04ce23371e4bad396acca232399, type: 3}
-  m_Name: Pagina1
+  m_Name: Telecamera
   m_EditorClassIdentifier: 
   <IsStackable>k__BackingField: 0
   <MaxStackSize>k__BackingField: 1
-  <Name>k__BackingField: Pagina_1
-  <Description>k__BackingField: Descrizione pagina 1
-  <ItemImage>k__BackingField: {fileID: 21300000, guid: a898fa442ed206848b77a4b716b5f0e0, type: 3}
-  <prefab>k__BackingField: {fileID: 379112439095967829, guid: f2b594c5751e5f2408c3dc3bb0faa630, type: 3}
+  <Name>k__BackingField: telecamera
+  <Description>k__BackingField: "Questa telecamera se equipaggiata pu\xF2 aiutarti."
+  <ItemImage>k__BackingField: {fileID: 21300000, guid: da61a4f42358a0e40838256d8fef38af, type: 3}
+  <prefab>k__BackingField: {fileID: 1901999967819353639, guid: 39ab594c47b5b9c4b9a08fa37a90e608, type: 3}
   <DefaultParametersList>k__BackingField: []
   <actionSFX>k__BackingField: {fileID: 0}

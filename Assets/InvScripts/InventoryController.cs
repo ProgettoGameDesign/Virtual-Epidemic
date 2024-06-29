@@ -5,6 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 namespace Inventory
@@ -24,22 +25,32 @@ namespace Inventory
 
         [SerializeField]
         private AudioSource audioSource;
+        [SerializeField] SceneState sceneState;
 
         private void Start()
         {
-            PrepareUI();
-            PrepareInventoryData();
+            //if (SceneManager.GetActiveScene().name == "Ambiente iniziale")
+            //{
+                PrepareUI();
+                PrepareInventoryData();
+            //}
+            
         }
 
         private void PrepareInventoryData()
         {
-            inventoryData.Initialize();
-            inventoryData.OnInventoryUpdated += UpdateInventoryUI;
+            if (SceneManager.GetActiveScene().name == "Ambiente iniziale" && sceneState.stateOfCutscene1 == 1)
+            {
+                inventoryData.Initialize();
+                inventoryData.OnInventoryUpdated += UpdateInventoryUI;
+            
+            
             foreach (InventoryItem item in initialItems)
             {
                 if (item.IsEmpty)
                     continue;
                 inventoryData.AddItem(item);
+            }
             }
         }
 

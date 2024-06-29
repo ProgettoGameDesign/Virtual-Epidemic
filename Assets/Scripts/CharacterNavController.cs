@@ -44,7 +44,7 @@ public class CharacterNavController : MonoBehaviour
         {
             // Calcolare la distanza attuale dal target
             float distanceToTarget = Vector3.Distance(transform.position, player.position);
-            Debug.Log(distanceToTarget);
+            
             
             // Se la distanza è maggiore della stopDistance, continuare a muoversi verso il target
             if (distanceToTarget > stopDistance)
