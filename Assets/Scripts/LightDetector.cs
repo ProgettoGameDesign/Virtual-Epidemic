@@ -4,6 +4,7 @@ public class LightDetector : MonoBehaviour
 {
     public Light torchLight; // Assegna qui il componente Light della torcia
     public GameObject wallText; // Assegna qui il GameObject che contiene la scritta
+    public Color colorToMatch;
 
     void Update()
     {
@@ -31,7 +32,7 @@ public class LightDetector : MonoBehaviour
         {
 
             // Verifica se il Raycast colpisce il muro
-            if (hit.collider.gameObject == gameObject && torchLight.color == Color.red)
+            if (hit.collider.gameObject == gameObject && torchLight.color == colorToMatch)
             {
                 Debug.Log("Raggio ha colpito il muro");
                 return true;
