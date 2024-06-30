@@ -10,7 +10,7 @@ public class InspectorItemMio : MonoBehaviour
     public void AcquisisciNome(string nome)    
     {
         nomeItem = nome;
-        Debug.Log(nomeItem);
+        //Debug.Log(nomeItem);
         //IspezionaElemento();
 
     }

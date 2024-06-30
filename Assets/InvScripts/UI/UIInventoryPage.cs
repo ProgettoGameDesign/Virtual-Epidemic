@@ -65,11 +65,12 @@ public class UIInventoryPage : MonoBehaviour
 
     internal void UpdateDescription(int itemIndex, Sprite itemImage, ItemSO itemSO, string name, string description)
     {
-        inspectorItemMio.AcquisisciNome(name);
-        buttonUseScript.AcquisisciNomeXUsa(name);
+        
         itemDescription.SetDescription(itemImage, itemSO, name, description);
         DeselectAllItems();
         listOfUIItems[itemIndex].Select();
+        inspectorItemMio.AcquisisciNome(name);
+        buttonUseScript.AcquisisciNomeXUsa(name);
     }
     public void UpdateData(int itemIndex, Sprite itemImage, int itemQuantity)
     {
