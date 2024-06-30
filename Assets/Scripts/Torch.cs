@@ -22,19 +22,19 @@ public class Torch : MonoBehaviour
         _color.color = sceneState._currentcolor;
         if (Input.GetKey(KeyCode.Alpha1)) 
         {
-            sceneState._currentcolor = Color.blue; 
+            sceneState._currentcolor = Color.white; 
         }
         if (Input.GetKey(KeyCode.Alpha2)) 
         {
-            sceneState._currentcolor = Color.green;  
+            sceneState._currentcolor = Color.red;  
         }
         if (Input.GetKey(KeyCode.Alpha3)) 
         {
-            sceneState._currentcolor = Color.red;  
+            sceneState._currentcolor = Color.green;  
         }
         if (Input.GetKey(KeyCode.Alpha0)) 
         {
-            sceneState._currentcolor = Color.white;  
+            sceneState._currentcolor = Color.blue;  
         }
     }
 }
