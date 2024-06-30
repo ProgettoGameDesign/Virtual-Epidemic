@@ -3577,8 +3577,11 @@ MonoBehaviour:
     - _character:
         _name: Studente
         _icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
-      _line: '# TODO: Implementare funzione di ordinamento... ehi, qualcuno mi aiuti,
-        potrei essere impazzito!'
+      _line: '# TODO: Implementare funzione di ordinamento... '
+    - _character:
+        _name: Studente
+        _icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+      _line: ' ehi, qualcuno mi aiuti, potrei essere impazzito!'
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
 --- !u!65 &551535803
@@ -3596,7 +3599,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -14765,8 +14768,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.4684609, y: 2.5930574, z: 1.2612771}
-  m_Center: {x: 0.39139548, y: 0.7965284, z: -0.03834781}
+  m_Size: {x: 1.9900689, y: 2.5930574, z: 1.2612771}
+  m_Center: {x: 0.1305935, y: 0.7965284, z: -0.038347807}
 --- !u!1 &1511110790
 GameObject:
   m_ObjectHideFlags: 0
