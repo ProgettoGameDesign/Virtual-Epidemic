@@ -94,10 +94,13 @@ public class TPM_characterController : MonoBehaviour
         {
             _animator.SetBool("Run", true);
             _speed = 10f;
+            playerFootsteps.setParameterByName("WalkRun", 1);
+
         }
         if (Input.GetKeyUp(KeyCode.LeftShift)) {
             _animator.SetBool("Run", false);
             _speed = 4f;
+            playerFootsteps.setParameterByName("WalkRun", 0);
         }
         //FALLING
         _velocity.y += _gravity * Time.deltaTime;
