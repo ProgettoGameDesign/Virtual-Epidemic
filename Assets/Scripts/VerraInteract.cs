@@ -11,14 +11,26 @@ public class VerraInteract : MonoBehaviour, InteractInterface
     [SerializeField] Animator _animatorNerraSveglio;
     [SerializeField] private FadeToWhite fadeToWhite;
     [SerializeField] private Dialogue dialogue;
-    
+
 
     public string InteractionPrompt => _prompt;
+
     public bool Interact(Interactor interactor)
     {
         playerData.blockMovementPlayer = true;
-        StartCoroutine(fadeToWhite.FadeToWhiteTransition());
-        // Disattiva tutti i volumi di post-processing dopo ColorTransition
+        StartCoroutine(HandleCutsceneSequence());
+        return true;
+    }
+
+    private IEnumerator HandleCutsceneSequence()
+    {
+        yield return StartCoroutine(fadeToWhite.FadeToWhiteTransition());
+
+        // Ritarda la transizione del colore di 1 secondo
+        Invoke("ColorTransition", 0.5f);
+
+        // Disattiva i volumi di post-processing dopo la transizione del colore con un ritardo di 1 secondo
+        yield return new WaitForSeconds(0.5f);
         if (PostProcessingManager.Instance != null)
         {
             Debug.Log("Disattiva i volumi di post-processing");
@@ -28,11 +40,14 @@ public class VerraInteract : MonoBehaviour, InteractInterface
         {
             Debug.LogError("PostProcessingManager instance is null.");
         }
-        Invoke("ColorTransition",1);
-        Invoke("LoadNewNerra", 2);
-        Invoke("AnimazioneRisveglio",2.3f);
-        Invoke("StartDialogue",5);
-        return true;
+
+        // Ritarda il caricamento della nuova scena
+        yield return new WaitForSeconds(1);
+        Invoke("LoadNewNerra", 0);
+        Invoke("AnimazioneRisveglio", 0.3f);
+        Invoke("StartDialogue", 3);
+
+        yield return null;
     }
     private void ColorTransition()    
     {
