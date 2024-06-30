@@ -8344,7 +8344,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1abfd09130c0c2b479c3daec074f28ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctSequence: BRGYCM
+  correctSequence: BYCMRC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
   animator: {fileID: 732337844}
   display1: {fileID: 1631641444}
