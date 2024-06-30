@@ -9611,19 +9611,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6167146292460915879, guid: 6f9308a9ad3eccc48a77142fbad86f27, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6167146292460915879, guid: 6f9308a9ad3eccc48a77142fbad86f27, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6167146292460915879, guid: 6f9308a9ad3eccc48a77142fbad86f27, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 44.625748
       objectReference: {fileID: 0}
     - target: {fileID: 6167146292460915879, guid: 6f9308a9ad3eccc48a77142fbad86f27, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -42.73655
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10949,13 +10949,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventoryUI: {fileID: 597862732}
   inventoryData: {fileID: 11400000, guid: 7c8a5a2af1efac84c8cafb5edf47f58d, type: 2}
-  initialItems:
-  - quantity: 1
-    item: {fileID: 11400000, guid: 2ee79e603d044af4386e24f59216036c, type: 2}
-    itemState: []
-  - quantity: 1
-    item: {fileID: 11400000, guid: 35e2cf55108b3c743807be89dfdb748f, type: 2}
-    itemState: []
+  initialItems: []
   dropClip: {fileID: 0}
   audioSource: {fileID: 0}
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
