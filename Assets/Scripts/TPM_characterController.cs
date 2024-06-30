@@ -144,6 +144,9 @@ public class TPM_characterController : MonoBehaviour
         {
             PLAYBACK_STATE playbackState;
             playerFootsteps.getPlaybackState(out playbackState);
+
+            int terrainType = DetectTerrain();
+            playerFootsteps.setParameterByName("Terrain", (int)terrainType);
             
             
             if (playbackState.Equals(PLAYBACK_STATE.STOPPED))
@@ -157,6 +160,33 @@ public class TPM_characterController : MonoBehaviour
             playerFootsteps.stop(STOP_MODE.ALLOWFADEOUT);
         }
         
+    }
+
+    private int DetectTerrain()
+    {
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position, Vector3.down, out hit, 2.5f, _groundMask))
+        {
+            if (hit.collider != null)
+            {
+                Renderer renderer = hit.collider.GetComponent<Renderer>();
+                if (renderer != null && renderer.sharedMaterial != null)
+                {
+                    UnityEngine.Debug.Log("Terreno rilevato: " + renderer.sharedMaterial.name);
+                    if (renderer.sharedMaterial.name == "Pavimento Cortile")
+                    {
+                        return 0;
+                    }
+                    else if (renderer.sharedMaterial.name == "Prato")
+                    {
+                        return 1;
+                    }
+
+                }
+            }
+        }
+        return 0;
+
     }
     
 }
