@@ -5,8 +5,9 @@ using UnityEngine.UI;
 
 public class ButtonUseScript : MonoBehaviour
 {
+    [SerializeField] SceneState sceneState;
     private string nomeItem;
-    [SerializeField] GameObject torch;
+    //[SerializeField] GameObject torch;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,7 +38,7 @@ public class ButtonUseScript : MonoBehaviour
     {
         if(nomeItem == "Telecamera")
         {
-            torch.SetActive(true);
+            sceneState._torchActive= true;
 
         }
         else return;

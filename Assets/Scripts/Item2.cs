@@ -16,6 +16,7 @@ public class Item2 : MonoBehaviour, InteractInterface
         //Item item1 = gameObject.GetComponent<Item>();
         //Debug.Log(item1);
         gameObject.SetActive(false); 
+        //playerData._torchActive = true;
         if (item1 != null )
         {
             //Debug.Log("prova");
