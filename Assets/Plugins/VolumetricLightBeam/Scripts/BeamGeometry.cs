@@ -225,7 +225,7 @@ namespace VLB
             else
                 gameObject.layer = m_Master.gameObject.layer;
 
-            gameObject.layer = LayerMask.NameToLayer("ColoredLight");
+            gameObject.layer = LayerMask.NameToLayer("ColoredLight"); ///CAMBIA IL LAYER DA TRANSPARENTFX A COLORED LIGHT
             gameObject.tag = Config.Instance.geometryTag;
 
             if (coneMesh && m_CurrentMeshType == MeshType.Custom)
