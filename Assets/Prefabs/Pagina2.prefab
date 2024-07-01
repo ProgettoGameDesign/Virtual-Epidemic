@@ -48,6 +48,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 4c5a67e4d7843b14aa4900f20bf71f89, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 4c5a67e4d7843b14aa4900f20bf71f89, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 4c5a67e4d7843b14aa4900f20bf71f89, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 08cb560f51427fa4eb7273acf909eb28, type: 2}
     - target: {fileID: 919132149155446097, guid: 4c5a67e4d7843b14aa4900f20bf71f89, type: 3}
       propertyPath: m_Name
       value: Pagina2
