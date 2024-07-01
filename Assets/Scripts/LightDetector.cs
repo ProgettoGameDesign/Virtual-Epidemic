@@ -1,8 +1,9 @@
 using UnityEngine;
+using VLB;
 
 public class LightDetector : MonoBehaviour
 {
-    public Light torchLight; // Assegna qui il componente Light della torcia
+    public VolumetricLightBeam torchLight; // Assegna qui il componente Light della torcia
     public GameObject wallText; // Assegna qui il GameObject che contiene la scritta
     public Color colorToMatch;
 
@@ -26,9 +27,9 @@ public class LightDetector : MonoBehaviour
         RaycastHit hit;
         
         // Disegna il raggio per il debug
-        Debug.DrawRay(ray.origin, ray.direction * torchLight.range, Color.red);
+        Debug.DrawRay(ray.origin, ray.direction * torchLight.raycastDistance, Color.red);
 
-        if (Physics.Raycast(ray, out hit, torchLight.range))
+        if (Physics.Raycast(ray, out hit, torchLight.raycastDistance))
         {
 
             // Verifica se il Raycast colpisce il muro

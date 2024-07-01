@@ -6,7 +6,7 @@ public class TastierinoServetti : MonoBehaviour
 {
     public string correctSequence = "BRGYCM";
     private string currentSequence = "";
-    private float timeToWait = 0.5f;
+    private float timeToWait = 0.3f;
     private Outline _outlineTastierino;
     [SerializeField] SceneState sceneState;
     [SerializeField] Animator animator;
@@ -17,6 +17,7 @@ public class TastierinoServetti : MonoBehaviour
     [SerializeField] GameObject display5;
     [SerializeField] GameObject display6;
     [SerializeField] GameObject tastierinoSulMuro;
+    
 
     // Start is called before the first frame update
     public void AddDigit(string digit)

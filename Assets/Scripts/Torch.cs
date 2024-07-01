@@ -2,17 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using VLB;
 
 public class Torch : MonoBehaviour
 {
-    [SerializeField] private Transform _torch;
+    //[SerializeField] private Transform _torch;
     [SerializeField] SceneState sceneState;
-    private Light _color;
+    private VolumetricLightBeam _color;
 
     // Start is called before the first frame update
     void Start()
     {
-        _color = _torch.GetComponent<Light>();
+        _color = gameObject.GetComponent<VolumetricLightBeam>();
         
     }
 
