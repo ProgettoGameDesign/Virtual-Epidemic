@@ -37,7 +37,7 @@ public class Torch : MonoBehaviour
         {
             sceneState._currentcolor = Color.blue;  
         }
-        if (Input.GetKey(KeyCode.R)) 
+        if (Input.GetKey(KeyCode.V)) 
         {
             gameObject.SetActive(false);  
         }
