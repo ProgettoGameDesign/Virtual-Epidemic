@@ -5,7 +5,7 @@ using UnityEngine.UI; // Necessario per interagire con il pulsante UI
 using FMODUnity; // Necessario per utilizzare FMOD
 using FMOD.Studio; // Necessario per lavorare con gli eventi FMOD
 
-public class ButtonSound : MonoBehaviour
+public class BackButtonSound : MonoBehaviour
 {
     // Assicurati di assegnare questo campo nell'Inspector di Unity
     public string fmodEventPath;
@@ -32,7 +32,7 @@ public class ButtonSound : MonoBehaviour
     void PlaySound()
     {
         // Imposta il parametro "Type" su 3
-        eventInstance.setParameterByName("Type", 0);
+        eventInstance.setParameterByName("Type", 2);
 
         // Riproduci l'evento
         eventInstance.start();
@@ -46,4 +46,5 @@ public class ButtonSound : MonoBehaviour
         // Assicurati di rilasciare l'istanza quando l'oggetto viene distrutto
         eventInstance.release();
     }
+  
 }
