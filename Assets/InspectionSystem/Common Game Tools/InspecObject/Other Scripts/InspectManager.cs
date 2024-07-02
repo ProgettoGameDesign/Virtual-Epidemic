@@ -59,7 +59,7 @@ namespace CGT
         {
             return layerInspect;
         }
-
+        
         private void Start()
         {
             if(mainCamera==null)
@@ -139,11 +139,12 @@ namespace CGT
         {
             if (inspecting==null)
                 return;            
-
+            
             if(mainCamera.gameObject.GetComponent<CustomBlur>()!=null && blurOnInspect)
                 mainCamera.gameObject.GetComponent<CustomBlur>().enabled = false;
 
             inspecting.gameObject.SetActive(false);
+
             inspecting = null;
         }
 

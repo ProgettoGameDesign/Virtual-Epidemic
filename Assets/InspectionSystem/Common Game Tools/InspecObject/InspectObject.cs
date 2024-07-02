@@ -21,7 +21,8 @@ namespace CGT
 
         [HideInInspector]
         public Vector3 initialPosition;    
-        [SerializeField] ChiudiApriInventario chiudiApriInventario;    
+        [SerializeField] ChiudiApriInventario chiudiApriInventario;
+        [SerializeField] GameObject pulsanteChiudi;    
 
         void Start()
         {                        
@@ -89,6 +90,14 @@ namespace CGT
             {
                 trans.gameObject.layer = layerNumber;
             }
+        }
+        public void ChiudiIspezionamentoPulsante()
+        {
+            transform.localEulerAngles = initialPosition;
+            pulsanteChiudi.SetActive(false);
+            InspectManager.instance.StopInspecting();
+            chiudiApriInventario.SwitchActive();
+
         }
     }
 }

@@ -7,6 +7,7 @@ public class InspectorItemMio : MonoBehaviour
 {
     private string nomeItem;
     private InspectObject inspectObject;
+    [SerializeField] GameObject pulsanteChiudi;
     [SerializeField] private ChiudiApriInventario chiudiApriInventario;
     public void AcquisisciNome(string nome)    
     {
@@ -22,6 +23,7 @@ public class InspectorItemMio : MonoBehaviour
         else  
         {
             chiudiApriInventario.SwitchActive();
+            pulsanteChiudi.SetActive(true);
             foreach (Transform child in gameObject.transform)
                 {
                     if (child.gameObject.name == nomeItem)
