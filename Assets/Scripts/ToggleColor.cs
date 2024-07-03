@@ -3,16 +3,12 @@ using UnityEngine.UI;
 
 public class ToggleColor : MonoBehaviour
 {
-    public Material grayscaleMaterial;
     private Image image;
     private Text text;
+    private Color originalColor;
+    public Material grayscaleMaterial;
     private Material originalMaterial;
     private bool isBlackAndWhite = false;
-    private float timer = 0f;
-    private float initialDelay = 3.535f;
-    private float interval = 7.28f;
-    private float bwDuration = 1.34f;
-    private bool firstTransitionDone = false;
 
     void Start()
     {
@@ -27,38 +23,26 @@ public class ToggleColor : MonoBehaviour
         {
             originalMaterial = text.material;
         }
+
+        GlobalColorManager.Instance.Subscribe(this);
     }
 
-    void Update()
+    void OnDestroy()
     {
-        timer += Time.deltaTime;
-
-        if (!firstTransitionDone && timer >= initialDelay)
-        {
-            SetBlackAndWhite(true);
-            Invoke("ResetColor", bwDuration);
-            firstTransitionDone = true;
-            timer = 0f; // Reset timer for the next interval
-        }
-        else if (firstTransitionDone && timer >= interval)
-        {
-            SetBlackAndWhite(true);
-            Invoke("ResetColor", bwDuration);
-            timer = 0f; // Reset timer for the next interval
-        }
+        GlobalColorManager.Instance.Unsubscribe(this);
     }
 
-    void SetBlackAndWhite(bool toBlackAndWhite)
+    public void SetBlackAndWhite(bool toBlackAndWhite)
     {
         if (toBlackAndWhite)
         {
             if (image != null)
             {
-                image.material = grayscaleMaterial; // Change to grayscale
+                image.material = grayscaleMaterial;
             }
             else if (text != null)
             {
-                text.material = grayscaleMaterial; // Change to grayscale
+                text.material = grayscaleMaterial;
             }
         }
         else
@@ -74,10 +58,5 @@ public class ToggleColor : MonoBehaviour
         }
 
         isBlackAndWhite = toBlackAndWhite;
-    }
-
-    void ResetColor()
-    {
-        SetBlackAndWhite(false);
     }
 }
