@@ -6003,6 +6003,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 415631014685009138, guid: 9ac7706d19437624bb7c7ef961623bff, type: 3}
+      propertyPath: fmodEventPath1
+      value: event:/UI
+      objectReference: {fileID: 0}
     - target: {fileID: 7245149590587986287, guid: 9ac7706d19437624bb7c7ef961623bff, type: 3}
       propertyPath: m_Name
       value: PauseMenuManager
@@ -15798,6 +15802,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 832632009}
     - target: {fileID: 3171301218058158861, guid: da8d6495f5bd430449e88a12b6439d77, type: 3}
+      propertyPath: fmodEventPath1
+      value: event:/UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 3171301218058158861, guid: da8d6495f5bd430449e88a12b6439d77, type: 3}
       propertyPath: buttonUseScript
       value: 
       objectReference: {fileID: 1929056840}
@@ -16351,8 +16359,7 @@ MonoBehaviour:
   - quantity: 1
     item: {fileID: 11400000, guid: 35e2cf55108b3c743807be89dfdb748f, type: 2}
     itemState: []
-  dropClip: {fileID: 0}
-  audioSource: {fileID: 0}
+  fmodEventPath: event:/UI
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
 --- !u!1 &1984062875
 GameObject:
