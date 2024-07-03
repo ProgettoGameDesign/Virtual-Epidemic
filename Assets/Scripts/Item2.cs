@@ -10,10 +10,15 @@ public class Item2 : MonoBehaviour, InteractInterface
     [SerializeField] private string _prompt;
     [SerializeField] private InventorySO inventoryData;
     [SerializeField] private Item item1;
+    [SerializeField] TutorialVideoCamera tutorialVideoCamera;
     public string InteractionPrompt => _prompt;
     public bool Interact(Interactor interactor)
     {
-        //Item item1 = gameObject.GetComponent<Item>();
+        if (_prompt == "Telecamera")
+        {
+            
+            tutorialVideoCamera.SwitchActive();
+        }
         //Debug.Log(item1);
         gameObject.SetActive(false); 
         //playerData._torchActive = true;

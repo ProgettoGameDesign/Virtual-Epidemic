@@ -25,7 +25,7 @@ public class Pagine : MonoBehaviour, InteractInterface
         {
             diario.Pagina2 = true;
             gameObject.SetActive(false);
-            Invoke("AddToInventory", 0.7f);
+            Invoke("AddToInventory", 0.5f);
             
         }
         
@@ -33,21 +33,21 @@ public class Pagine : MonoBehaviour, InteractInterface
         {
             diario.Pagina3 = true;
             gameObject.SetActive(false);
-            Invoke("AddToInventory", 0.7f);
+            Invoke("AddToInventory", 0.5f);
             
         }
         if(_prompt == "Pagina4")
         {
             diario.Pagina4 = true;
             gameObject.SetActive(false);
-            Invoke("AddToInventory", 0.7f);
+            Invoke("AddToInventory", 0.5f);
             
         }
         if(_prompt == "Schema")
         {
             diario.Pagina5 = true;
             gameObject.SetActive(false);
-            Invoke("AddToInventory", 0.7f);
+            Invoke("AddToInventory", 0.5f);
             
         }
         return true;
