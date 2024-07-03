@@ -15,7 +15,8 @@ MonoBehaviour:
   <IsStackable>k__BackingField: 0
   <MaxStackSize>k__BackingField: 1
   <Name>k__BackingField: Chiave
-  <Description>k__BackingField: Serve ad aprire le porte
+  <Description>k__BackingField: Una piccola chiave comune, probabilmente apre la
+    porta di qualche aula universitaria
   <ItemImage>k__BackingField: {fileID: 21300000, guid: a0114e968a251b744b8c078ead017c60, type: 3}
   <prefab>k__BackingField: {fileID: -8679921383154817045, guid: 1717f36566c86ce489dfae7b3b44ead0, type: 3}
   <DefaultParametersList>k__BackingField: []
