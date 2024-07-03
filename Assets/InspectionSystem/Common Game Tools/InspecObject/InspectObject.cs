@@ -20,20 +20,22 @@ namespace CGT
         public float maxFOV = 75;
 
         [HideInInspector]
-        public Vector3 initialPosition;    
+        public Vector3 initialPosition;
         [SerializeField] ChiudiApriInventario chiudiApriInventario;
-        [SerializeField] GameObject pulsanteChiudi;    
+        [SerializeField] GameObject pulsanteChiudi;
+
+        private Vector3 pivotOffset = new Vector3(0, -0.2f, 0); // Piccolo offset per il pivot
 
         void Start()
-        {                        
-            InspectManager.instance.Ping();            
+        {
+            InspectManager.instance.Ping();
         }
 
         private void OnEnable()
         {
-            if (Application.isPlaying)            
+            if (Application.isPlaying)
                 transform.localEulerAngles = initialPosition;
-            
+
         }
 
         void Update()
@@ -55,15 +57,17 @@ namespace CGT
             else
                 horizontalRotation = 0;
 
+            Vector3 pivotPoint = transform.position + pivotOffset;
+
             if (Input.GetMouseButton(0))
             {
-                if(horizontalRotation!=0)
-                    transform.Rotate(0, -horizontalRotation, 0, Space.World);
+                if (horizontalRotation != 0)
+                    transform.RotateAround(pivotPoint, Vector3.up, -horizontalRotation);
                 else
-                    transform.Rotate(verticalRotation, 0, 0, Space.World);
+                    transform.RotateAround(pivotPoint, Vector3.right, verticalRotation);
             }
 
-            else if (Input.GetMouseButtonDown(1)) 
+            else if (Input.GetMouseButtonDown(1))
             {
                 transform.localEulerAngles = initialPosition;
                 InspectManager.instance.StopInspecting();
@@ -74,7 +78,6 @@ namespace CGT
             {
                 if (InspectManager.instance.inspectCamera.fieldOfView < maxFOV)
                     InspectManager.instance.inspectCamera.fieldOfView += zoomSpeed;
-
             }
             if (Input.GetAxis("Mouse ScrollWheel") > 0)
             {
@@ -91,13 +94,13 @@ namespace CGT
                 trans.gameObject.layer = layerNumber;
             }
         }
+
         public void ChiudiIspezionamentoPulsante()
         {
             transform.localEulerAngles = initialPosition;
             pulsanteChiudi.SetActive(false);
             InspectManager.instance.StopInspecting();
             chiudiApriInventario.SwitchActive();
-
         }
     }
 }

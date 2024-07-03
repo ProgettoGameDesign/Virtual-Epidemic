@@ -8,6 +8,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
+
 namespace Inventory
 {
     public class InventoryController : MonoBehaviour
@@ -21,11 +22,12 @@ namespace Inventory
         public List<InventoryItem> initialItems = new List<InventoryItem>();
 
         [SerializeField]
-        private AudioClip dropClip;
+        public string fmodEventPath = "event:/UI";
 
-        [SerializeField]
-        private AudioSource audioSource;
+        
+       
         [SerializeField] SceneState sceneState;
+
 
         private void Start()
         {
@@ -33,6 +35,10 @@ namespace Inventory
             //{
                 PrepareUI();
                 PrepareInventoryData();
+               
+
+
+
             //}
             
         }
@@ -104,7 +110,7 @@ namespace Inventory
         {
             inventoryData.RemoveItem(itemIndex, quantity);
             inventoryUI.ResetSelection();
-            audioSource.PlayOneShot(dropClip);
+           
         }
 
         public void PerformAction(int itemIndex)
@@ -123,7 +129,7 @@ namespace Inventory
             if (itemAction != null)
             {
                 itemAction.PerformAction(gameObject, inventoryItem.itemState);
-                audioSource.PlayOneShot(itemAction.actionSFX);
+               
                 if(inventoryData.GetItemAt(itemIndex).IsEmpty)
                     inventoryUI.ResetSelection();
             }
@@ -185,5 +191,6 @@ namespace Inventory
                 }
             }
         }
+       
     }
 }

@@ -5,6 +5,8 @@ using System;
 using Inventory.UI;
 using Inventory.Model;
 using CGT;
+using FMODUnity;
+using FMOD.Studio;
 
 public class UIInventoryPage : MonoBehaviour
 {
@@ -23,6 +25,11 @@ public class UIInventoryPage : MonoBehaviour
     [SerializeField] private ButtonUseScript buttonUseScript;
 
     List<UIInventoryItem> listOfUIItems = new List<UIInventoryItem>();
+    
+    private EventInstance eventInstance;
+    
+    
+    public string fmodEventPath1;
 
 
 
@@ -137,6 +144,8 @@ public class UIInventoryPage : MonoBehaviour
     {
         gameObject.SetActive(true);
         ResetSelection();
+        PlaySoundShow();
+
     }
     public void ResetSelection()
     {
@@ -170,6 +179,7 @@ public class UIInventoryPage : MonoBehaviour
         actionPanel.Toggle(false);
         gameObject.SetActive(false);
         ResetDraggedItem();
+        PlaySoundShow();
     }
 
     internal void ResetAllItems()
@@ -179,5 +189,13 @@ public class UIInventoryPage : MonoBehaviour
             item.ResetData();
             item.Deselect();
         }
+    }
+    
+    private void PlaySoundShow()
+    {
+        eventInstance = RuntimeManager.CreateInstance(fmodEventPath1);
+        eventInstance.setParameterByName("Type", 3);
+        eventInstance.start();
+        eventInstance.release();
     }
 }

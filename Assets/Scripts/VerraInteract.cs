@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Video;
 
 public class VerraInteract : MonoBehaviour, InteractInterface
 {
@@ -10,7 +11,9 @@ public class VerraInteract : MonoBehaviour, InteractInterface
     [SerializeField] private GameObject transition;
     [SerializeField] Animator _animatorNerraSveglio;
     [SerializeField] private FadeToWhite fadeToWhite;
+    [SerializeField] private GameObject canvasWhiteTransition;
     [SerializeField] private Dialogue dialogue;
+    
 
 
     public string InteractionPrompt => _prompt;
@@ -18,6 +21,7 @@ public class VerraInteract : MonoBehaviour, InteractInterface
     public bool Interact(Interactor interactor)
     {
         playerData.blockMovementPlayer = true;
+        canvasWhiteTransition.SetActive(true);
         StartCoroutine(HandleCutsceneSequence());
         return true;
     }
@@ -41,11 +45,17 @@ public class VerraInteract : MonoBehaviour, InteractInterface
             Debug.LogError("PostProcessingManager instance is null.");
         }
 
+        yield return new WaitForSeconds(3);
+        //Invoke("FadeOut",0.5f);
+        
+        
         // Ritarda il caricamento della nuova scena
-        yield return new WaitForSeconds(1);
-        Invoke("LoadNewNerra", 0);
-        Invoke("AnimazioneRisveglio", 0.3f);
-        Invoke("StartDialogue", 3);
+        yield return new WaitForSeconds(0.5f);
+        Invoke("LoadNewNerra", 0.5f);
+        Invoke("AnimazioneRisveglio", 0.8f);    
+        Invoke("StartDialogue", 2);
+
+        
 
         yield return null;
     }
@@ -62,10 +72,13 @@ public class VerraInteract : MonoBehaviour, InteractInterface
     {
         DialogueManager.Instance.StartDialogue(dialogue);
         transition.SetActive(false);
+        
     }
     private void AnimazioneRisveglio() 
     {
         _animatorNerraSveglio.SetBool("trigger", true);
 
     }
+    
+    
 }
