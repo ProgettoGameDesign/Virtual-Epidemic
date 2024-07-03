@@ -28,3 +28,4 @@ MonoBehaviour:
   Pagina3: 0
   Pagina4: 0
   Pagina5: 0
+  _ambient: {r: 0, g: 0, b: 0, a: 1}

@@ -11,11 +11,23 @@ public class LightUp : MonoBehaviour
         _light = gameObject.GetComponent<Light>();
 
     }
-    
+
     void Update()
     {
-        if(sceneState._lightup == true)
-        _light.enabled = true;
-        
+        if (sceneState._lightup == true)
+        {
+            _light.enabled = true;
+            SetAmbientColor(new Color(0.6f, 0.6f, 0.6f));
+        }
+
+
+    }
+
+    void SetAmbientColor(Color ambientColor)
+    {
+        RenderSettings.ambientMode = UnityEngine.Rendering.AmbientMode.Flat;
+        RenderSettings.ambientLight = ambientColor;
     }
 }
+
+

@@ -34,7 +34,8 @@ public class CharacterNavController : MonoBehaviour
         if ((DialogueManager.Instance.isDialogueActive == false) && (sceneState.stateOfCutscene1 == 2))
         {
             _NPCanimator.SetBool("trigger", true);
-            Debug.Log("ci sta riuscendo");
+            //Debug.Log("ci sta riuscendo");
+            
             NpcEscape();
         }
     }
@@ -50,7 +51,7 @@ public class CharacterNavController : MonoBehaviour
             if (distanceToTarget > stopDistance)
             {
                 _navMeshAgent.SetDestination(player.position);
-                //RotateTowards(player);
+                if(distanceToTarget < 4) RotateTowards(player);
                 
             }
             else
@@ -78,13 +79,11 @@ public class CharacterNavController : MonoBehaviour
             {
                 _navMeshAgent.SetDestination(escape.position);
                 //RotateTowards(escape);
+                if(distanceToTarget < 5.5) RotateTowards(escape);
             }
             else
             {
-                // Fermare il movimento se siamo abbastanza vicini
-                //_navMeshAgent.ResetPath();
-                //_NPCanimator.SetBool("trigger", false);
-                //gameObject.SetActive(false);
+                
                 Destroy(gameObject);
                 //Invoke("AggiornaStato", 0.5f);
                 sceneState.stateOfCutscene1 = 3;
