@@ -80,7 +80,7 @@ public class Door : MonoBehaviour, InteractInterface
     }
     private IEnumerator LoadNewScene(string sceneName)
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.8f);
         SceneManager.LoadScene(sceneName);
     }
 
