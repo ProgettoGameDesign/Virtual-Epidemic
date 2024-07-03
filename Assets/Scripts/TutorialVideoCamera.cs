@@ -7,6 +7,7 @@ public class TutorialVideoCamera : MonoBehaviour
 {
     [SerializeField] GameObject canvasTutorial;
     [SerializeField] GameObject menu;
+    [SerializeField] SceneState sceneState;
     void Update()
     {
         if (canvasTutorial.activeSelf == true)
@@ -20,6 +21,6 @@ public class TutorialVideoCamera : MonoBehaviour
     public void SwitchActive()
     {
         canvasTutorial.SetActive(!canvasTutorial.activeSelf);
-
+        sceneState.blockMovementPlayer = !sceneState.blockMovementPlayer;
     }
 }
