@@ -21,6 +21,7 @@ public class SceneState : ScriptableObject
     public bool Pagina3;
     public bool Pagina4;
     public bool Pagina5;
+    public Color _ambient;
     public void ResetData() // imposta ai valori iniziali ogni volta che fa ripartire il gioco
     {
         lastPosition_AI = Vector3.zero; 
@@ -28,6 +29,7 @@ public class SceneState : ScriptableObject
         _torchActive = false;
         _hasKey = false;
         _lightup = false;
+        _ambient = Color.black;
         _currentcolor = Color.white;
         stateOfCutscene1 = 1;
         NerraCutscene = false;
