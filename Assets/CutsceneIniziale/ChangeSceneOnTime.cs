@@ -15,7 +15,11 @@ public class ChangeSceneOnTime : MonoBehaviour
         changeTime -= Time.deltaTime;
         if (changeTime <= 0)
         {
-            SceneManager.LoadScene(sceneName);
+            CaricaAmbienteIniziale();
         }
+    }
+    public void CaricaAmbienteIniziale()
+    {
+        SceneManager.LoadScene(sceneName);
     }
 }
