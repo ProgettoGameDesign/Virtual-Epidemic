@@ -6,6 +6,8 @@ public class VerraSveglio : MonoBehaviour
 {
     [SerializeField] Animator animator;
     [SerializeField] Transform target;
+    [SerializeField] private GameObject canvasWhiteTransition;
+    [SerializeField] private FadeToWhite fadeToWhite;
     private float rotationSpeed = 3f;
     /*
     void Awake()
@@ -16,6 +18,7 @@ public class VerraSveglio : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Invoke("FadeOut",1);
         
     }
 
@@ -44,5 +47,10 @@ public class VerraSveglio : MonoBehaviour
 
         Quaternion targetRotation = Quaternion.LookRotation(direction);
         transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+    }
+    private void FadeOut()
+    {
+        canvasWhiteTransition.SetActive(true);
+        StartCoroutine(fadeToWhite.FadeToTransparent());
     }
 }

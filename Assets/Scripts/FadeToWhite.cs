@@ -6,7 +6,9 @@ using UnityEngine.UI;
 public class FadeToWhite : MonoBehaviour
 {
     public Image fadePanel; // Assicurati che sia un'Image UI
-    public float fadeDuration = 1.0f;
+    public float fadeDuration = 2f;
+    //public float fadeDuration2 = 10f;
+    public GameObject canvasWhite;
     
     private void Start()
     {
@@ -35,6 +37,26 @@ public class FadeToWhite : MonoBehaviour
         // Assicurati che il pannello sia completamente opaco alla fine della transizione
         panelColor.a = 1.0f;
         fadePanel.color = panelColor;
-        gameObject.SetActive(false);
+        canvasWhite.SetActive(false);
+    }
+    public IEnumerator FadeToTransparent()
+    {
+        Debug.Log("ora");
+        //canvasWhite.SetActive(true);
+        Color color = fadePanel.color;
+        float elapsedTime = 0f;
+
+        while (elapsedTime < fadeDuration)
+        {
+            Debug.Log("prova");
+            color.a = Mathf.Lerp(1f, 0f, elapsedTime / fadeDuration);
+            fadePanel.color = color;
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+
+        color.a = 0f;
+        fadePanel.color = color;
+        canvasWhite.SetActive(false);
     }
 }
