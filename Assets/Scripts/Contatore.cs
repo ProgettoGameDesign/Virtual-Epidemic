@@ -10,6 +10,7 @@ public class Contatore : MonoBehaviour, InteractInterface
     [SerializeField] private CameraSwitchTarget cameraSwitchTarget;
     [SerializeField] private GameObject _lightTransition;
     [SerializeField] private Animator _NPCanimator;
+    [SerializeField] private GameObject canvasContatore;
     //[SerializeField] private GameObject _NPC;
 
     public string InteractionPrompt => _prompt;
@@ -21,6 +22,7 @@ public class Contatore : MonoBehaviour, InteractInterface
         {
             _animator.SetBool("key", true);
             gameObject.GetComponent<CanvasActive>().enabled = false;
+            canvasContatore.SetActive(false);
         }
         else
         {

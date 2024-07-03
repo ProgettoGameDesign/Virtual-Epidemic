@@ -22501,6 +22501,7 @@ MonoBehaviour:
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
   NPC: {fileID: 1482499393}
   Contatore: {fileID: 6908453356006550722}
+  canvaContatore: {fileID: 462509310}
 --- !u!114 &2068840151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23874,6 +23875,7 @@ MonoBehaviour:
   cameraSwitchTarget: {fileID: 1389231442}
   _lightTransition: {fileID: 912515511}
   _NPCanimator: {fileID: 1482499397}
+  canvasContatore: {fileID: 462509310}
 --- !u!114 &6908453356006550727
 MonoBehaviour:
   m_ObjectHideFlags: 0

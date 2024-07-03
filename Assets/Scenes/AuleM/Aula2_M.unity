@@ -3538,6 +3538,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvasTutorial: {fileID: 2127296303}
   menu: {fileID: 2027115342}
+  sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
 --- !u!1 &759758643
 GameObject:
   m_ObjectHideFlags: 0
