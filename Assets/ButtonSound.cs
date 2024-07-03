@@ -8,7 +8,7 @@ using FMOD.Studio; // Necessario per lavorare con gli eventi FMOD
 public class ButtonSound : MonoBehaviour
 {
     // Assicurati di assegnare questo campo nell'Inspector di Unity
-    public string fmodEventPath;
+    public string fmodEventPath = "event:/UI";
 
     private Button button;
     private EventInstance eventInstance;

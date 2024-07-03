@@ -781,7 +781,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a1993976e42f46e285b6c42858d24d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fmodEventPath: 
+  fmodEventPath: event:/UI
 --- !u!1 &104552010
 GameObject:
   m_ObjectHideFlags: 0
@@ -1822,6 +1822,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PauseMenuCanvas: {fileID: 0}
+  fmodEventPath1: 
 --- !u!4 &307839078
 Transform:
   m_ObjectHideFlags: 0

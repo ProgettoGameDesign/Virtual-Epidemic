@@ -1,6 +1,8 @@
 
+using FMOD.Studio;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using FMODUnity;
 
 
 public class PauseMenu : MonoBehaviour
@@ -8,6 +10,9 @@ public class PauseMenu : MonoBehaviour
     public static bool Paused = false;
 
     public GameObject PauseMenuCanvas;
+
+    private EventInstance eventInstance;
+    public string fmodEventPath1 = "event:/UI";
 
     void Start()
     {
@@ -21,6 +26,8 @@ public class PauseMenu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
+            PlaySoundShow();
+            
             if (Paused)
             {
                 Play();
@@ -74,5 +81,13 @@ public class PauseMenu : MonoBehaviour
         PauseMenuCanvas.SetActive(false);
         Time.timeScale = 1f;
         Paused = false;
+    }
+    
+    private void PlaySoundShow()
+    {
+        eventInstance = RuntimeManager.CreateInstance(fmodEventPath1);
+        eventInstance.setParameterByName("Type", 3);
+        eventInstance.start();
+        eventInstance.release();
     }
 }
