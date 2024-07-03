@@ -1302,7 +1302,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 207336059}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: ae47f0f54910a484592c32b570aa0604, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 454e4e3d60338744792659ace312ccb6, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -1613,6 +1613,7 @@ GameObject:
   - component: {fileID: 285272647}
   - component: {fileID: 285272651}
   - component: {fileID: 285272650}
+  - component: {fileID: 285272652}
   m_Layer: 0
   m_Name: ButtonControlli
   m_TagString: Untagged
@@ -1792,6 +1793,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fmodEventPath: event:/UI
+--- !u!114 &285272652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 285272645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9596dcdd199cc8a4986577b7fc211f5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grayscaleMaterial: {fileID: 2100000, guid: 5ffce1d407d37a2458c96ca54fc31859, type: 2}
 --- !u!1 &307839076
 GameObject:
   m_ObjectHideFlags: 0
@@ -1852,6 +1866,7 @@ GameObject:
   - component: {fileID: 312963405}
   - component: {fileID: 312963408}
   - component: {fileID: 312963409}
+  - component: {fileID: 312963410}
   m_Layer: 0
   m_Name: ButtonPlay
   m_TagString: Untagged
@@ -2019,6 +2034,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fmodEventPath: event:/UI
+--- !u!114 &312963410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 312963403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9596dcdd199cc8a4986577b7fc211f5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grayscaleMaterial: {fileID: 2100000, guid: 5ffce1d407d37a2458c96ca54fc31859, type: 2}
 --- !u!1 &351857497
 GameObject:
   m_ObjectHideFlags: 0
@@ -4027,6 +4055,7 @@ GameObject:
   - component: {fileID: 1318149820}
   - component: {fileID: 1318149824}
   - component: {fileID: 1318149823}
+  - component: {fileID: 1318149825}
   m_Layer: 0
   m_Name: ButtonOptions
   m_TagString: Untagged
@@ -4206,6 +4235,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fmodEventPath: event:/UI
+--- !u!114 &1318149825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1318149818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9596dcdd199cc8a4986577b7fc211f5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grayscaleMaterial: {fileID: 2100000, guid: 5ffce1d407d37a2458c96ca54fc31859, type: 2}
 --- !u!1 &1358407403
 GameObject:
   m_ObjectHideFlags: 0
@@ -4531,6 +4573,7 @@ GameObject:
   - component: {fileID: 1467632221}
   - component: {fileID: 1467632225}
   - component: {fileID: 1467632224}
+  - component: {fileID: 1467632226}
   m_Layer: 0
   m_Name: ButtonQuit
   m_TagString: Untagged
@@ -4710,6 +4753,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fmodEventPath: event:/UI
+--- !u!114 &1467632226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467632219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9596dcdd199cc8a4986577b7fc211f5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grayscaleMaterial: {fileID: 2100000, guid: 5ffce1d407d37a2458c96ca54fc31859, type: 2}
 --- !u!1 &1468662688
 GameObject:
   m_ObjectHideFlags: 0
