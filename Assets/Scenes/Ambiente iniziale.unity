@@ -14983,6 +14983,7 @@ MonoBehaviour:
   display5: {fileID: 1216880204}
   display6: {fileID: 2144172631}
   tastierinoSulMuro: {fileID: 2131862401}
+  canvasDaDistruggere: {fileID: 2025750242}
 --- !u!114 &732337846
 MonoBehaviour:
   m_ObjectHideFlags: 0

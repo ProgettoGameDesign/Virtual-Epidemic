@@ -179,6 +179,7 @@ namespace Inventory
             {
                 if (inventoryUI.isActiveAndEnabled == false)
                 {
+                    UnityEngine.Cursor.visible = true;
                     inventoryUI.Show();
                     foreach (var item in inventoryData.GetCurrentInventoryState())
                     {
@@ -187,6 +188,7 @@ namespace Inventory
                 }
                 else
                 {
+                    UnityEngine.Cursor.visible = false;
                     inventoryUI.Hide();
                 }
             }

@@ -56,7 +56,7 @@ public class PauseMenu : MonoBehaviour
             }
         }
 
-        Cursor.lockState = CursorLockMode.None; // Sblocca il cursore
+        //Cursor.lockState = CursorLockMode.None; // Sblocca il cursore
         Cursor.visible = true; // Rende il cursore visibile
     }
 
@@ -70,7 +70,7 @@ public class PauseMenu : MonoBehaviour
         {
             a.UnPause();
         }
-        Cursor.lockState = CursorLockMode.Locked; // Blocca il cursore al centro dello schermo
+        //Cursor.lockState = CursorLockMode.Locked; // Blocca il cursore al centro dello schermo
         Cursor.visible = false; // Rende il cursore invisibile       
     }
 

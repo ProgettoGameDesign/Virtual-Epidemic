@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UpdateState : MonoBehaviour
 {
@@ -31,12 +32,12 @@ public class UpdateState : MonoBehaviour
             _porta.layer = 7;
             animatorPorta1.SetBool("endgame", true);
             animatorPorta2.SetBool("endgame", true);
-            Invoke("StartFinalCutsce", 3f);
+            Invoke("StartFinalCutsce", 2f);
         }
     }
     void StartFinalCutsce()
     {
-        //qua va implementata la funzione per far partire l'ultima cutscene
+        SceneManager.LoadScene("Scena_Outro");
 
     }
 }

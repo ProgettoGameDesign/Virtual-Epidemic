@@ -8,9 +8,9 @@ public class SettingsMenu : MonoBehaviour
     public GameObject volumeMusicSlider;
     public GameObject volumeFxSlider;
     public GameObject sensitivitySlider;
-    public GameObject backButton;
+    //public GameObject backButton;
 
-    public AudioMixer audioMixer;
+    //public AudioMixer audioMixer;
 
     public static float adjustedSensitivity = 0.5f;
     public static float sliderMusicValue = 1f;

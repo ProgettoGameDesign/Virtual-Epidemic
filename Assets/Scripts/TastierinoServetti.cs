@@ -17,6 +17,7 @@ public class TastierinoServetti : MonoBehaviour
     [SerializeField] GameObject display5;
     [SerializeField] GameObject display6;
     [SerializeField] GameObject tastierinoSulMuro;
+    [SerializeField] GameObject canvasDaDistruggere;
     
 
     // Start is called before the first frame update
@@ -33,6 +34,7 @@ public class TastierinoServetti : MonoBehaviour
             Invoke("ResetDisplay", timeToWait+1);
             if (currentSequence == correctSequence)
             {
+                Destroy(canvasDaDistruggere);
                 _outlineTastierino.OutlineColor = Color.green;
                 _outlineTastierino.enabled = true;
                 //_outlineDisplay.OutlineColor = Color.green;

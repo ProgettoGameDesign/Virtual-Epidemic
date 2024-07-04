@@ -2540,7 +2540,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9059bc49143c5a847a6a5865d83f09c3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: caeddc4db807298468c941928c2762c4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5957,8 +5957,7 @@ MonoBehaviour:
   - quantity: 1
     item: {fileID: 11400000, guid: 35e2cf55108b3c743807be89dfdb748f, type: 2}
     itemState: []
-  dropClip: {fileID: 0}
-  audioSource: {fileID: 0}
+  fmodEventPath: event:/UI
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
 --- !u!1 &1090866901
 GameObject:
