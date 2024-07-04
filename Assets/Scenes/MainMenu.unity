@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: bee7a1c6ac6b356428d9e9ed2fdca717, type: 2}
+  m_LightingDataAsset: {fileID: 0}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -7059,8 +7059,6 @@ MonoBehaviour:
   volumeMusicSlider: {fileID: 1468662688}
   volumeFxSlider: {fileID: 1436531525}
   sensitivitySlider: {fileID: 695858972}
-  backButton: {fileID: 0}
-  audioMixer: {fileID: 0}
 --- !u!114 &2123904865
 MonoBehaviour:
   m_ObjectHideFlags: 0
