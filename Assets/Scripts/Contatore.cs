@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Contatore : MonoBehaviour, InteractInterface
 {
@@ -10,6 +12,7 @@ public class Contatore : MonoBehaviour, InteractInterface
     [SerializeField] private CameraSwitchTarget cameraSwitchTarget;
     [SerializeField] private GameObject _lightTransition;
     [SerializeField] private Animator _NPCanimator;
+    [SerializeField] private Button textcanvas;
     [SerializeField] private GameObject canvasContatore;
     //[SerializeField] private GameObject _NPC;
 
@@ -22,13 +25,15 @@ public class Contatore : MonoBehaviour, InteractInterface
         {
             _animator.SetBool("key", true);
             gameObject.GetComponent<CanvasActive>().enabled = false;
-            canvasContatore.SetActive(false);
+            //canvasContatore.SetActive(false);
+            textcanvas.GetComponentInChildren<TextMeshProUGUI>().text = "(E) Accendi";
         }
         else
         {
+            canvasContatore.SetActive(false);
             gameObject.layer = 0;
             gameObject.GetComponent<Outline>().enabled = false;
-            gameObject.GetComponent<LightObject>().enabled = false;
+            gameObject.GetComponent<LightContatore>().enabled = false;
             Debug.Log("Hai acceso la luce!");
             sceneState.blockMovementPlayer = true;
             _lightTransition.SetActive(true);
