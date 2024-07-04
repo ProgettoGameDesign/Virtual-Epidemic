@@ -2222,8 +2222,7 @@ MonoBehaviour:
   - quantity: 1
     item: {fileID: 11400000, guid: 35e2cf55108b3c743807be89dfdb748f, type: 2}
     itemState: []
-  dropClip: {fileID: 0}
-  audioSource: {fileID: 0}
+  fmodEventPath: event:/UI
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
 --- !u!1 &491358926
 GameObject:
@@ -2344,7 +2343,7 @@ GameObject:
   - component: {fileID: 517950516}
   - component: {fileID: 517950515}
   - component: {fileID: 517950518}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: TextToTarget
   m_TagString: Untagged
   m_Icon: {fileID: 0}
