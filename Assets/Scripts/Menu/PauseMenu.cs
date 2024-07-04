@@ -3,6 +3,8 @@ using FMOD.Studio;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using FMODUnity;
+using UnityEngine.EventSystems;
+using UnityEngine.Video;
 
 
 public class PauseMenu : MonoBehaviour
@@ -10,6 +12,7 @@ public class PauseMenu : MonoBehaviour
     public static bool Paused = false;
 
     public GameObject PauseMenuCanvas;
+    public VideoPlayer VideoPlayer;
 
     private EventInstance eventInstance;
     public string fmodEventPath1 = "event:/UI";
@@ -44,6 +47,7 @@ public class PauseMenu : MonoBehaviour
         PauseMenuCanvas.SetActive(true);
         Time.timeScale = 0f;
         Paused = true;
+        VideoPlayer.Pause();
 
         AudioSource[] audios = FindObjectsOfType<AudioSource>();
         foreach (AudioSource a in audios)
@@ -65,6 +69,8 @@ public class PauseMenu : MonoBehaviour
         PauseMenuCanvas.SetActive(false);
         Time.timeScale = 1f;
         Paused = false;
+        VideoPlayer.Play();
+
         AudioSource[] audios = FindObjectsOfType<AudioSource>();
         foreach (AudioSource a in audios)
         {
