@@ -14,12 +14,14 @@ public class TastierinoSulMuro : MonoBehaviour, InteractInterface
         if (playerData.blockMovementPlayer == false)    
         {
             playerData.blockMovementPlayer = true;
+            Cursor.visible = true;
             _tastierinotoappear.SetActive(!_tastierinotoappear.activeSelf);
             animator.Play("show");
         }
         else 
         {
             playerData.blockMovementPlayer = false;
+            Cursor.visible = false;
             _tastierinotoappear.SetActive(!_tastierinotoappear.activeSelf);
             //animator.Play("hide");
         }

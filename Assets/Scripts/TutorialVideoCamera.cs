@@ -20,6 +20,7 @@ public class TutorialVideoCamera : MonoBehaviour
     }
     public void SwitchActive()
     {
+        Cursor.visible = !Cursor.visible;
         canvasTutorial.SetActive(!canvasTutorial.activeSelf);
         sceneState.blockMovementPlayer = !sceneState.blockMovementPlayer;
     }
