@@ -5,27 +5,19 @@ using UnityEngine;
 public class CheckTorchActive : MonoBehaviour
 {
     [SerializeField] private SceneState playerData;
+    [SerializeField] private GameObject _torciaCamera;
     private bool _active = false;
 
     // Update is called once per frame
     void Update()
     {
-        if (_active == false)       
+        if(playerData._torchActive)
         {
-            if(playerData._torchActive)
-                {
-                    foreach (Transform child in transform)
-                    {
-                        // Confronta il nome del GameObject figlio con il prompt
-                        if (child.gameObject.name == "Torcia")
-                        {
-                            child.gameObject.SetActive(true);
-                            _active = true;
-                        }
-                    }
-                }
+            _torciaCamera.SetActive(true);
         }
-        else 
-        return;
+        else
+        {
+            _torciaCamera.SetActive(false);
+        }
     }
 }

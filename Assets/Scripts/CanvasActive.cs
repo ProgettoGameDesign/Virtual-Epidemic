@@ -9,14 +9,14 @@ public class CanvasActive : MonoBehaviour
     // Disabilita il Canvas
     void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Player"))
+        if(other.CompareTag("Player") && gameObject.layer == 7)
         canvas.gameObject.SetActive(true);
     }
 
     // Abilita il Canvas
     void OnTriggerExit(Collider other)
     {
-        if(other.CompareTag("Player"))
+        if(other.CompareTag("Player") && gameObject.layer == 7)
         canvas.gameObject.SetActive(false);
     }
 }

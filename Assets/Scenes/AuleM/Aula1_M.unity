@@ -1778,6 +1778,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerData: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
+  _torciaCamera: {fileID: 898623763}
 --- !u!114 &317446711
 MonoBehaviour:
   m_ObjectHideFlags: 0
