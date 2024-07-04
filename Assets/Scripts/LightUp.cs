@@ -5,6 +5,7 @@ using UnityEngine;
 public class LightUp : MonoBehaviour
 {
     [SerializeField] SceneState sceneState;
+    [SerializeField] GameObject _lucina;
     private Light _light;
     void Start()
     {
@@ -17,6 +18,7 @@ public class LightUp : MonoBehaviour
         if (sceneState._lightup == true)
         {
             _light.enabled = true;
+            _lucina.SetActive(false);
             SetAmbientColor(new Color(0.6f, 0.6f, 0.6f));
         }
 

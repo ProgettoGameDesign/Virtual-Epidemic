@@ -12,7 +12,7 @@ public class PauseMenu : MonoBehaviour
     public static bool Paused = false;
 
     public GameObject PauseMenuCanvas;
-    public VideoPlayer VideoPlayer;
+    //public VideoPlayer VideoPlayer;
 
     private EventInstance eventInstance;
     public string fmodEventPath1 = "event:/UI";
@@ -47,7 +47,7 @@ public class PauseMenu : MonoBehaviour
         PauseMenuCanvas.SetActive(true);
         Time.timeScale = 0f;
         Paused = true;
-        VideoPlayer.Pause();
+        //VideoPlayer.Pause();
 
         AudioSource[] audios = FindObjectsOfType<AudioSource>();
         foreach (AudioSource a in audios)
@@ -59,7 +59,7 @@ public class PauseMenu : MonoBehaviour
                 Debug.Log($"Suono messo in pausa: {a.name}");
             }
         }
-
+        Debug.Log("prova");
         //Cursor.lockState = CursorLockMode.None; // Sblocca il cursore
         Cursor.visible = true; // Rende il cursore visibile
     }
@@ -69,7 +69,7 @@ public class PauseMenu : MonoBehaviour
         PauseMenuCanvas.SetActive(false);
         Time.timeScale = 1f;
         Paused = false;
-        VideoPlayer.Play();
+        //VideoPlayer.Play();
 
         AudioSource[] audios = FindObjectsOfType<AudioSource>();
         foreach (AudioSource a in audios)
