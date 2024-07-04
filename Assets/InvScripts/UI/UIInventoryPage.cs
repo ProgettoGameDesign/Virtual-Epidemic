@@ -29,7 +29,7 @@ public class UIInventoryPage : MonoBehaviour
     private EventInstance eventInstance;
     
     
-    public string fmodEventPath1;
+    //public string fmodEventPath1;
 
 
 
@@ -144,7 +144,7 @@ public class UIInventoryPage : MonoBehaviour
     {
         gameObject.SetActive(true);
         ResetSelection();
-        PlaySoundShow();
+        //PlaySoundShow();
 
     }
     public void ResetSelection()
@@ -179,7 +179,7 @@ public class UIInventoryPage : MonoBehaviour
         actionPanel.Toggle(false);
         gameObject.SetActive(false);
         ResetDraggedItem();
-        PlaySoundShow();
+        //PlaySoundShow();
     }
 
     internal void ResetAllItems()
@@ -190,12 +190,12 @@ public class UIInventoryPage : MonoBehaviour
             item.Deselect();
         }
     }
-    
+    /*
     private void PlaySoundShow()
     {
         eventInstance = RuntimeManager.CreateInstance(fmodEventPath1);
         eventInstance.setParameterByName("Type", 3);
         eventInstance.start();
         eventInstance.release();
-    }
+    }*/
 }
