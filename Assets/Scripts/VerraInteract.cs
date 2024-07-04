@@ -12,6 +12,7 @@ public class VerraInteract : MonoBehaviour, InteractInterface
     [SerializeField] Animator _animatorNerraSveglio;
     [SerializeField] private FadeToWhite fadeToWhite;
     [SerializeField] private GameObject canvasWhiteTransition;
+    [SerializeField] private GameObject _torch;
     [SerializeField] private Dialogue dialogue;
     
 
@@ -20,6 +21,7 @@ public class VerraInteract : MonoBehaviour, InteractInterface
 
     public bool Interact(Interactor interactor)
     {
+        _torch.SetActive(false);
         playerData.blockMovementPlayer = true;
         canvasWhiteTransition.SetActive(true);
         StartCoroutine(HandleCutsceneSequence());
