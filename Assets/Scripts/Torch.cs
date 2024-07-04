@@ -39,7 +39,7 @@ public class Torch : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.V)) 
         {
-            gameObject.SetActive(false);  
+            //gameObject.SetActive(false);  
             sceneState._torchActive = false;
         }
     }
