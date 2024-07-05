@@ -113,7 +113,21 @@ namespace CGT
         {
 
         }
+        public void AggiungiBlur()
+        {
+            if (mainCamera.gameObject.GetComponent<CustomBlur>() == null)
+                {
+                    CustomBlur cb = mainCamera.gameObject.AddComponent<CustomBlur>();
+                    cb.blurSize = 10;
+                }
+                else
+                    mainCamera.gameObject.GetComponent<CustomBlur>().enabled = true;
 
+        }
+        public void TogliBlur()
+        {
+            mainCamera.gameObject.GetComponent<CustomBlur>().enabled = false;
+        }
         public void StartInspecting(InspectObject io)
         {
             if (inspecting!=null)
@@ -125,13 +139,7 @@ namespace CGT
 
             if (blurOnInspect)
             {
-                if (mainCamera.gameObject.GetComponent<CustomBlur>() == null)
-                {
-                    CustomBlur cb = mainCamera.gameObject.AddComponent<CustomBlur>();
-                    cb.blurSize = 10;
-                }
-                else
-                    mainCamera.gameObject.GetComponent<CustomBlur>().enabled = true;
+                AggiungiBlur();
             }
         }
 
@@ -141,8 +149,7 @@ namespace CGT
                 return;            
             
             if(mainCamera.gameObject.GetComponent<CustomBlur>()!=null && blurOnInspect)
-                mainCamera.gameObject.GetComponent<CustomBlur>().enabled = false;
-
+                TogliBlur();
             inspecting.gameObject.SetActive(false);
 
             inspecting = null;
@@ -186,4 +193,5 @@ namespace CGT
 #endif
 
     }
+    
 }

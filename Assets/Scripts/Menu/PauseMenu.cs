@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 using FMODUnity;
 using UnityEngine.EventSystems;
 using UnityEngine.Video;
+using CGT;
 
 
 public class PauseMenu : MonoBehaviour
@@ -13,7 +14,7 @@ public class PauseMenu : MonoBehaviour
 
     public GameObject PauseMenuCanvas;
     //public VideoPlayer VideoPlayer;
-
+    [SerializeField] private InspectManager inspectManager;
     private EventInstance eventInstance;
     public string fmodEventPath1 = "event:/UI";
 
@@ -33,10 +34,12 @@ public class PauseMenu : MonoBehaviour
             
             if (Paused)
             {
+                inspectManager.TogliBlur();
                 Play();
             }
             else
             {
+                inspectManager.AggiungiBlur();
                 Stop();
             }
         }
