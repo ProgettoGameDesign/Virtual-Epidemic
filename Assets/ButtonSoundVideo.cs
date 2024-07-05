@@ -41,9 +41,9 @@ public class ButtonSoundVideo : MonoBehaviour
         }
     }
 
-    void PlaySound()
+   void PlaySound()
     {
-        // Imposta il parametro "Type" su 3
+        // Imposta il parametro "Type" su 0
         eventInstance.setParameterByName("Type", 0);
 
         // Riproduci l'evento
@@ -54,16 +54,16 @@ public class ButtonSoundVideo : MonoBehaviour
 
         if (mainCameraEventInstance.isValid())
         {
-            PLAYBACK_STATE playbackState;
-            mainCameraEventInstance.getPlaybackState(out playbackState);
+            bool isPaused;
+            mainCameraEventInstance.getPaused(out isPaused);
 
-            if (playbackState == PLAYBACK_STATE.PLAYING)
+            if (isPaused)
             {
-                mainCameraEventInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+                mainCameraEventInstance.setPaused(false);
             }
             else
             {
-                mainCameraEventInstance.start();
+                mainCameraEventInstance.setPaused(true);
             }
         }
         else
