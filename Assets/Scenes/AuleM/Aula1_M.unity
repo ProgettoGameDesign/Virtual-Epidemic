@@ -1234,19 +1234,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6167146292460915879, guid: 6f9308a9ad3eccc48a77142fbad86f27, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6167146292460915879, guid: 6f9308a9ad3eccc48a77142fbad86f27, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6167146292460915879, guid: 6f9308a9ad3eccc48a77142fbad86f27, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 44.625748
       objectReference: {fileID: 0}
     - target: {fileID: 6167146292460915879, guid: 6f9308a9ad3eccc48a77142fbad86f27, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -42.73655
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2367,7 +2367,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.109, y: 0.05}
+  m_AnchoredPosition: {x: -0.101, y: 0.05}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &517950515
@@ -2538,8 +2538,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 5.6753416, y: 5.973297, z: 0}
-  m_Center: {x: 0.1833713, y: -0.9323915, z: -8.2950657e-16}
+  m_Size: {x: 5.0252547, y: 2.9505806, z: 0.06976678}
+  m_Center: {x: 0.5540571, y: -0.059811354, z: -0.0348834}
 --- !u!1 &518360950
 GameObject:
   m_ObjectHideFlags: 0
@@ -3004,7 +3004,7 @@ Canvas:
   m_GameObject: {fileID: 610096196}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 0
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -4475,7 +4475,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 300, y: -195}
+  m_AnchoredPosition: {x: 515, y: -330}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &894368488
@@ -4704,7 +4704,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   colorFromLight: 1
   colorMode: 0
-  color: {r: 1, g: 0, b: 0, a: 1}
+  color: {r: 1, g: 1, b: 1, a: 1}
   colorGradient:
     serializedVersion: 2
     key0: {r: 1, g: 1, b: 1, a: 1}
@@ -9815,6 +9815,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
+  _lucina: {fileID: 303806424}
 --- !u!1001 &1788631565
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10622,27 +10623,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2025439121459738180, guid: da8d6495f5bd430449e88a12b6439d77, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2025439121459738180, guid: da8d6495f5bd430449e88a12b6439d77, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2025439121459738180, guid: da8d6495f5bd430449e88a12b6439d77, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 160
       objectReference: {fileID: 0}
     - target: {fileID: 2025439121459738180, guid: da8d6495f5bd430449e88a12b6439d77, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 160
       objectReference: {fileID: 0}
     - target: {fileID: 2025439121459738180, guid: da8d6495f5bd430449e88a12b6439d77, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 2025439121459738180, guid: da8d6495f5bd430449e88a12b6439d77, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -100
       objectReference: {fileID: 0}
     - target: {fileID: 2891282810409729202, guid: da8d6495f5bd430449e88a12b6439d77, type: 3}
       propertyPath: m_AnchorMax.y

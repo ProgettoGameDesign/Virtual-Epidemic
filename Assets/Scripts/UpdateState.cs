@@ -15,6 +15,7 @@ public class UpdateState : MonoBehaviour
 
     void Awake()
     {
+        Cursor.visible = false;
         if(sceneState.stateOfCutscene1 == 3)
         {
             Destroy(_NPC);

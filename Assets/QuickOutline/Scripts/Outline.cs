@@ -89,7 +89,12 @@ public class Outline : MonoBehaviour {
     outlineMaskMaterial = Instantiate(Resources.Load<Material>(@"Materials/OutlineMask"));
     outlineFillMaterial = Instantiate(Resources.Load<Material>(@"Materials/OutlineFill"));
 
-    outlineMaskMaterial.name = "OutlineMask (Instance)";
+        if (outlineMaskMaterial == null || outlineFillMaterial == null)
+        {
+            Debug.LogError("Outline materials not found in Resources folder.");
+        }
+
+        outlineMaskMaterial.name = "OutlineMask (Instance)";
     outlineFillMaterial.name = "OutlineFill (Instance)";
 
     // Retrieve or generate smooth normals
@@ -100,7 +105,10 @@ public class Outline : MonoBehaviour {
   }
 
   void OnEnable() {
-    foreach (var renderer in renderers) {
+
+        Debug.Log("Outline script enabled");
+
+        foreach (var renderer in renderers) {
 
       // Append outline shaders
       var materials = renderer.sharedMaterials.ToList();
