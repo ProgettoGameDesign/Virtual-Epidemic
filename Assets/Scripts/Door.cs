@@ -12,6 +12,7 @@ public class Door : MonoBehaviour, InteractInterface
     //private Vector3 _spawnPosition;
     public SceneState _sceneState;
 
+
     public bool Interact(Interactor interactor)
     {
         if (_prompt == "Exit") {   
@@ -82,6 +83,11 @@ public class Door : MonoBehaviour, InteractInterface
     {
         yield return new WaitForSeconds(0.8f);
         SceneManager.LoadScene(sceneName);
+    }
+
+    private void PlaySound(string path)
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(path, GetComponent<Transform>().position);
     }
 
 }

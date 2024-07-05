@@ -22,13 +22,15 @@ public class Contatore : MonoBehaviour, InteractInterface
     [SerializeField] private StudioEventEmitter musichetta;
     //[SerializeField] private GameObject _NPC;
     public EventInstance eventInstance;
+    public EventInstance eventInstance2;
     public string eventpath = "";
+    public string eventpath2 = "";
 
     public string InteractionPrompt => _prompt;
     private StudioEventEmitter mainCameraEmitter;
     
    
-    private float targetVolume = -24.0f;  // Volume di destinazione (ad esempio abbassare a 20%)
+   
     
 
        void Start()
@@ -61,6 +63,8 @@ public class Contatore : MonoBehaviour, InteractInterface
             _lightTransition.GetComponent<Animator>().SetBool("trigger",true);
             Invoke("ActiveLight", 4);
             Invoke("SwitchTarget",5);
+            LightPrepare();
+
 
         }
         return true;
@@ -103,6 +107,12 @@ public class Contatore : MonoBehaviour, InteractInterface
         musichetta.Play();
 
         
+    }
+
+    private void LightPrepare(){
+        eventInstance2 = RuntimeManager.CreateInstance(eventpath2);
+        eventInstance2.start();
+        eventInstance2.release();
     }
   
 }

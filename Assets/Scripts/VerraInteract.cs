@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Video;
+using FMODUnity;
+using FMOD.Studio;
+
 
 public class VerraInteract : MonoBehaviour, InteractInterface
 {
@@ -15,6 +18,10 @@ public class VerraInteract : MonoBehaviour, InteractInterface
     //[SerializeField] private GameObject _torch;
     [SerializeField] private GameObject _player;
     [SerializeField] private Dialogue dialogue;
+    [SerializeField] private StudioEventEmitter musichina;
+    
+    public string path = "";
+    private StudioEventEmitter mainCameraEmitter;
     
 
 
@@ -26,7 +33,8 @@ public class VerraInteract : MonoBehaviour, InteractInterface
         playerData._torchActive = false;
         playerData.blockMovementPlayer = true;
         canvasWhiteTransition.SetActive(true);
-        
+        AdjustVolume();
+        PlayTransitionSound(path);
         StartCoroutine(HandleCutsceneSequence());
         return true;
     }
@@ -75,6 +83,7 @@ public class VerraInteract : MonoBehaviour, InteractInterface
     }
     private void StartDialogue()
     {
+        Musichina();
         DialogueManager.Instance.StartDialogue(dialogue);
         _player.GetComponent<CheckTorchActive>().enabled = true;
         transition.SetActive(false);
@@ -85,6 +94,25 @@ public class VerraInteract : MonoBehaviour, InteractInterface
         _animatorNerraSveglio.SetBool("trigger", true);
 
     }
+
+    private void PlayTransitionSound(string path)
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(path);
+    }
     
+
+    void Start()
+    {
+        mainCameraEmitter = Camera.main.GetComponent<StudioEventEmitter>();
+    }
+     private void AdjustVolume()
+    {
+        mainCameraEmitter.Stop();
+    }
+    private void Musichina()
+    {
+        musichina.Play();
+
+    }
     
 }
