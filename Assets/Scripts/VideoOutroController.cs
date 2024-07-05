@@ -17,7 +17,7 @@ public class VideoOutroController : MonoBehaviour
         videoPlayer.Play();
 
         // Collega l'evento al metodo che verrà chiamato quando il video sarà finito
-        videoPlayer.loopPointReached += OnVideoEnd;
+        Invoke("OnVideoEnd", 17);
 
         // Imposta la texture del video sul RawImage
         videoPlayer.prepareCompleted += OnVideoPrepared;
@@ -29,7 +29,7 @@ public class VideoOutroController : MonoBehaviour
         rawImage.texture = videoPlayer.texture;
     }
 
-    void OnVideoEnd(VideoPlayer vp)
+    void OnVideoEnd()
     {
         // Carica la scena del menu quando il video finisce
         SceneManager.LoadScene(menuSceneName);
