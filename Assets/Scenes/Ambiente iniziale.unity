@@ -200,11 +200,11 @@ MonoBehaviour:
     dialogueLines:
     - _character:
         _name: Studente
-        _icon: {fileID: 0}
+        _icon: {fileID: 21300000, guid: 61f32f38636dc914985219f2b5f1e86c, type: 3}
       _line: '"hawk tuah! and spit on that thang you get me?" '
     - _character:
         _name: Studente
-        _icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+        _icon: {fileID: 21300000, guid: 61f32f38636dc914985219f2b5f1e86c, type: 3}
       _line: "ma \xE8 da un'ora che guardo questo reel, basta "
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
@@ -2173,7 +2173,7 @@ MonoBehaviour:
     dialogueLines:
     - _character:
         _name: Studente
-        _icon: {fileID: 0}
+        _icon: {fileID: 21300000, guid: 0cedc7269f00f724f860dce49ddb8af8, type: 3}
       _line: I colori del cielo sono incredibili oggi
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
@@ -5460,7 +5460,7 @@ MonoBehaviour:
     dialogueLines:
     - _character:
         _name: Studente
-        _icon: {fileID: 0}
+        _icon: {fileID: 21300000, guid: 9e697c58cda8bd2438511f129b3c5f94, type: 3}
       _line: Non mi vedranno mai quei cretini
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
@@ -6470,7 +6470,7 @@ MonoBehaviour:
     dialogueLines:
     - _character:
         _name: Studente
-        _icon: {fileID: 0}
+        _icon: {fileID: 21300000, guid: d2e70fe592b0bf347a0ece1a5b830530, type: 3}
       _line: Son qua appostato da una vita, possibile che non passi neanche un furry
         da spiare?
   _prompt: NPC
@@ -9234,7 +9234,7 @@ MonoBehaviour:
     dialogueLines:
     - _character:
         _name: Studente
-        _icon: {fileID: 0}
+        _icon: {fileID: 21300000, guid: 49d2552dd6a9c5f4c84b5be873224273, type: 3}
       _line: Ma quei due scemi non si vergognano a stare qua in costume?
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
@@ -9969,45 +9969,45 @@ MonoBehaviour:
     dialogueLines:
     - _character:
         _name: Studente
-        _icon: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
+        _icon: {fileID: 21300000, guid: e5989e5d368734e42a2a6cba0e59507d, type: 3}
       _line: "psss\u2026 psss\u2026"
     - _character:
         _name: Studente
-        _icon: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
+        _icon: {fileID: 21300000, guid: e5989e5d368734e42a2a6cba0e59507d, type: 3}
       _line: "S-sig. G-Gastani Frinzi? Mi \xE8 stato detto di venirle incontro per
         darle qualche informazione... "
     - _character:
         _name: Studente
-        _icon: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
+        _icon: {fileID: 21300000, guid: e5989e5d368734e42a2a6cba0e59507d, type: 3}
       _line: M-mi chiamo G-Gino...
     - _character:
         _name: Gino
-        _icon: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
+        _icon: {fileID: 21300000, guid: e5989e5d368734e42a2a6cba0e59507d, type: 3}
       _line: 'I-Il prof Scottino pare sia rinchiuso nel suo ufficio nelle aule T. '
     - _character:
         _name: Gino
-        _icon: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
+        _icon: {fileID: 21300000, guid: e5989e5d368734e42a2a6cba0e59507d, type: 3}
       _line: P-provi a parlare prima con i professori Nerra e Schiavetti
     - _character:
         _name: Gino
-        _icon: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
+        _icon: {fileID: 21300000, guid: e5989e5d368734e42a2a6cba0e59507d, type: 3}
       _line: L-loro dovrebbero riuscire a darle una mano
     - _character:
         _name: Gino
-        _icon: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
+        _icon: {fileID: 21300000, guid: e5989e5d368734e42a2a6cba0e59507d, type: 3}
       _line: "O-ora scappo, la mia copertura \xE8 saltata, non voglio r-rimanere
         infetto."
     - _character:
         _name: Gino
-        _icon: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
+        _icon: {fileID: 21300000, guid: e5989e5d368734e42a2a6cba0e59507d, type: 3}
       _line: B-BUONA FORTUNA!
     - _character:
         _name: Isp. Gastani Frinzi
-        _icon: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
+        _icon: {fileID: 21300000, guid: 97a54f358f771a7468420273816f4b6d, type: 3}
       _line: Aspetta un attimo! chi ti ha detto di aiutarmi?
     - _character:
         _name: Isp. Gastani Frinzi
-        _icon: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
+        _icon: {fileID: 21300000, guid: 97a54f358f771a7468420273816f4b6d, type: 3}
       _line: Nessuno dovrebbe sapere della mia presenza qui!
 --- !u!1001 &370135838
 PrefabInstance:
@@ -11446,27 +11446,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2025439121459738180, guid: da8d6495f5bd430449e88a12b6439d77, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2025439121459738180, guid: da8d6495f5bd430449e88a12b6439d77, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2025439121459738180, guid: da8d6495f5bd430449e88a12b6439d77, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 160
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2025439121459738180, guid: da8d6495f5bd430449e88a12b6439d77, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 160
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2025439121459738180, guid: da8d6495f5bd430449e88a12b6439d77, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2025439121459738180, guid: da8d6495f5bd430449e88a12b6439d77, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2891282810409729202, guid: da8d6495f5bd430449e88a12b6439d77, type: 3}
       propertyPath: m_AnchorMax.y
@@ -13467,7 +13467,7 @@ MonoBehaviour:
     dialogueLines:
     - _character:
         _name: Studente
-        _icon: {fileID: 0}
+        _icon: {fileID: 21300000, guid: bea458bfbcff0454288023f177e4129a, type: 3}
       _line: "Chiss\xE0 se anche oggi incontro Paperino in mensa\n"
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
@@ -16205,7 +16205,7 @@ MonoBehaviour:
     dialogueLines:
     - _character:
         _name: Studente
-        _icon: {fileID: 0}
+        _icon: {fileID: 21300000, guid: 8abebb220c37cf44b97c4fe5f9de9f21, type: 3}
       _line: L'ultimo episodio poi mi alzo, lo giuro
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
@@ -16853,7 +16853,7 @@ MonoBehaviour:
     dialogueLines:
     - _character:
         _name: Studente
-        _icon: {fileID: 0}
+        _icon: {fileID: 21300000, guid: 2f3082cb0c507544e8a62ed4db7e725a, type: 3}
       _line: "e tippe e tappe e tipidid\xE0..."
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
@@ -19020,19 +19020,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6167146292460915879, guid: 6f9308a9ad3eccc48a77142fbad86f27, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6167146292460915879, guid: 6f9308a9ad3eccc48a77142fbad86f27, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6167146292460915879, guid: 6f9308a9ad3eccc48a77142fbad86f27, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 44.625748
       objectReference: {fileID: 0}
     - target: {fileID: 6167146292460915879, guid: 6f9308a9ad3eccc48a77142fbad86f27, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -42.73655
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19968,7 +19968,7 @@ MonoBehaviour:
     dialogueLines:
     - _character:
         _name: Studente
-        _icon: {fileID: 0}
+        _icon: {fileID: 21300000, guid: a41aa0b804c3a02458ebfa701e226fa7, type: 3}
       _line: "\xC8 fantastico stare qui in costume"
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
@@ -29884,7 +29884,7 @@ MonoBehaviour:
     dialogueLines:
     - _character:
         _name: Studente
-        _icon: {fileID: 0}
+        _icon: {fileID: 21300000, guid: 182e3062d4cf19140bcbdcb8718ad8bb, type: 3}
       _line: Ho giocato troppo mi sa che sto per vomitare...
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
@@ -39902,14 +39902,14 @@ RectTransform:
   m_GameObject: {fileID: 1520193210}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 4}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 542266813}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -214.4, y: -131}
+  m_AnchoredPosition: {x: -204.5, y: -125.6}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1520359658
@@ -42600,7 +42600,7 @@ MonoBehaviour:
     dialogueLines:
     - _character:
         _name: Studente
-        _icon: {fileID: 0}
+        _icon: {fileID: 21300000, guid: edd167d6f8bde5542896f4645e3bf4f8, type: 3}
       _line: Se rimango 45 minuti in questa posizione dovrei sbloccare la skin da
         penitente
   _prompt: NPC
@@ -48694,7 +48694,7 @@ MonoBehaviour:
     dialogueLines:
     - _character:
         _name: Studente
-        _icon: {fileID: 0}
+        _icon: {fileID: 21300000, guid: 828ed8af017b3454b95dbcc0031494bb, type: 3}
       _line: ronf... ronf...
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
@@ -51740,7 +51740,7 @@ MonoBehaviour:
     dialogueLines:
     - _character:
         _name: Studente
-        _icon: {fileID: 0}
+        _icon: {fileID: 21300000, guid: fb3409e81d2846649a27a822cfbb5fbb, type: 3}
       _line: Queste zampe da leopardo delle nevi mi stanno da dio sinceramente
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}

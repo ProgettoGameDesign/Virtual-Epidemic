@@ -3813,27 +3813,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2025439121459738180, guid: da8d6495f5bd430449e88a12b6439d77, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2025439121459738180, guid: da8d6495f5bd430449e88a12b6439d77, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2025439121459738180, guid: da8d6495f5bd430449e88a12b6439d77, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 160
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2025439121459738180, guid: da8d6495f5bd430449e88a12b6439d77, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 160
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2025439121459738180, guid: da8d6495f5bd430449e88a12b6439d77, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2025439121459738180, guid: da8d6495f5bd430449e88a12b6439d77, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2891282810409729202, guid: da8d6495f5bd430449e88a12b6439d77, type: 3}
       propertyPath: m_AnchorMax.y
@@ -6352,7 +6352,7 @@ MonoBehaviour:
     dialogueLines:
     - _character:
         _name: Studente
-        _icon: {fileID: 0}
+        _icon: {fileID: 21300000, guid: 0cedc7269f00f724f860dce49ddb8af8, type: 3}
       _line: Vai schiavo Bidoof, usa taglio!
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
@@ -7954,11 +7954,11 @@ MonoBehaviour:
     dialogueLines:
     - _character:
         _name: Studente
-        _icon: {fileID: 0}
+        _icon: {fileID: 21300000, guid: 2f3082cb0c507544e8a62ed4db7e725a, type: 3}
       _line: 'Qua mi dice che anche i prof Nerra e Schiavetti sono attivi  '
     - _character:
         _name: Studente
-        _icon: {fileID: 0}
+        _icon: {fileID: 21300000, guid: 2f3082cb0c507544e8a62ed4db7e725a, type: 3}
       _line: "sulla mappa per\xF2 non si sa dove siano..."
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
@@ -8211,12 +8211,12 @@ MonoBehaviour:
     dialogueLines:
     - _character:
         _name: Studente
-        _icon: {fileID: 0}
+        _icon: {fileID: 21300000, guid: a41aa0b804c3a02458ebfa701e226fa7, type: 3}
       _line: Ho cambiato la posizione virtuale dei bagni e l'ho messa in fondo al
         corridoio
     - _character:
         _name: Studente
-        _icon: {fileID: 0}
+        _icon: {fileID: 21300000, guid: a41aa0b804c3a02458ebfa701e226fa7, type: 3}
       _line: "chiss\xE0 se qualche rincoglionito ci casca davvero"
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
@@ -9483,14 +9483,14 @@ RectTransform:
   m_GameObject: {fileID: 1588160243}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 4}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1551196407}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -214.4, y: -131}
+  m_AnchoredPosition: {x: -204.5, y: -125.6}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1588160245
