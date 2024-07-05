@@ -37,7 +37,7 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
-        PlaySoundPop();
+        //PlaySoundPop();
         eventInstance = RuntimeManager.CreateInstance(fmodEventPath);
         eventInstance = RuntimeManager.CreateInstance(fmodEventPath2);
         isDialogueActive = true;
@@ -61,7 +61,7 @@ public class DialogueManager : MonoBehaviour
         DialogueLine currentLine = lines.Dequeue();
         characterImage.sprite = currentLine._character._icon;
         characterName.text = currentLine._character._name;
-        PlaySoundPop();
+        //PlaySoundPop();
 
         StopAllCoroutines();
         StartCoroutine(TypeSentence(currentLine));
@@ -84,7 +84,7 @@ public class DialogueManager : MonoBehaviour
         
         isDialogueActive = false;
         _animator.Play("hide");
-        PlaySoundPop();
+        //PlaySoundPop();
         sceneState.blockMovementPlayer = false;
         
         
