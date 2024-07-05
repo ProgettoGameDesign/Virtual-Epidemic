@@ -664,11 +664,11 @@ MonoBehaviour:
     - _character:
         _name: Nerra
         _icon: {fileID: 21300000, guid: 4d9f38fb3008f6d43aafbba7f0c88f9f, type: 3}
-      _line: Grazie per avermi Salvato!!!
+      _line: . . . . .
     - _character:
         _name: Nerra
         _icon: {fileID: 21300000, guid: 4d9f38fb3008f6d43aafbba7f0c88f9f, type: 3}
-      _line: Ecco tieni sto codice e levati dai coglioni...
+      _line: Orson Welles.... sei proprio tu ?
 --- !u!1 &126267890
 GameObject:
   m_ObjectHideFlags: 0
@@ -7833,27 +7833,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2025439121459738180, guid: da8d6495f5bd430449e88a12b6439d77, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2025439121459738180, guid: da8d6495f5bd430449e88a12b6439d77, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2025439121459738180, guid: da8d6495f5bd430449e88a12b6439d77, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 160
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2025439121459738180, guid: da8d6495f5bd430449e88a12b6439d77, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 160
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2025439121459738180, guid: da8d6495f5bd430449e88a12b6439d77, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2025439121459738180, guid: da8d6495f5bd430449e88a12b6439d77, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2891282810409729202, guid: da8d6495f5bd430449e88a12b6439d77, type: 3}
       propertyPath: m_AnchorMax.y
