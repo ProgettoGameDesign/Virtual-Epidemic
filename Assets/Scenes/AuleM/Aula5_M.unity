@@ -280,7 +280,7 @@ GameObject:
   m_Component:
   - component: {fileID: 153586637}
   - component: {fileID: 153586639}
-  - component: {fileID: 153586638}
+  - component: {fileID: 153586640}
   m_Layer: 0
   m_Name: ColorCamera
   m_TagString: Untagged
@@ -303,14 +303,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1970765898}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!81 &153586638
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 153586636}
-  m_Enabled: 1
 --- !u!20 &153586639
 Camera:
   m_ObjectHideFlags: 0
@@ -362,6 +354,19 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &153586640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153586636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
 --- !u!1001 &177303027
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6974,19 +6979,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6167146292460915879, guid: 6f9308a9ad3eccc48a77142fbad86f27, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6167146292460915879, guid: 6f9308a9ad3eccc48a77142fbad86f27, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6167146292460915879, guid: 6f9308a9ad3eccc48a77142fbad86f27, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 44.625748
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6167146292460915879, guid: 6f9308a9ad3eccc48a77142fbad86f27, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -42.73655
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7039,9 +7044,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1124610234}
   - component: {fileID: 1124610233}
-  - component: {fileID: 1124610232}
   - component: {fileID: 1124610230}
   - component: {fileID: 1124610231}
+  - component: {fileID: 1124610235}
   m_Layer: 0
   m_Name: InspectCamera
   m_TagString: Untagged
@@ -7076,14 +7081,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 628214017}
---- !u!81 &1124610232
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1124610229}
-  m_Enabled: 1
 --- !u!20 &1124610233
 Camera:
   m_ObjectHideFlags: 0
@@ -7158,6 +7155,19 @@ Transform:
   - {fileID: 756938326}
   m_Father: {fileID: 31126858}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1124610235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1124610229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
 --- !u!1001 &1174610872
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11084,7 +11094,7 @@ MonoBehaviour:
   AllowNonRigidbodyDoppler: 0
   Params:
   - Name: Luogo
-    Value: 1
+    Value: 3
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20

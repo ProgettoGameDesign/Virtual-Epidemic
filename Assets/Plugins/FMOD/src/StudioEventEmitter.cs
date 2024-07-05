@@ -89,6 +89,7 @@ namespace FMODUnity
             // If at least one listener is within the max distance, ensure an event instance is playing
             bool playInstance = StudioListener.DistanceSquaredToNearestListener(transform.position) <= (MaxDistance * MaxDistance);
 
+            
             if (force || playInstance != IsPlaying())
             {
                 if (playInstance)

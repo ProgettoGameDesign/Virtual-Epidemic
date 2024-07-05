@@ -167,7 +167,7 @@ public class TPM_characterController : MonoBehaviour
     private int DetectTerrain()
     {
         RaycastHit hit;
-        if (Physics.Raycast(transform.position, Vector3.down, out hit, 2.5f, _groundMask))
+        if (Physics.Raycast(transform.position, Vector3.down, out hit, 0.3f, _groundMask))
         {
             if (hit.collider != null)
             {
