@@ -19,12 +19,14 @@ public class Contatore : MonoBehaviour, InteractInterface
     [SerializeField] private Animator _NPCanimator;
     [SerializeField] private Button textcanvas;
     [SerializeField] private GameObject canvasContatore;
+    [SerializeField] private StudioEventEmitter musichetta;
     //[SerializeField] private GameObject _NPC;
     public EventInstance eventInstance;
     public string eventpath = "";
 
     public string InteractionPrompt => _prompt;
     private StudioEventEmitter mainCameraEmitter;
+    
    
     private float targetVolume = -24.0f;  // Volume di destinazione (ad esempio abbassare a 20%)
     
@@ -33,6 +35,7 @@ public class Contatore : MonoBehaviour, InteractInterface
     {
         // Ottieni il riferimento al FMOD Event Emitter sulla Main Camera
         mainCameraEmitter = Camera.main.GetComponent<StudioEventEmitter>();
+        
 
     }
     
@@ -96,8 +99,9 @@ public class Contatore : MonoBehaviour, InteractInterface
 
     private void AdjustVolume()
     {
-        mainCameraEmitter.SetParameter("Volume", targetVolume);
-        mainCameraEmitter.SetParameter("VolumeRamp", 1 );
+        mainCameraEmitter.Stop();
+        musichetta.Play();
+
         
     }
   

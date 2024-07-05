@@ -33,7 +33,7 @@ public class TPM_characterController : MonoBehaviour
     private bool _isGrounded;
     private string actualScene;
     private EventInstance playerFootsteps;
-
+    
     void Awake()
     {
         actualScene = SceneManager.GetActiveScene().name;
@@ -146,7 +146,8 @@ public class TPM_characterController : MonoBehaviour
         {
             PLAYBACK_STATE playbackState;
             playerFootsteps.getPlaybackState(out playbackState);
-
+            
+            
             int terrainType = DetectTerrain();
             playerFootsteps.setParameterByName("Terrain", (int)terrainType);
             
@@ -154,6 +155,7 @@ public class TPM_characterController : MonoBehaviour
             if (playbackState.Equals(PLAYBACK_STATE.STOPPED))
             {
                 playerFootsteps.start();
+                
             }
 
         }
@@ -167,22 +169,21 @@ public class TPM_characterController : MonoBehaviour
     private int DetectTerrain()
     {
         RaycastHit hit;
-        if (Physics.Raycast(transform.position, Vector3.down, out hit, 0.3f, _groundMask))
+        if (Physics.Raycast(transform.position, Vector3.down, out hit, 2.0f))
         {
             if (hit.collider != null)
             {
                 Renderer renderer = hit.collider.GetComponent<Renderer>();
-                if (renderer != null && renderer.sharedMaterial != null)
+                if (renderer != null)
                 {
                     UnityEngine.Debug.Log("Terreno rilevato: " + renderer.sharedMaterial.name);
-                    if (renderer.sharedMaterial.name == "Pavimento Cortile")
-                    {
-                        return 0;
-                    }
-                    else if (renderer.sharedMaterial.name == "Prato")
+                    if (hit.collider.gameObject.layer == 15)
                     {
                         return 1;
                     }
+                    else 
+                        return 0;
+                    
 
                 }
             }
