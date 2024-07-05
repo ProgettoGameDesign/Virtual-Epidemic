@@ -15069,7 +15069,7 @@ MonoBehaviour:
   display5: {fileID: 1216880204}
   display6: {fileID: 2144172631}
   tastierinoSulMuro: {fileID: 2131862401}
-  canvasDaDistruggere: {fileID: 2025750242}
+  canvasDaDistruggere: {fileID: 962271006}
 --- !u!114 &732337846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18005,19 +18005,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6167146292460915879, guid: 6f9308a9ad3eccc48a77142fbad86f27, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6167146292460915879, guid: 6f9308a9ad3eccc48a77142fbad86f27, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6167146292460915879, guid: 6f9308a9ad3eccc48a77142fbad86f27, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 44.625748
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6167146292460915879, guid: 6f9308a9ad3eccc48a77142fbad86f27, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -42.73655
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -30814,8 +30814,8 @@ MonoBehaviour:
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
   colliderConversazione: {fileID: 366185925}
   dissolvenzaIniziale: {fileID: 2043144205}
-  animatorPorta1: {fileID: 413155422}
-  animatorPorta2: {fileID: 1727548391}
+  animatorPorta1: {fileID: 2096005332}
+  animatorPorta2: {fileID: 1414518231}
 --- !u!4 &1358835698
 Transform:
   m_ObjectHideFlags: 0

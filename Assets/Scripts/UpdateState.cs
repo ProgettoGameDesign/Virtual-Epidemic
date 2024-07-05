@@ -33,7 +33,7 @@ public class UpdateState : MonoBehaviour
             _porta.layer = 7;
             animatorPorta1.SetBool("endgame", true);
             animatorPorta2.SetBool("endgame", true);
-            Invoke("StartFinalCutsce", 2f);
+            Invoke("StartFinalCutsce", 2.5f);
         }
     }
     void StartFinalCutsce()
