@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using FMODUnity;
+using FMOD.Studio;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -17,16 +19,27 @@ public class DialogueManager : MonoBehaviour
     public float typingSpeed = 3f;
     public Animator _animator;
     public SceneState sceneState;
+
+    private string fmodEventPath = "event:/UI/Dialogues2";
+    private string fmodEventPath2 = "event:/UI/Dialogues";
+
+    EventInstance eventInstance;
+    EventInstance eventInstance2;
     private void Awake()
     {
         if (Instance == null)
             Instance = this;
  
         lines = new Queue<DialogueLine>();
+      
+
     }
 
     public void StartDialogue(Dialogue dialogue)
     {
+        PlaySoundPop();
+        eventInstance = RuntimeManager.CreateInstance(fmodEventPath);
+        eventInstance = RuntimeManager.CreateInstance(fmodEventPath2);
         isDialogueActive = true;
         _animator.Play("show");
         lines.Clear();
@@ -35,6 +48,8 @@ public class DialogueManager : MonoBehaviour
             lines.Enqueue(dialogueLine);
         }
         DisplayNextDialogueLine();
+        
+
     }
     public void DisplayNextDialogueLine()
     {
@@ -46,6 +61,7 @@ public class DialogueManager : MonoBehaviour
         DialogueLine currentLine = lines.Dequeue();
         characterImage.sprite = currentLine._character._icon;
         characterName.text = currentLine._character._name;
+        PlaySoundPop();
 
         StopAllCoroutines();
         StartCoroutine(TypeSentence(currentLine));
@@ -53,9 +69,11 @@ public class DialogueManager : MonoBehaviour
 
     IEnumerator TypeSentence(DialogueLine dialogueLine)
     {
+        
         dialogueArea.text = "";
         foreach (char letter in dialogueLine._line.ToCharArray())
         {
+            
             dialogueArea.text += letter;
             yield return new WaitForSeconds(typingSpeed);
         }
@@ -63,10 +81,24 @@ public class DialogueManager : MonoBehaviour
 
     void EndDialogue()
     {
+        
         isDialogueActive = false;
         _animator.Play("hide");
+        PlaySoundPop();
         sceneState.blockMovementPlayer = false;
+        
+        
+
         //sceneState.NPCtrig1 = 2;
+    }
+
+    private void PlaySoundPop()
+    {
+        
+        eventInstance = RuntimeManager.CreateInstance(fmodEventPath);
+        eventInstance.start();
+        eventInstance.release();
+
     }
 
     

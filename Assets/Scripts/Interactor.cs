@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using FMOD.Studio;
+using FMODUnity;
 using JetBrains.Annotations;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -12,6 +14,8 @@ public class Interactor : MonoBehaviour
     [SerializeField] private LayerMask _interactableMask; // tutti gli oggetti con cui puoi interagire hanno lo stesso layer
 
     private Collider[] _colliders = new Collider[2]; // può avere un massimo di 2 oggetti interagibili alla volta
+    private string fmodEventPath="event:/Catch";
+    private EventInstance eventInstance;
 
     private Transform[] allTransforms;
     //private InteractInterface interactable2; // questo servirà nel solo caso ci sia un secondo oggetto interagibile
@@ -33,12 +37,19 @@ public class Interactor : MonoBehaviour
               //  interactable2 = _colliders[1].GetComponent<InteractInterface>();
             //string _tagToSearch = interactable.InteractionPrompt;
             if (interactable != null && Input.GetKeyUp(KeyCode.E)) {
-                interactable.Interact(this); // richiamo il metodo Interact
+                interactable.Interact(this); 
+                eventInstance = RuntimeManager.CreateInstance(fmodEventPath);
+                eventInstance.start();
+                eventInstance.release();
+                
+                // richiamo il metodo Interact
                 //if (interactable2 != null)
                 //interactable2.Interact(this);
                 //if (_tagToSearch == "Torch") {
                     //PanelActivation(_tagToSearch);
                     //}
+
+
             }
            
         }
