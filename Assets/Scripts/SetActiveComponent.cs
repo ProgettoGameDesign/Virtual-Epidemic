@@ -13,7 +13,7 @@ public class SetActive : MonoBehaviour
         {
             gameObject.layer = 7;
             gameObject.GetComponent<LightDoor>().enabled = true;
-
+            gameObject.GetComponent<Outline>().enabled = true;
         }
     }
 }

@@ -61,6 +61,7 @@ public class ManagerTastierino : MonoBehaviour
     private IEnumerator SequenzaGiusta()
     {
         yield return new WaitForSeconds(timeToWait+1);
+        gameObject.GetComponent<LightDoor>().enabled = false;
         tastierinoToDisappear.SetActive(false);
         
         sceneState.tastierino = true;
