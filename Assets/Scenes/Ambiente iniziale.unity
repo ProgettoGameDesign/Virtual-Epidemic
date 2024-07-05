@@ -10025,7 +10025,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35f8051288ab841a7b9aacc20d0edad9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fmodEventPath: event:/UI
 --- !u!1 &400007188
 GameObject:
   m_ObjectHideFlags: 0
@@ -13108,7 +13107,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35f8051288ab841a7b9aacc20d0edad9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fmodEventPath: event:/UI
 --- !u!1001 &550906936
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20264,6 +20262,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 290121900711485693, guid: 9ac7706d19437624bb7c7ef961623bff, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 934565400}
+    - target: {fileID: 290121900711485693, guid: 9ac7706d19437624bb7c7ef961623bff, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetVolume
+      objectReference: {fileID: 0}
+    - target: {fileID: 290121900711485693, guid: 9ac7706d19437624bb7c7ef961623bff, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: VcaController, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 415631014685009138, guid: 9ac7706d19437624bb7c7ef961623bff, type: 3}
       propertyPath: Camera
       value: 
@@ -20291,6 +20301,18 @@ PrefabInstance:
     - target: {fileID: 833554300131224359, guid: 9ac7706d19437624bb7c7ef961623bff, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460533242033174103, guid: 9ac7706d19437624bb7c7ef961623bff, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 934565401}
+    - target: {fileID: 1460533242033174103, guid: 9ac7706d19437624bb7c7ef961623bff, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetVolume
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460533242033174103, guid: 9ac7706d19437624bb7c7ef961623bff, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: VcaController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1472865904784747393, guid: 9ac7706d19437624bb7c7ef961623bff, type: 3}
       propertyPath: m_sharedMaterial
@@ -20643,10 +20665,52 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8492331984925344945, guid: 9ac7706d19437624bb7c7ef961623bff, type: 3}
       insertIndex: -1
       addedObject: {fileID: 396966815}
+    - targetCorrespondingSourceObject: {fileID: 8117719965989932229, guid: 9ac7706d19437624bb7c7ef961623bff, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 934565401}
+    - targetCorrespondingSourceObject: {fileID: 755265327537210298, guid: 9ac7706d19437624bb7c7ef961623bff, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 934565400}
     - targetCorrespondingSourceObject: {fileID: 6420496307834070036, guid: 9ac7706d19437624bb7c7ef961623bff, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1843993427}
   m_SourcePrefab: {fileID: 100100000, guid: 9ac7706d19437624bb7c7ef961623bff, type: 3}
+--- !u!1 &934565398 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 755265327537210298, guid: 9ac7706d19437624bb7c7ef961623bff, type: 3}
+  m_PrefabInstance: {fileID: 934565397}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &934565399 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8117719965989932229, guid: 9ac7706d19437624bb7c7ef961623bff, type: 3}
+  m_PrefabInstance: {fileID: 934565397}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &934565400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 934565398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10949a45fda1047b7b68fdccf9342470, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  path: vca:/SFX
+--- !u!114 &934565401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 934565399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10949a45fda1047b7b68fdccf9342470, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  path: vca:/Music
 --- !u!1 &955349489
 GameObject:
   m_ObjectHideFlags: 0
@@ -31928,7 +31992,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35f8051288ab841a7b9aacc20d0edad9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fmodEventPath: event:/UI
 --- !u!1001 &1340190672
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -47139,7 +47202,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a1993976e42f46e285b6c42858d24d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fmodEventPath: event:/UI
 --- !u!1 &1851285936
 GameObject:
   m_ObjectHideFlags: 0

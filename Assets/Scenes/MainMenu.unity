@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -388,7 +388,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a1993976e42f46e285b6c42858d24d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fmodEventPath: event:/UI
 --- !u!114 &10827350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -783,7 +782,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35f8051288ab841a7b9aacc20d0edad9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fmodEventPath: event:/UI
 --- !u!114 &69501459
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -796,7 +794,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a1993976e42f46e285b6c42858d24d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fmodEventPath: event:/UI
 --- !u!114 &69501460
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1820,7 +1817,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35f8051288ab841a7b9aacc20d0edad9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fmodEventPath: event:/UI
 --- !u!114 &285272652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1864,6 +1860,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PauseMenuCanvas: {fileID: 0}
+  inspectManager: {fileID: 0}
   fmodEventPath1: 
 --- !u!4 &307839078
 Transform:
@@ -2061,7 +2058,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35f8051288ab841a7b9aacc20d0edad9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fmodEventPath: event:/UI
 --- !u!114 &312963410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3533,7 +3529,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a1993976e42f46e285b6c42858d24d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fmodEventPath: event:/UI
 --- !u!114 &1191716216
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4083,7 +4078,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a1993976e42f46e285b6c42858d24d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fmodEventPath: event:/UI
 --- !u!114 &1302424324
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4290,7 +4284,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35f8051288ab841a7b9aacc20d0edad9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fmodEventPath: event:/UI
 --- !u!114 &1318149825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4523,6 +4516,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1436531526}
   - component: {fileID: 1436531527}
+  - component: {fileID: 1436531528}
   m_Layer: 5
   m_Name: VolumeFxSlider
   m_TagString: Untagged
@@ -4603,9 +4597,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2123904864}
-        m_TargetAssemblyTypeName: SettingsMenu, Assembly-CSharp
-        m_MethodName: SetVolumeFx
+      - m_Target: {fileID: 1436531528}
+        m_TargetAssemblyTypeName: VcaController, Assembly-CSharp
+        m_MethodName: SetVolume
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4615,6 +4609,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1436531528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1436531525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10949a45fda1047b7b68fdccf9342470, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  path: vca:/SFX
 --- !u!1 &1467632219
 GameObject:
   m_ObjectHideFlags: 0
@@ -4808,7 +4815,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35f8051288ab841a7b9aacc20d0edad9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fmodEventPath: event:/UI
 --- !u!114 &1467632226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4832,6 +4838,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1468662690}
   - component: {fileID: 1468662689}
+  - component: {fileID: 1468662691}
   m_Layer: 5
   m_Name: VolumeMusicSlider
   m_TagString: Untagged
@@ -4890,9 +4897,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2123904864}
-        m_TargetAssemblyTypeName: SettingsMenu, Assembly-CSharp
-        m_MethodName: SetVolumeMusic
+      - m_Target: {fileID: 1468662691}
+        m_TargetAssemblyTypeName: VcaController, Assembly-CSharp
+        m_MethodName: SetVolume
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4924,6 +4931,19 @@ RectTransform:
   m_AnchoredPosition: {x: -374, y: 89}
   m_SizeDelta: {x: 130, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1468662691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1468662688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10949a45fda1047b7b68fdccf9342470, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  path: vca:/Music
 --- !u!1 &1503303154
 GameObject:
   m_ObjectHideFlags: 0
