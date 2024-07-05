@@ -612,7 +612,7 @@ MonoBehaviour:
     dialogueLines:
     - _character:
         _name: Studente
-        _icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+        _icon: {fileID: 0}
       _line: "Un cretino in aula 1 ha appena comprato il mio corso \"Rich and well
         endowed\" per 1500\u20AC"
   _prompt: NPC
@@ -2594,7 +2594,7 @@ MonoBehaviour:
     dialogueLines:
     - _character:
         _name: Studente
-        _icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+        _icon: {fileID: 0}
       _line: Tutto sto tempo in questa posizione e la skin da penitente fa pure schifo...
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
@@ -9925,19 +9925,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6167146292460915879, guid: 6f9308a9ad3eccc48a77142fbad86f27, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6167146292460915879, guid: 6f9308a9ad3eccc48a77142fbad86f27, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6167146292460915879, guid: 6f9308a9ad3eccc48a77142fbad86f27, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 44.625748
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6167146292460915879, guid: 6f9308a9ad3eccc48a77142fbad86f27, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -42.73655
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10544,7 +10544,7 @@ MonoBehaviour:
     dialogueLines:
     - _character:
         _name: Studente
-        _icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+        _icon: {fileID: 0}
       _line: Questa lavagna ha degli strani riflessi verdi
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
@@ -11031,7 +11031,7 @@ MonoBehaviour:
     dialogueLines:
     - _character:
         _name: Studente
-        _icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+        _icon: {fileID: 0}
       _line: Shhh Raga arriva la mia scena preferita
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}

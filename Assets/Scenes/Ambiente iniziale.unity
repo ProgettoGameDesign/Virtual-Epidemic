@@ -200,7 +200,7 @@ MonoBehaviour:
     dialogueLines:
     - _character:
         _name: Studente
-        _icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+        _icon: {fileID: 0}
       _line: '"hawk tuah! and spit on that thang you get me?" '
     - _character:
         _name: Studente
@@ -2173,7 +2173,7 @@ MonoBehaviour:
     dialogueLines:
     - _character:
         _name: Studente
-        _icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+        _icon: {fileID: 0}
       _line: I colori del cielo sono incredibili oggi
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
@@ -5460,7 +5460,7 @@ MonoBehaviour:
     dialogueLines:
     - _character:
         _name: Studente
-        _icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+        _icon: {fileID: 0}
       _line: Non mi vedranno mai quei cretini
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
@@ -6470,7 +6470,7 @@ MonoBehaviour:
     dialogueLines:
     - _character:
         _name: Studente
-        _icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+        _icon: {fileID: 0}
       _line: Son qua appostato da una vita, possibile che non passi neanche un furry
         da spiare?
   _prompt: NPC
@@ -9234,7 +9234,7 @@ MonoBehaviour:
     dialogueLines:
     - _character:
         _name: Studente
-        _icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+        _icon: {fileID: 0}
       _line: Ma quei due scemi non si vergognano a stare qua in costume?
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
@@ -13463,7 +13463,7 @@ MonoBehaviour:
     dialogueLines:
     - _character:
         _name: Studente
-        _icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+        _icon: {fileID: 0}
       _line: "Chiss\xE0 se anche oggi incontro Paperino in mensa\n"
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
@@ -16201,7 +16201,7 @@ MonoBehaviour:
     dialogueLines:
     - _character:
         _name: Studente
-        _icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+        _icon: {fileID: 0}
       _line: L'ultimo episodio poi mi alzo, lo giuro
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
@@ -16849,7 +16849,7 @@ MonoBehaviour:
     dialogueLines:
     - _character:
         _name: Studente
-        _icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+        _icon: {fileID: 0}
       _line: "e tippe e tappe e tipidid\xE0..."
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
@@ -19964,7 +19964,7 @@ MonoBehaviour:
     dialogueLines:
     - _character:
         _name: Studente
-        _icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+        _icon: {fileID: 0}
       _line: "\xC8 fantastico stare qui in costume"
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
@@ -29785,7 +29785,7 @@ MonoBehaviour:
     dialogueLines:
     - _character:
         _name: Studente
-        _icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+        _icon: {fileID: 0}
       _line: Ho giocato troppo mi sa che sto per vomitare...
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
@@ -42501,7 +42501,7 @@ MonoBehaviour:
     dialogueLines:
     - _character:
         _name: Studente
-        _icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+        _icon: {fileID: 0}
       _line: Se rimango 45 minuti in questa posizione dovrei sbloccare la skin da
         penitente
   _prompt: NPC
@@ -48595,7 +48595,7 @@ MonoBehaviour:
     dialogueLines:
     - _character:
         _name: Studente
-        _icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+        _icon: {fileID: 0}
       _line: ronf... ronf...
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
@@ -51641,7 +51641,7 @@ MonoBehaviour:
     dialogueLines:
     - _character:
         _name: Studente
-        _icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+        _icon: {fileID: 0}
       _line: Queste zampe da leopardo delle nevi mi stanno da dio sinceramente
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
