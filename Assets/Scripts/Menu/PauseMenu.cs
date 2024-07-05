@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 using FMODUnity;
 using UnityEngine.EventSystems;
 using UnityEngine.Video;
+using UnityEngine.UI;
 
 
 public class PauseMenu : MonoBehaviour
@@ -13,6 +14,10 @@ public class PauseMenu : MonoBehaviour
 
     public GameObject PauseMenuCanvas;
     public VideoPlayer VideoPlayer;
+    public Camera Camera; //aggiunta
+    public RenderTexture RenderTexture; //aggiunta
+    public RawImage RawImage;
+     
 
     private EventInstance eventInstance;
     public string fmodEventPath1 = "event:/UI";
@@ -42,10 +47,13 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
+
     void Stop()
     {
-        PauseMenuCanvas.SetActive(true);
+
+        //Camera.targetTexture = RenderTexture; //aggiunta
         Time.timeScale = 0f;
+        PauseMenuCanvas.SetActive(true);
         Paused = true;
         VideoPlayer.Pause();
 
@@ -67,6 +75,8 @@ public class PauseMenu : MonoBehaviour
     public void Play()
     {
         PauseMenuCanvas.SetActive(false);
+        //Camera.targetTexture = null; //aggiunta
+
         Time.timeScale = 1f;
         Paused = false;
         VideoPlayer.Play();
@@ -85,6 +95,7 @@ public class PauseMenu : MonoBehaviour
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
         SceneManager.LoadScene(0); //per andare al MainMenu
         PauseMenuCanvas.SetActive(false);
+        Camera.targetTexture = null; //aggiunta
         Time.timeScale = 1f;
         Paused = false;
     }
