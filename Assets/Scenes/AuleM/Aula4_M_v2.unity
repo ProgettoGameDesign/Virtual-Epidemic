@@ -541,6 +541,7 @@ MonoBehaviour:
   _prompt: Diario
   inventoryData: {fileID: 0}
   item1: {fileID: 0}
+  tutorialVideoCamera: {fileID: 0}
 --- !u!1 &473034853
 GameObject:
   m_ObjectHideFlags: 0
@@ -1443,7 +1444,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a9c438286ba742429a8c5b523368b7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _torch: {fileID: 911012109}
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
 --- !u!1 &929520636
 GameObject:
@@ -1773,6 +1773,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerData: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
+  _torciaCamera: {fileID: 0}
 --- !u!1 &1210400224
 GameObject:
   m_ObjectHideFlags: 0
@@ -1880,7 +1881,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a9c438286ba742429a8c5b523368b7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _torch: {fileID: 1210400225}
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
 --- !u!1 &1231009038
 GameObject:
@@ -4270,6 +4270,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerData: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
+  _torciaCamera: {fileID: 0}
 --- !u!114 &1402619407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4923,6 +4924,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
+  _lucina: {fileID: 0}
 --- !u!1001 &1777364178
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5195,9 +5197,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1970765898}
   - component: {fileID: 1970765897}
-  - component: {fileID: 1970765896}
   - component: {fileID: 1970765899}
   - component: {fileID: 1970765900}
+  - component: {fileID: 1970765901}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -5205,14 +5207,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1970765896
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1970765895}
-  m_Enabled: 1
 --- !u!20 &1970765897
 Camera:
   m_ObjectHideFlags: 0
@@ -5347,6 +5341,19 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
+--- !u!114 &1970765901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1970765895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
 --- !u!1 &2027340055
 GameObject:
   m_ObjectHideFlags: 0

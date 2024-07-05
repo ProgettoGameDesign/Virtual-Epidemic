@@ -7285,7 +7285,7 @@ GameObject:
   m_Component:
   - component: {fileID: 900954979}
   - component: {fileID: 900954981}
-  - component: {fileID: 900954980}
+  - component: {fileID: 900954982}
   m_Layer: 0
   m_Name: ColorCamera
   m_TagString: Untagged
@@ -7308,14 +7308,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1970765898}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!81 &900954980
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 900954978}
-  m_Enabled: 1
 --- !u!20 &900954981
 Camera:
   m_ObjectHideFlags: 0
@@ -7367,6 +7359,19 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &900954982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 900954978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
 --- !u!1 &912515511
 GameObject:
   m_ObjectHideFlags: 0
@@ -10897,9 +10902,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1237181360}
   - component: {fileID: 1237181359}
-  - component: {fileID: 1237181358}
   - component: {fileID: 1237181356}
   - component: {fileID: 1237181357}
+  - component: {fileID: 1237181361}
   m_Layer: 0
   m_Name: InspectCamera
   m_TagString: Untagged
@@ -10934,14 +10939,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 1824578920}
---- !u!81 &1237181358
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1237181355}
-  m_Enabled: 1
 --- !u!20 &1237181359
 Camera:
   m_ObjectHideFlags: 0
@@ -11016,6 +11013,19 @@ Transform:
   - {fileID: 1781169335}
   m_Father: {fileID: 1403943888}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1237181361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1237181355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
 --- !u!1 &1246547702
 GameObject:
   m_ObjectHideFlags: 0
@@ -19550,19 +19560,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6167146292460915879, guid: 6f9308a9ad3eccc48a77142fbad86f27, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6167146292460915879, guid: 6f9308a9ad3eccc48a77142fbad86f27, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6167146292460915879, guid: 6f9308a9ad3eccc48a77142fbad86f27, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 44.625748
       objectReference: {fileID: 0}
     - target: {fileID: 6167146292460915879, guid: 6f9308a9ad3eccc48a77142fbad86f27, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -42.73655
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21888,7 +21898,7 @@ MonoBehaviour:
   AllowNonRigidbodyDoppler: 0
   Params:
   - Name: Luogo
-    Value: 1
+    Value: 3
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
@@ -23878,6 +23888,7 @@ MonoBehaviour:
   _NPCanimator: {fileID: 1482499397}
   textcanvas: {fileID: 815871429}
   canvasContatore: {fileID: 462509310}
+  eventpath: event:/Luce
 --- !u!114 &6908453356006550727
 MonoBehaviour:
   m_ObjectHideFlags: 0
