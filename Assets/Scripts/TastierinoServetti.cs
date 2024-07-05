@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
+using FMOD.Studio;
+using FMOD;
 
 public class TastierinoServetti : MonoBehaviour
 {
@@ -18,6 +21,7 @@ public class TastierinoServetti : MonoBehaviour
     [SerializeField] GameObject display6;
     [SerializeField] GameObject tastierinoSulMuro;
     [SerializeField] GameObject canvasDaDistruggere;
+    private StudioEventEmitter mainCameraEmitter;
     
 
     // Start is called before the first frame update
@@ -43,10 +47,12 @@ public class TastierinoServetti : MonoBehaviour
                 animator.Play("hide");
                 StartCoroutine(SequenzaGiusta());
                 tastierinoSulMuro.layer = 0;
-                Debug.Log("Sequenza corretta! La porta si apre.");
+                UnityEngine.Debug.Log("Sequenza corretta! La porta si apre.");
                 //currentSequence = "";
                 
                 sceneState.tastierinoServetti = true;
+                Invoke("StopMusic", 2.5f);
+
                 
             }
             else
@@ -56,7 +62,7 @@ public class TastierinoServetti : MonoBehaviour
                 //_outlineDisplay.OutlineColor = Color.red;
                 //_outlineDisplay.enabled = true;
                 StartCoroutine(SequenzaSbagliata());
-                Debug.Log("Sequenza sbagliata! Ripristino.");
+                UnityEngine.Debug.Log("Sequenza sbagliata! Ripristino.");
                 // Resetta la sequenza
                 
                 //displayText.text = currentSequence;
@@ -95,8 +101,8 @@ public class TastierinoServetti : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(currentSequence);
-        Debug.Log(correctSequence);
+        UnityEngine.Debug.Log(currentSequence);
+        UnityEngine.Debug.Log(correctSequence);
         
     }
     public void IlluminaDisplay(string colore)
@@ -123,5 +129,11 @@ public class TastierinoServetti : MonoBehaviour
         display4.GetComponent<Renderer>().material.color = Color.white;
         display5.GetComponent<Renderer>().material.color = Color.white;
         display6.GetComponent<Renderer>().material.color = Color.white;
+    }
+    private void StopMusic()
+    {
+        mainCameraEmitter = Camera.main.GetComponent<StudioEventEmitter>();
+        mainCameraEmitter.Stop();
+
     }
 }
