@@ -5,13 +5,15 @@ using UnityEngine.UI; // Necessario per interagire con il pulsante UI
 using FMODUnity; // Necessario per utilizzare FMOD
 using FMOD.Studio; // Necessario per lavorare con gli eventi FMOD
 
-public class ButtonSound : MonoBehaviour
+public class ButtonSoundVideo2 : MonoBehaviour
 {
     // Assicurati di assegnare questo campo nell'Inspector di Unity
     private string fmodEventPath = "event:/UI";
 
     private Button button;
     private EventInstance eventInstance;
+    private EventInstance mainCameraEventInstance;
+    [SerializeField] StudioEventEmitter mainCameraEmitter;
 
     void Start()
     {
@@ -28,6 +30,15 @@ public class ButtonSound : MonoBehaviour
         // Creare un'istanza dell'evento
         eventInstance = RuntimeManager.CreateInstance(fmodEventPath);
         
+       
+        if (mainCameraEmitter != null)
+        {
+            mainCameraEventInstance = mainCameraEmitter.EventInstance;
+        }
+        else
+        {
+            Debug.LogError("Main Camera does not have a StudioEventEmitter component.");
+        }
     }
 
     void PlaySound()
@@ -40,7 +51,12 @@ public class ButtonSound : MonoBehaviour
 
         // Rilascia l'istanza dopo aver riprodotto il suono
         eventInstance.release();
+
+       
+        mainCameraEventInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
     }
+          
+    
 
     void OnDestroy()
     {
