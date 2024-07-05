@@ -39,9 +39,7 @@ public class ManagerTastierino : MonoBehaviour
                 animator.Play("hide");
                 StartCoroutine(SequenzaGiusta());
                 
-                //currentSequence = "";
                 
-                //sceneState.tastierino = true;
                 
             }
             else

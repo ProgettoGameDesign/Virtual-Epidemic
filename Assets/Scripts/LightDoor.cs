@@ -12,7 +12,7 @@ public class LightDoor : MonoBehaviour
         _outlinescript.enabled = false;
          
     }
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if (other.CompareTag("Player"))
             _outlinescript.enabled = true;
