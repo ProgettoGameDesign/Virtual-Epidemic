@@ -609,7 +609,7 @@ MonoBehaviour:
     dialogueLines:
     - _character:
         _name: Studente
-        _icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+        _icon: {fileID: 0}
       _line: Mi prendo... solo un minuto... di pausa.... zzz...
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
@@ -813,7 +813,7 @@ MonoBehaviour:
     dialogueLines:
     - _character:
         _name: Studente
-        _icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+        _icon: {fileID: 0}
       _line: "\xC8 tutto cos\xEC... fantastico... potrei rimanerci per sempre..."
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
@@ -3413,7 +3413,7 @@ MonoBehaviour:
     dialogueLines:
     - _character:
         _name: Studente
-        _icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+        _icon: {fileID: 0}
       _line: "Oooh \xE8 uscita l'espansione MDMA nel pacchetto droghe pesanti, ci
         voleva tanto?"
   _prompt: NPC
@@ -4067,7 +4067,7 @@ MonoBehaviour:
     dialogueLines:
     - _character:
         _name: Studente
-        _icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+        _icon: {fileID: 0}
       _line: Implementeranno mai i raggi x?
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
@@ -4702,7 +4702,7 @@ MonoBehaviour:
     dialogueLines:
     - _character:
         _name: Studente
-        _icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+        _icon: {fileID: 0}
       _line: Mi sembra di avere tempo infinito...
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
@@ -6025,6 +6025,34 @@ PrefabInstance:
       propertyPath: inspectManager
       value: 
       objectReference: {fileID: 351316887}
+    - target: {fileID: 2137633780226942020, guid: 9ac7706d19437624bb7c7ef961623bff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2137633780226942020, guid: 9ac7706d19437624bb7c7ef961623bff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2137633780226942020, guid: 9ac7706d19437624bb7c7ef961623bff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 351316887}
+    - target: {fileID: 2137633780226942020, guid: 9ac7706d19437624bb7c7ef961623bff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2137633780226942020, guid: 9ac7706d19437624bb7c7ef961623bff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: TogliBlur
+      objectReference: {fileID: 0}
+    - target: {fileID: 2137633780226942020, guid: 9ac7706d19437624bb7c7ef961623bff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: CGT.InspectManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2137633780226942020, guid: 9ac7706d19437624bb7c7ef961623bff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4784986893525027376, guid: 9ac7706d19437624bb7c7ef961623bff, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -8738,12 +8766,12 @@ MonoBehaviour:
     dialogueLines:
     - _character:
         _name: Studente
-        _icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+        _icon: {fileID: 0}
       _line: Ma i bagni non erano qui una volta, che si sia buggato qualcosa? ma
         va dai
     - _character:
         _name: Studente
-        _icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+        _icon: {fileID: 0}
       _line: pssss.....
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
@@ -13269,7 +13297,7 @@ MonoBehaviour:
     dialogueLines:
     - _character:
         _name: Studente
-        _icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+        _icon: {fileID: 0}
       _line: "\"Raccogli le mele nelle aule M\"? Che razza di secondaria \xE8?"
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
@@ -16689,7 +16717,7 @@ MonoBehaviour:
     dialogueLines:
     - _character:
         _name: Studente
-        _icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+        _icon: {fileID: 0}
       _line: "Cagare al poli \xE8 sempre un piacere, nelle M poi onestamente \xE8
         forse meglio che a casa"
   _prompt: NPC

@@ -792,7 +792,7 @@ MonoBehaviour:
     dialogueLines:
     - _character:
         _name: Studente
-        _icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+        _icon: {fileID: 0}
       _line: 2 minuti e mi rimetto a lavoro, s-sto impaz-zendo
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
@@ -4019,7 +4019,7 @@ MonoBehaviour:
     dialogueLines:
     - _character:
         _name: Studente
-        _icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+        _icon: {fileID: 0}
       _line: '# TODO: Implementare funzione di ordinamento... ehi, qualcuno mi aiuti,
         potrei essere impazzito!'
   _prompt: NPC
@@ -5974,7 +5974,7 @@ MonoBehaviour:
     dialogueLines:
     - _character:
         _name: Studente
-        _icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+        _icon: {fileID: 0}
       _line: In fondo posso tenermela, o al massimo la faccio qui, ma posso continuare
         a lavorare
   _prompt: NPC
@@ -8783,11 +8783,11 @@ MonoBehaviour:
     dialogueLines:
     - _character:
         _name: Studente
-        _icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+        _icon: {fileID: 0}
       _line: bug, bug, bugbugbug
     - _character:
         _name: Studente
-        _icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+        _icon: {fileID: 0}
       _line: BUG BUG BUGBUG!
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
@@ -10330,7 +10330,7 @@ MonoBehaviour:
     dialogueLines:
     - _character:
         _name: Studente
-        _icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+        _icon: {fileID: 0}
       _line: E se anche la mia mente fosse scritta in codice?
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
@@ -12872,6 +12872,34 @@ PrefabInstance:
       propertyPath: inspectManager
       value: 
       objectReference: {fileID: 171514708}
+    - target: {fileID: 2137633780226942020, guid: 9ac7706d19437624bb7c7ef961623bff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2137633780226942020, guid: 9ac7706d19437624bb7c7ef961623bff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2137633780226942020, guid: 9ac7706d19437624bb7c7ef961623bff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 171514708}
+    - target: {fileID: 2137633780226942020, guid: 9ac7706d19437624bb7c7ef961623bff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2137633780226942020, guid: 9ac7706d19437624bb7c7ef961623bff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: TogliBlur
+      objectReference: {fileID: 0}
+    - target: {fileID: 2137633780226942020, guid: 9ac7706d19437624bb7c7ef961623bff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: CGT.InspectManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2137633780226942020, guid: 9ac7706d19437624bb7c7ef961623bff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4784986893525027376, guid: 9ac7706d19437624bb7c7ef961623bff, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -13297,7 +13325,7 @@ MonoBehaviour:
     dialogueLines:
     - _character:
         _name: Studente
-        _icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+        _icon: {fileID: 0}
       _line: "non la deluder\xF2 prof, \xE8 il pi\xF9 grande programma di sempre"
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
@@ -14018,7 +14046,7 @@ MonoBehaviour:
     dialogueLines:
     - _character:
         _name: Studente
-        _icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+        _icon: {fileID: 0}
       _line: "L-lo so l-lo so ha ragione, domani \xE8 il grande giorno"
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
@@ -14214,7 +14242,7 @@ MonoBehaviour:
     dialogueLines:
     - _character:
         _name: Studente
-        _icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+        _icon: {fileID: 0}
       _line: Ho trovato messaggi nascosti nel codice, parlano di me, conoscono i
         miei segreti.
   _prompt: NPC
@@ -14557,7 +14585,7 @@ MonoBehaviour:
     dialogueLines:
     - _character:
         _name: Studente
-        _icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+        _icon: {fileID: 0}
       _line: Ho sentito il codice sussurarmi nel sonno, diceva di non fermarmi
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
@@ -16654,7 +16682,7 @@ MonoBehaviour:
     dialogueLines:
     - _character:
         _name: Studente
-        _icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+        _icon: {fileID: 0}
       _line: 'non posso nascondermi, sa sempre dove sono, a che punto sono... '
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
@@ -17059,11 +17087,11 @@ MonoBehaviour:
     dialogueLines:
     - _character:
         _name: Studente
-        _icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+        _icon: {fileID: 0}
       _line: Hey Marco come stai?
     - _character:
         _name: Marco
-        _icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+        _icon: {fileID: 0}
       _line: Bene grazie e tu?
     - _character:
         _name: Marco
@@ -17267,11 +17295,11 @@ MonoBehaviour:
     dialogueLines:
     - _character:
         _name: Studente
-        _icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+        _icon: {fileID: 0}
       _line: Mi si chiudono gli occhi, devo restare sveglio
     - _character:
         _name: Studente
-        _icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+        _icon: {fileID: 0}
       _line: Sniff... sniff...
   _prompt: 
   sceneState: {fileID: 0}
@@ -18124,7 +18152,7 @@ MonoBehaviour:
     dialogueLines:
     - _character:
         _name: Studente
-        _icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+        _icon: {fileID: 0}
       _line: S-staimo cambiando il mondo, d-devo ripetermelo, STIAMO CAMBIANDO IL
         MONDO!
   _prompt: NPC
@@ -19147,11 +19175,11 @@ MonoBehaviour:
     dialogueLines:
     - _character:
         _name: Studente
-        _icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+        _icon: {fileID: 0}
       _line: "tac-tac-tac-tac sento solo pi\xF9 questoo rumore... ahaha"
     - _character:
         _name: Studente
-        _icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+        _icon: {fileID: 0}
       _line: ahahahahaha
     - _character:
         _name: Studente
@@ -20512,11 +20540,11 @@ MonoBehaviour:
     dialogueLines:
     - _character:
         _name: Studente
-        _icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+        _icon: {fileID: 0}
       _line: "S-s\xEC prof, possono accedere a contenuti su internet solo indirettamente"
     - _character:
         _name: Studente
-        _icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+        _icon: {fileID: 0}
       _line: "Nessuno pu\xF2 contattare nessun'altro all'esterno, proprio come ci
         ha chiesto"
   _prompt: NPC

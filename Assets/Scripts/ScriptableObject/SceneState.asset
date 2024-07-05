@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5b30e62428a4594d812178419042702, type: 3}
   m_Name: SceneState
   m_EditorClassIdentifier: 
-  lastPosition_AI: {x: 0, y: 0, z: 0}
-  lastPosition_CorridoioM: {x: 0, y: 0, z: 0}
+  lastPosition_AI: {x: -41.79133, y: -0.009335041, z: 10.67333}
+  lastPosition_CorridoioM: {x: 9.449671, y: 0.13202906, z: 6.575175}
   _torchActive: 0
-  _hasKey: 0
+  _hasKey: 1
   _lightup: 0
   _currentcolor: {r: 1, g: 1, b: 1, a: 1}
-  stateOfCutscene1: 1
+  stateOfCutscene1: 3
   NerraCutscene: 0
-  tastierino: 0
+  tastierino: 1
   tastierinoServetti: 0
   blockMovementPlayer: 0
   Pagina1: 0

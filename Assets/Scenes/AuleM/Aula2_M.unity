@@ -612,7 +612,7 @@ MonoBehaviour:
     dialogueLines:
     - _character:
         _name: Studente
-        _icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+        _icon: {fileID: 0}
       _line: "Un cretino in aula 1 ha appena comprato il mio corso \"Rich and well
         endowed\" per 1500\u20AC"
   _prompt: NPC
@@ -1093,6 +1093,34 @@ PrefabInstance:
       propertyPath: inspectManager
       value: 
       objectReference: {fileID: 2078675190}
+    - target: {fileID: 2137633780226942020, guid: 9ac7706d19437624bb7c7ef961623bff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2137633780226942020, guid: 9ac7706d19437624bb7c7ef961623bff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2137633780226942020, guid: 9ac7706d19437624bb7c7ef961623bff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 2078675190}
+    - target: {fileID: 2137633780226942020, guid: 9ac7706d19437624bb7c7ef961623bff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2137633780226942020, guid: 9ac7706d19437624bb7c7ef961623bff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: TogliBlur
+      objectReference: {fileID: 0}
+    - target: {fileID: 2137633780226942020, guid: 9ac7706d19437624bb7c7ef961623bff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: CGT.InspectManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2137633780226942020, guid: 9ac7706d19437624bb7c7ef961623bff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4784986893525027376, guid: 9ac7706d19437624bb7c7ef961623bff, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -2594,7 +2622,7 @@ MonoBehaviour:
     dialogueLines:
     - _character:
         _name: Studente
-        _icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+        _icon: {fileID: 0}
       _line: Tutto sto tempo in questa posizione e la skin da penitente fa pure schifo...
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
@@ -10552,7 +10580,7 @@ MonoBehaviour:
     dialogueLines:
     - _character:
         _name: Studente
-        _icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+        _icon: {fileID: 0}
       _line: Questa lavagna ha degli strani riflessi verdi
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
@@ -11039,7 +11067,7 @@ MonoBehaviour:
     dialogueLines:
     - _character:
         _name: Studente
-        _icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+        _icon: {fileID: 0}
       _line: Shhh Raga arriva la mia scena preferita
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
