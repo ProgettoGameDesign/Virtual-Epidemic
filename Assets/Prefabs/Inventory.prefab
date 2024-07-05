@@ -1538,7 +1538,7 @@ MonoBehaviour:
   itemDescription: {fileID: 7391466245707628874}
   mouseFollower: {fileID: 0}
   inspectorItemMio: {fileID: 0}
-  buttonUseScript: {fileID: 0}
+  buttonUseScript: {fileID: 4770605199063938218}
   actionPanel: {fileID: 0}
 --- !u!1 &5102736663202117843
 GameObject:

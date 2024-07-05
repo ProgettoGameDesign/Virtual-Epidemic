@@ -4831,10 +4831,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 802063011}
     - target: {fileID: 3171301218058158861, guid: da8d6495f5bd430449e88a12b6439d77, type: 3}
-      propertyPath: buttonUseScript
-      value: 
-      objectReference: {fileID: 1637783048}
-    - target: {fileID: 3171301218058158861, guid: da8d6495f5bd430449e88a12b6439d77, type: 3}
       propertyPath: inspectorItemMio
       value: 
       objectReference: {fileID: 733511411}
@@ -9961,19 +9957,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6167146292460915879, guid: 6f9308a9ad3eccc48a77142fbad86f27, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6167146292460915879, guid: 6f9308a9ad3eccc48a77142fbad86f27, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6167146292460915879, guid: 6f9308a9ad3eccc48a77142fbad86f27, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 44.625748
       objectReference: {fileID: 0}
     - target: {fileID: 6167146292460915879, guid: 6f9308a9ad3eccc48a77142fbad86f27, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -42.73655
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

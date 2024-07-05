@@ -3878,7 +3878,7 @@ PrefabInstance:
     - target: {fileID: 3171301218058158861, guid: da8d6495f5bd430449e88a12b6439d77, type: 3}
       propertyPath: buttonUseScript
       value: 
-      objectReference: {fileID: 370689233}
+      objectReference: {fileID: 510499428}
     - target: {fileID: 3171301218058158861, guid: da8d6495f5bd430449e88a12b6439d77, type: 3}
       propertyPath: inspectorItemMio
       value: 
@@ -4271,6 +4271,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4562589222484086039, guid: da8d6495f5bd430449e88a12b6439d77, type: 3}
   m_PrefabInstance: {fileID: 510499424}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &510499428 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4770605199063938218, guid: da8d6495f5bd430449e88a12b6439d77, type: 3}
+  m_PrefabInstance: {fileID: 510499424}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69690cae65d2d9d47b8ea9c1ad9adf04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519664853
 GameObject:
   m_ObjectHideFlags: 0
