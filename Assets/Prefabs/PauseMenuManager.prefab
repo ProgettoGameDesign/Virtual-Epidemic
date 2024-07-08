@@ -326,7 +326,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PauseMenuCanvas: {fileID: 4784986893525027376}
-  VideoPlayer: {fileID: 0}
+  inspectManager: {fileID: 0}
+  sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
   fmodEventPath1: event:/UI
 --- !u!1 &659093962699644783
 GameObject:

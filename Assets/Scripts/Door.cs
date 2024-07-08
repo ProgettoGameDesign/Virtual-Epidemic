@@ -15,13 +15,14 @@ public class Door : MonoBehaviour, InteractInterface
 
     public bool Interact(Interactor interactor)
     {
+        _sceneState.blockMovementPlayer = true;
         if (_prompt == "Exit") {   
            SceneManager.LoadScene("Ambiente iniziale");
             //AudioManager.instance.PlayOneShot(FMODEvents.instance.openDoor, this.transform.position);
             }
         else 
         {
-
+            
             if (_prompt == "Door-M")
             {
                 _animator.SetBool("aperto", true);
@@ -83,6 +84,7 @@ public class Door : MonoBehaviour, InteractInterface
     {
         yield return new WaitForSeconds(0.8f);
         SceneManager.LoadScene(sceneName);
+        _sceneState.blockMovementPlayer = false;
     }
 
     private void PlaySound(string path)

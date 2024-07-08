@@ -20338,10 +20338,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8400000, guid: 08df22ebb81d31342ab91186bf1135bb, type: 2}
     - target: {fileID: 415631014685009138, guid: 9ac7706d19437624bb7c7ef961623bff, type: 3}
-      propertyPath: fmodEventPath1
-      value: event:/UI
-      objectReference: {fileID: 0}
-    - target: {fileID: 415631014685009138, guid: 9ac7706d19437624bb7c7ef961623bff, type: 3}
       propertyPath: inspectManager
       value: 
       objectReference: {fileID: 1552705078}
@@ -21576,7 +21572,7 @@ MonoBehaviour:
   _prompt: Door-M
   _animator: {fileID: 967088120}
   CanvasPorta3: {fileID: 0}
-  _sceneState: {fileID: 0}
+  _sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
 --- !u!1 &970067356
 GameObject:
   m_ObjectHideFlags: 0
@@ -42251,7 +42247,7 @@ MonoBehaviour:
   _prompt: Door-M
   _animator: {fileID: 1545411701}
   CanvasPorta3: {fileID: 0}
-  _sceneState: {fileID: 0}
+  _sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
 --- !u!1001 &1549578474
 PrefabInstance:
   m_ObjectHideFlags: 0

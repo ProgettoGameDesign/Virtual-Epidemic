@@ -15,6 +15,7 @@ public class PauseMenu : MonoBehaviour
     public GameObject PauseMenuCanvas;
     //public VideoPlayer VideoPlayer;
     [SerializeField] private InspectManager inspectManager;
+    [SerializeField] private SceneState sceneState;
     private EventInstance eventInstance;
     public string fmodEventPath1 = "event:/UI";
 
@@ -34,11 +35,13 @@ public class PauseMenu : MonoBehaviour
             
             if (Paused)
             {
+                sceneState.blockMovementPlayer = false;
                 inspectManager.TogliBlur();
                 Play();
             }
             else
             {
+                sceneState.blockMovementPlayer = true;
                 inspectManager.AggiungiBlur();
                 Stop();
             }

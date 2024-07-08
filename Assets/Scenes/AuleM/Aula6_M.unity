@@ -13804,7 +13804,7 @@ MonoBehaviour:
   _prompt: Door-M
   _animator: {fileID: 6792984009754030881}
   CanvasPorta3: {fileID: 0}
-  _sceneState: {fileID: 0}
+  _sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
 --- !u!95 &6792984009754030881
 Animator:
   serializedVersion: 5
