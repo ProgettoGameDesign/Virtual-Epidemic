@@ -1861,6 +1861,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PauseMenuCanvas: {fileID: 0}
   inspectManager: {fileID: 0}
+  sceneState: {fileID: 0}
   fmodEventPath1: 
 --- !u!4 &307839078
 Transform:
@@ -5111,7 +5112,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3602bfe968c92cc4295c2700326be263, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c9787bb771ec2724abe28bd2354d3d1c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
