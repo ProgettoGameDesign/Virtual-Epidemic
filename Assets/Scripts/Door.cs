@@ -15,7 +15,7 @@ public class Door : MonoBehaviour, InteractInterface
 
     public bool Interact(Interactor interactor)
     {
-        _sceneState.blockMovementPlayer = true;
+        
         if (_prompt == "Exit") {   
            SceneManager.LoadScene("Ambiente iniziale");
             //AudioManager.instance.PlayOneShot(FMODEvents.instance.openDoor, this.transform.position);
@@ -25,18 +25,21 @@ public class Door : MonoBehaviour, InteractInterface
             
             if (_prompt == "Door-M")
             {
+                _sceneState.blockMovementPlayer = true;
                 _animator.SetBool("aperto", true);
                 StartCoroutine(LoadNewScene("Corridoio_M"));
                 //AudioManager.instance.PlayOneShot(FMODEvents.instance.openDoor, this.transform.position);
             }
             else if (_prompt == "Door-M1")
             {
+                _sceneState.blockMovementPlayer = true;
                 _animator.SetBool("aperto", true);
                 StartCoroutine(LoadNewScene("Aula1_M"));
                 //AudioManager.instance.PlayOneShot(FMODEvents.instance.openDoor, this.transform.position);
             }
             else if (_prompt == "Door-M2")
             {
+                _sceneState.blockMovementPlayer = true;
                 _animator.SetBool("aperto", true);
                 StartCoroutine(LoadNewScene("Aula2_M"));
                 //AudioManager.instance.PlayOneShot(FMODEvents.instance.openDoor, this.transform.position);
@@ -46,6 +49,7 @@ public class Door : MonoBehaviour, InteractInterface
                 if (_sceneState._hasKey == true)
 
                 {
+                    _sceneState.blockMovementPlayer = true;
                     _animator.SetBool("aperto", true);
                     StartCoroutine(LoadNewScene("Aula3_M"));
                     //AudioManager.instance.PlayOneShot(FMODEvents.instance.openDoor, this.transform.position);
@@ -58,18 +62,21 @@ public class Door : MonoBehaviour, InteractInterface
             }
             else if (_prompt == "Door-M4")
             {
+                _sceneState.blockMovementPlayer = true;
                 _animator.SetBool("aperto", true);
                 StartCoroutine(LoadNewScene("Aula4_M"));
                 //AudioManager.instance.PlayOneShot(FMODEvents.instance.openDoor, this.transform.position);
             }
             else if (_prompt == "Door-M5")
             {
+                _sceneState.blockMovementPlayer = true;
                 _animator.SetBool("aperto", true);
                 StartCoroutine(LoadNewScene("Aula5_M"));
                 //AudioManager.instance.PlayOneShot(FMODEvents.instance.openDoor, this.transform.position);
             }
             else if (_prompt == "Door-M6")
             {
+                _sceneState.blockMovementPlayer = true;
                 _animator.SetBool("aperto", true);
                 StartCoroutine(LoadNewScene("Aula6_M"));
                 //AudioManager.instance.PlayOneShot(FMODEvents.instance.openDoor, this.transform.position);
