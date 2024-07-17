@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Cinemachine;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -11,7 +12,8 @@ public class Door : MonoBehaviour, InteractInterface
     public string InteractionPrompt => _prompt;
     //private Vector3 _spawnPosition;
     public SceneState _sceneState;
-
+    public GameObject virtualCamera;
+    private float rotationSpeed = 0.7f;
 
     public bool Interact(Interactor interactor)
     {
@@ -27,7 +29,9 @@ public class Door : MonoBehaviour, InteractInterface
             {
                 _sceneState.blockMovementPlayer = true;
                 _animator.SetBool("aperto", true);
-                StartCoroutine(LoadNewScene("Corridoio_M"));
+                if (SceneManager.GetActiveScene().name == "Ambiente iniziale") StartCoroutine(RotateCamera());
+                else StartCoroutine(LoadNewScene("Corridoio_M"));
+
                 //AudioManager.instance.PlayOneShot(FMODEvents.instance.openDoor, this.transform.position);
             }
             else if (_prompt == "Door-M1")
@@ -93,7 +97,27 @@ public class Door : MonoBehaviour, InteractInterface
         SceneManager.LoadScene(sceneName);
         _sceneState.blockMovementPlayer = false;
     }
+    IEnumerator RotateCamera()
+    {
+        Quaternion initialRotation = virtualCamera.transform.rotation;
+        Quaternion targetRotation = Quaternion.Euler(20, -90, 0);
+        float elapsedTime = 0f;
+        CinemachineVirtualCamera cameraComponent = virtualCamera.GetComponent<CinemachineVirtualCamera>();
+        float startFOV = cameraComponent.m_Lens.FieldOfView;
+        float targetFOV = 22;
 
+        while (elapsedTime < 1.8f)
+        {
+            virtualCamera.transform.rotation = Quaternion.Slerp(initialRotation, targetRotation, elapsedTime / 1.8f);
+            cameraComponent.m_Lens.FieldOfView = Mathf.Lerp(startFOV, targetFOV, elapsedTime / 1.8f);
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+
+        virtualCamera.transform.rotation = targetRotation; // Assicurati che la rotazione finale sia esattamente quella target
+        SceneManager.LoadScene("Corridoio_M");
+        _sceneState.blockMovementPlayer = false;
+    }
     private void PlaySound(string path)
     {
         FMODUnity.RuntimeManager.PlayOneShot(path, GetComponent<Transform>().position);

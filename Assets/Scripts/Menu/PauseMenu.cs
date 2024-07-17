@@ -83,7 +83,8 @@ public class PauseMenu : MonoBehaviour
             a.UnPause();
         }
         //Cursor.lockState = CursorLockMode.Locked; // Blocca il cursore al centro dello schermo
-        Cursor.visible = false; // Rende il cursore invisibile       
+        Cursor.visible = false; // Rende il cursore invisibile   
+        sceneState.blockMovementPlayer = false;    
     }
 
     public void MainMenuButton()

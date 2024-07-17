@@ -245,19 +245,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6167146292460915879, guid: 6f9308a9ad3eccc48a77142fbad86f27, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6167146292460915879, guid: 6f9308a9ad3eccc48a77142fbad86f27, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6167146292460915879, guid: 6f9308a9ad3eccc48a77142fbad86f27, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 44.625748
       objectReference: {fileID: 0}
     - target: {fileID: 6167146292460915879, guid: 6f9308a9ad3eccc48a77142fbad86f27, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -42.73655
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2654,7 +2654,7 @@ GameObject:
   - component: {fileID: 365713734}
   - component: {fileID: 365713735}
   - component: {fileID: 365713736}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2951,7 +2951,7 @@ GameObject:
   - component: {fileID: 434763796}
   - component: {fileID: 434763795}
   - component: {fileID: 434763794}
-  m_Layer: 5
+  m_Layer: 14
   m_Name: CanvasAsterisco (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3450,7 +3450,7 @@ GameObject:
   - component: {fileID: 472455353}
   - component: {fileID: 472455355}
   - component: {fileID: 472455354}
-  m_Layer: 5
+  m_Layer: 14
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4230,6 +4230,7 @@ MonoBehaviour:
   _animator: {fileID: 548143783}
   CanvasPorta3: {fileID: 0}
   _sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
+  virtualCamera: {fileID: 0}
 --- !u!114 &548143780
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4489,6 +4490,7 @@ MonoBehaviour:
   _animator: {fileID: 551406558}
   CanvasPorta3: {fileID: 0}
   _sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
+  virtualCamera: {fileID: 0}
 --- !u!95 &551406558
 Animator:
   serializedVersion: 5
@@ -4978,7 +4980,7 @@ GameObject:
   - component: {fileID: 613354090}
   - component: {fileID: 613354092}
   - component: {fileID: 613354091}
-  m_Layer: 5
+  m_Layer: 14
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6787,9 +6789,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 3
+  outlineMode: 0
   outlineColor: {r: 1, g: 0.84313726, b: 0.3137255, a: 1}
-  outlineWidth: 6.02
+  outlineWidth: 9.02
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
@@ -7103,7 +7105,7 @@ GameObject:
   - component: {fileID: 991980603}
   - component: {fileID: 991980602}
   - component: {fileID: 991980601}
-  m_Layer: 5
+  m_Layer: 14
   m_Name: CanvasAsterisco2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9266,7 +9268,7 @@ GameObject:
   - component: {fileID: 1354344843}
   - component: {fileID: 1354344845}
   - component: {fileID: 1354344844}
-  m_Layer: 5
+  m_Layer: 14
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11652,6 +11654,7 @@ MonoBehaviour:
   _animator: {fileID: 1461681579}
   CanvasPorta3: {fileID: 0}
   _sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
+  virtualCamera: {fileID: 0}
 --- !u!95 &1461681579
 Animator:
   serializedVersion: 5
@@ -12878,7 +12881,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 4.54
-  m_Range: 5.74
+  m_Range: 6.2
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -13110,6 +13113,7 @@ MonoBehaviour:
   _animator: {fileID: 0}
   CanvasPorta3: {fileID: 0}
   _sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
+  virtualCamera: {fileID: 0}
 --- !u!65 &1567873335
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13513,9 +13517,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8132884704822145849, guid: fd487e0a4b4696d4485654f8614ab35d, type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: -8091490317008756280, guid: fd487e0a4b4696d4485654f8614ab35d, type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: -7811797421411168921, guid: fd487e0a4b4696d4485654f8614ab35d, type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: -5401834974444580469, guid: fd487e0a4b4696d4485654f8614ab35d, type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: -4043365162069559223, guid: fd487e0a4b4696d4485654f8614ab35d, type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: -1728805662053644420, guid: fd487e0a4b4696d4485654f8614ab35d, type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: -813377690563925615, guid: fd487e0a4b4696d4485654f8614ab35d, type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: -658434998174783448, guid: fd487e0a4b4696d4485654f8614ab35d, type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 116902902638061589, guid: fd487e0a4b4696d4485654f8614ab35d, type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: fd487e0a4b4696d4485654f8614ab35d, type: 3}
       propertyPath: m_Name
       value: TastierinoToAppear
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fd487e0a4b4696d4485654f8614ab35d, type: 3}
+      propertyPath: m_Layer
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: fd487e0a4b4696d4485654f8614ab35d, type: 3}
       propertyPath: m_IsActive
@@ -13544,6 +13588,14 @@ PrefabInstance:
     - target: {fileID: 2160469368266386653, guid: fd487e0a4b4696d4485654f8614ab35d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 3893675845204438279, guid: fd487e0a4b4696d4485654f8614ab35d, type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 8425242195003950422, guid: fd487e0a4b4696d4485654f8614ab35d, type: 3}
+      propertyPath: m_Layer
+      value: 14
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14357,7 +14409,7 @@ GameObject:
   - component: {fileID: 1738597756}
   - component: {fileID: 1738597755}
   - component: {fileID: 1738597754}
-  m_Layer: 5
+  m_Layer: 14
   m_Name: CanvasAsterisco
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15098,7 +15150,7 @@ GameObject:
   - component: {fileID: 1872250280}
   - component: {fileID: 1872250279}
   - component: {fileID: 1872250278}
-  m_Layer: 5
+  m_Layer: 14
   m_Name: CanvasAsterisco3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15412,7 +15464,7 @@ GameObject:
   - component: {fileID: 1919965082}
   - component: {fileID: 1919965084}
   - component: {fileID: 1919965083}
-  m_Layer: 5
+  m_Layer: 14
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16463,6 +16515,7 @@ MonoBehaviour:
   _animator: {fileID: 1950721292}
   CanvasPorta3: {fileID: 0}
   _sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
+  virtualCamera: {fileID: 0}
 --- !u!95 &1950721292
 Animator:
   serializedVersion: 5
@@ -17074,6 +17127,7 @@ MonoBehaviour:
   _animator: {fileID: 2028111614}
   CanvasPorta3: {fileID: 0}
   _sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
+  virtualCamera: {fileID: 0}
 --- !u!95 &2028111614
 Animator:
   serializedVersion: 5
@@ -17286,6 +17340,7 @@ MonoBehaviour:
   _animator: {fileID: 2053060247}
   CanvasPorta3: {fileID: 1259471045}
   _sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
+  virtualCamera: {fileID: 0}
 --- !u!95 &2053060247
 Animator:
   serializedVersion: 5

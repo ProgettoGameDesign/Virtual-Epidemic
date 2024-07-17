@@ -4327,7 +4327,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 4.54
-  m_Range: 5.74
+  m_Range: 6.2
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -7789,6 +7789,7 @@ MonoBehaviour:
   _animator: {fileID: 1309943396}
   CanvasPorta3: {fileID: 0}
   _sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
+  virtualCamera: {fileID: 0}
 --- !u!4 &1309943401 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5862120960217425529, guid: 024a082fc68169e4db3ff399f7fa36a3, type: 3}
@@ -12597,6 +12598,7 @@ MonoBehaviour:
   _animator: {fileID: 6792984009754030881}
   CanvasPorta3: {fileID: 0}
   _sceneState: {fileID: 0}
+  virtualCamera: {fileID: 0}
 --- !u!114 &6792984009754030880
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -6943,6 +6943,7 @@ MonoBehaviour:
   _animator: {fileID: 0}
   CanvasPorta3: {fileID: 0}
   _sceneState: {fileID: 0}
+  virtualCamera: {fileID: 0}
 --- !u!4 &231088341 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5808632877121073436, guid: bf13908a0948cd0448db82af786fef3c, type: 3}
@@ -18736,6 +18737,7 @@ MonoBehaviour:
   _animator: {fileID: 841387434}
   CanvasPorta3: {fileID: 0}
   _sceneState: {fileID: 0}
+  virtualCamera: {fileID: 0}
 --- !u!95 &841387434
 Animator:
   serializedVersion: 5
@@ -18964,19 +18966,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6167146292460915879, guid: 6f9308a9ad3eccc48a77142fbad86f27, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6167146292460915879, guid: 6f9308a9ad3eccc48a77142fbad86f27, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6167146292460915879, guid: 6f9308a9ad3eccc48a77142fbad86f27, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 44.625748
       objectReference: {fileID: 0}
     - target: {fileID: 6167146292460915879, guid: 6f9308a9ad3eccc48a77142fbad86f27, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -42.73655
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21573,6 +21575,7 @@ MonoBehaviour:
   _animator: {fileID: 967088120}
   CanvasPorta3: {fileID: 0}
   _sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
+  virtualCamera: {fileID: 1520654209}
 --- !u!1 &970067356
 GameObject:
   m_ObjectHideFlags: 0
@@ -31850,13 +31853,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1303210775}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.0000015199182, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.1300001, z: 0.14100005}
+  m_LocalRotation: {x: -0.03925978, y: 0, z: 0, w: 0.9992291}
+  m_LocalPosition: {x: -0.3, y: 1.31, z: 0}
   m_LocalScale: {x: 0.5420895, y: 0.5420896, z: 0.9359176}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1909789198}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -4.5, y: 0, z: 0}
 --- !u!114 &1303210777
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31917,11 +31920,11 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   intensityFromLight: 1
   intensityModeAdvanced: 0
-  intensityInside: 1.07
-  intensityOutside: 1.07
-  blendingMode: 0
+  intensityInside: 0.35
+  intensityOutside: 0.35
+  blendingMode: 2
   spotAngleFromLight: 1
-  spotAngle: 86.5
+  spotAngle: 75
   coneRadiusStart: 0.1
   shaderAccuracy: 0
   geomMeshType: 0
@@ -31937,9 +31940,9 @@ MonoBehaviour:
   fallOffEnd: 3.5
   depthBlendDistance: 2
   cameraClippingDistance: 0.5
-  glareFrontal: 0.5
-  glareBehind: 0.54
-  fresnelPow: 1.1000001
+  glareFrontal: 0.46
+  glareBehind: 0.484
+  fresnelPow: 5.35
   noiseMode: 0
   noiseIntensity: 0.5
   noiseScaleUseGlobal: 1
@@ -39413,6 +39416,7 @@ MonoBehaviour:
   _animator: {fileID: 0}
   CanvasPorta3: {fileID: 0}
   _sceneState: {fileID: 0}
+  virtualCamera: {fileID: 0}
 --- !u!65 &1500689363
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -39481,6 +39485,7 @@ MonoBehaviour:
   _animator: {fileID: 0}
   CanvasPorta3: {fileID: 0}
   _sceneState: {fileID: 0}
+  virtualCamera: {fileID: 0}
 --- !u!1 &1514594037
 GameObject:
   m_ObjectHideFlags: 0
@@ -42248,6 +42253,7 @@ MonoBehaviour:
   _animator: {fileID: 1545411701}
   CanvasPorta3: {fileID: 0}
   _sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
+  virtualCamera: {fileID: 1520654209}
 --- !u!1001 &1549578474
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45573,7 +45579,7 @@ Camera:
     height: 1
   near clip plane: 0.1
   far clip plane: 5000
-  field of view: 26.991467
+  field of view: 30
   orthographic: 0
   orthographic size: 10
   m_Depth: 0
@@ -45893,6 +45899,7 @@ MonoBehaviour:
   _animator: {fileID: 1714304132}
   CanvasPorta3: {fileID: 0}
   _sceneState: {fileID: 0}
+  virtualCamera: {fileID: 0}
 --- !u!95 &1714304132
 Animator:
   serializedVersion: 5
