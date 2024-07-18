@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
+using FMOD.Studio;
 
 public class ManagerTastierino : MonoBehaviour
 {
@@ -17,6 +19,11 @@ public class ManagerTastierino : MonoBehaviour
     [SerializeField] GameObject tastierinoToDisappear;
     [SerializeField] GameObject displayNumeri;
     [SerializeField] Animator animator;
+
+    private EventInstance eventInstance;
+    public string fmodEventPath1 = "";
+    
+
     public void AddDigit(string digit)
     {
         currentSequence += digit;
@@ -35,9 +42,11 @@ public class ManagerTastierino : MonoBehaviour
                 _outlineTastierino.enabled = true;
                 _outlineDisplay.OutlineColor = Color.green;
                 _outlineDisplay.enabled = true;
+                SoundCorrect();
                 Cursor.visible = false;
                 animator.Play("hide");
                 StartCoroutine(SequenzaGiusta());
+
                 
                 
                 
@@ -48,6 +57,7 @@ public class ManagerTastierino : MonoBehaviour
                 _outlineTastierino.enabled = true;
                 _outlineDisplay.OutlineColor = Color.red;
                 _outlineDisplay.enabled = true;
+                SoundFalse();
                 StartCoroutine(SequenzaSbagliata());
                 Debug.Log("Sequenza sbagliata! Ripristino.");
                 // Resetta la sequenza
@@ -112,5 +122,21 @@ public class ManagerTastierino : MonoBehaviour
 
         }
 
+    }
+
+    private void SoundCorrect()
+    {
+        eventInstance = RuntimeManager.CreateInstance(fmodEventPath1);
+        eventInstance.setParameterByName("FeedbackTasti", 1);
+        eventInstance.start();
+        eventInstance.release();
+    }
+
+    private void SoundFalse()
+    {
+        eventInstance = RuntimeManager.CreateInstance(fmodEventPath1);
+        eventInstance.setParameterByName("FeedbackTasti", 2);
+        eventInstance.start();
+        eventInstance.release();  
     }
 }

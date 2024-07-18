@@ -21,6 +21,8 @@ public class TastierinoServetti : MonoBehaviour
     [SerializeField] GameObject display6;
     [SerializeField] GameObject tastierinoSulMuro;
     [SerializeField] GameObject canvasDaDistruggere;
+    private EventInstance eventInstance;
+    private string fmodEventPath1 = "event:/UI/Feedback_tasti";
     private StudioEventEmitter mainCameraEmitter;
     
 
@@ -41,6 +43,7 @@ public class TastierinoServetti : MonoBehaviour
                 Destroy(canvasDaDistruggere);
                 _outlineTastierino.OutlineColor = Color.green;
                 _outlineTastierino.enabled = true;
+                SoundCorrect();
                 //_outlineDisplay.OutlineColor = Color.green;
                 //_outlineDisplay.enabled = true;
                 sceneState.blockMovementPlayer = false;
@@ -61,6 +64,7 @@ public class TastierinoServetti : MonoBehaviour
                 _outlineTastierino.enabled = true;
                 //_outlineDisplay.OutlineColor = Color.red;
                 //_outlineDisplay.enabled = true;
+                SoundFalse();
                 StartCoroutine(SequenzaSbagliata());
                 UnityEngine.Debug.Log("Sequenza sbagliata! Ripristino.");
                 // Resetta la sequenza
@@ -120,6 +124,8 @@ public class TastierinoServetti : MonoBehaviour
         else if (currentSequence.Length == 6)
         display6.GetComponent<ChangeColorDisplay>().ChangeColor(colore);
 
+        SoundButton();
+
     }
     private void ResetDisplay()
     {
@@ -135,5 +141,28 @@ public class TastierinoServetti : MonoBehaviour
         mainCameraEmitter = Camera.main.GetComponent<StudioEventEmitter>();
         mainCameraEmitter.Stop();
 
+    }
+
+    private void SoundCorrect()
+    {
+        eventInstance = RuntimeManager.CreateInstance(fmodEventPath1);
+        eventInstance.setParameterByName("FeedbackTasti", 1);
+        eventInstance.start();
+        eventInstance.release();
+    }
+
+    private void SoundFalse()
+    {
+        eventInstance = RuntimeManager.CreateInstance(fmodEventPath1);
+        eventInstance.setParameterByName("FeedbackTasti", 2);
+        eventInstance.start();
+        eventInstance.release();  
+    }
+
+     private void SoundButton(){
+        eventInstance = RuntimeManager.CreateInstance(fmodEventPath1);
+        eventInstance.setParameterByName("FeedbackTasti", 0);
+        eventInstance.start();
+        eventInstance.release();
     }
 }
