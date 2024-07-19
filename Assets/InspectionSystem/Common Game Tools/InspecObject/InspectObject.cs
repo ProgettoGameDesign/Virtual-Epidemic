@@ -24,7 +24,7 @@ namespace CGT
         [SerializeField] ChiudiApriInventario chiudiApriInventario;
         [SerializeField] GameObject pulsanteChiudi;
 
-        private Vector3 pivotOffset = new Vector3(0, -0.2f, 0); // Piccolo offset per il pivot
+        private Vector3 pivotOffset = new Vector3(0, 0, 0); // Piccolo offset per il pivot
 
         void Start()
         {
@@ -34,6 +34,7 @@ namespace CGT
         private void OnEnable()
         {
             if (Application.isPlaying)
+                initialPosition = new Vector3(90, 180, 0); // Ruotato di 90 gradi sull'asse X
                 transform.localEulerAngles = initialPosition;
 
         }
