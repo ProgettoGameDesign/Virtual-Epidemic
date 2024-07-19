@@ -10,14 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6908a04ce23371e4bad396acca232399, type: 3}
-  m_Name: Pagina2
+  m_Name: Diario
   m_EditorClassIdentifier: 
   <IsStackable>k__BackingField: 0
   <MaxStackSize>k__BackingField: 1
-  <Name>k__BackingField: Page 2
-  <Description>k__BackingField: A diary page from a student, but what twenty-something
-    still writes in a diary these days?
-  <ItemImage>k__BackingField: {fileID: 21300000, guid: c032314cb0e1e7f4aa23d3cc1447415f, type: 3}
-  <prefab>k__BackingField: {fileID: 1969570022354132554, guid: 47e039267aa1b59498d0f5bee443a80d, type: 3}
+  <Name>k__BackingField: Diary
+  <Description>k__BackingField: This is the diary.
+  <ItemImage>k__BackingField: {fileID: 21300000, guid: 8d52c51dcc6a4904a8a316bd040a9185, type: 3}
+  <prefab>k__BackingField: {fileID: -8679921383154817045, guid: e581f3fcb554b404ebb20e97478e5633, type: 3}
   <DefaultParametersList>k__BackingField: []
   <actionSFX>k__BackingField: {fileID: 0}

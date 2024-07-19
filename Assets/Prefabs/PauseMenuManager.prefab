@@ -752,6 +752,7 @@ GameObject:
   m_Component:
   - component: {fileID: 460173895752784593}
   - component: {fileID: 290121900711485693}
+  - component: {fileID: 6420923172254034526}
   m_Layer: 0
   m_Name: VolumeFxSlider
   m_TagString: Untagged
@@ -844,6 +845,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &6420923172254034526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 755265327537210298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10949a45fda1047b7b68fdccf9342470, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  path: vca:/SFX
+  sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
 --- !u!1 &783930115819313303
 GameObject:
   m_ObjectHideFlags: 0
@@ -3741,6 +3756,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6001660558625378967}
   - component: {fileID: 1460533242033174103}
+  - component: {fileID: 5320992466941455474}
   m_Layer: 0
   m_Name: VolumeMusicSlider
   m_TagString: Untagged
@@ -3833,6 +3849,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &5320992466941455474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8117719965989932229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10949a45fda1047b7b68fdccf9342470, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  path: vca:/Music
+  sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
 --- !u!1 &8207720674750510216
 GameObject:
   m_ObjectHideFlags: 0

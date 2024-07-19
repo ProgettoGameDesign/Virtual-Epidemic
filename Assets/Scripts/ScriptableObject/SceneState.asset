@@ -29,3 +29,5 @@ MonoBehaviour:
   Pagina4: 0
   Pagina5: 0
   _ambient: {r: 0, g: 0, b: 0, a: 1}
+  sliderMusica: 1
+  sliderSonoro: 1

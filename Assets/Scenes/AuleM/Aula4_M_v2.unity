@@ -5544,7 +5544,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (E) Raccogli
+  m_text: '(E) Pick up
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6086,6 +6088,7 @@ MonoBehaviour:
   _animator: {fileID: 6792984009754030881}
   CanvasPorta3: {fileID: 0}
   _sceneState: {fileID: 0}
+  virtualCamera: {fileID: 0}
 --- !u!95 &6792984009754030881
 Animator:
   serializedVersion: 5

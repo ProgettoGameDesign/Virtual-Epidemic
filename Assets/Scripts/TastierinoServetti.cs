@@ -55,6 +55,7 @@ public class TastierinoServetti : MonoBehaviour
                 
                 sceneState.tastierinoServetti = true;
                 Invoke("StopMusic", 2.5f);
+                Invoke("ResetGame", 2.5f);
 
                 
             }
@@ -135,6 +136,10 @@ public class TastierinoServetti : MonoBehaviour
         display4.GetComponent<Renderer>().material.color = Color.white;
         display5.GetComponent<Renderer>().material.color = Color.white;
         display6.GetComponent<Renderer>().material.color = Color.white;
+    }
+    private void ResetGame()
+    {
+        sceneState.ResetData();
     }
     private void StopMusic()
     {

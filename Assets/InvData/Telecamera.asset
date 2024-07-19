@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <IsStackable>k__BackingField: 0
   <MaxStackSize>k__BackingField: 1
-  <Name>k__BackingField: telecamera
-  <Description>k__BackingField: Una Camera molto particolare, ha incorporata una
-    torcia con luci di diversi colori, sembra sporca di cenere di sigaretta
+  <Name>k__BackingField: Video Camera
+  <Description>k__BackingField: A very peculiar camera, it has an integrated flashlight
+    with different colored lights, it seems dirty with cigarette ash
   <ItemImage>k__BackingField: {fileID: 21300000, guid: da61a4f42358a0e40838256d8fef38af, type: 3}
   <prefab>k__BackingField: {fileID: 1901999967819353639, guid: 39ab594c47b5b9c4b9a08fa37a90e608, type: 3}
   <DefaultParametersList>k__BackingField: []
