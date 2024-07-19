@@ -22,6 +22,8 @@ public class SceneState : ScriptableObject
     public bool Pagina4;
     public bool Pagina5;
     public Color _ambient;
+    public float sliderMusica;
+    public float sliderSonoro;
     public void ResetData() // imposta ai valori iniziali ogni volta che fa ripartire il gioco
     {
         lastPosition_AI = Vector3.zero; 
@@ -41,5 +43,7 @@ public class SceneState : ScriptableObject
         Pagina3 = false;
         Pagina4 = false;
         Pagina5 = false;
+        sliderMusica = 1;
+        sliderSonoro = 1;
     }
 }
