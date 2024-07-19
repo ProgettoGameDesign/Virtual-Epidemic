@@ -89,10 +89,10 @@ public class TPM_characterController : MonoBehaviour
  
         
         //BOOST
-        if (Input.GetKey(KeyCode.LeftShift) && _isGrounded)
+        if (Input.GetKeyDown(KeyCode.LeftShift) && _isGrounded)
         {
             _animator.SetBool("Run", true);
-            _speed = 5.5f;
+            _speed = 5f;
             playerFootsteps.setParameterByName("WalkRun", 1);
 
         }
