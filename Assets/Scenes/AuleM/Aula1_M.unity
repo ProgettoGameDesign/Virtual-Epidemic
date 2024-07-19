@@ -588,9 +588,9 @@ MonoBehaviour:
   dialogue:
     dialogueLines:
     - _character:
-        _name: Studente
+        _name: Student
         _icon: {fileID: 21300000, guid: 61f32f38636dc914985219f2b5f1e86c, type: 3}
-      _line: Qui finalmente posso essere davvero me stesso
+      _line: Here I can finally be my true self
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
 --- !u!65 &155695157
@@ -913,10 +913,10 @@ MonoBehaviour:
   dialogue:
     dialogueLines:
     - _character:
-        _name: Studente
+        _name: Student
         _icon: {fileID: 21300000, guid: 7390c5a0708f8a84a858573655cafbb1, type: 3}
-      _line: "1500\u20AC e divento ricco in un mese, questo corso \xE8 incrediiibile,
-        augh augh!"
+      _line: "1500\u20AC and I'll be rich in a month, this course is amazing, augh
+        augh!"
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
 --- !u!65 &186500163
@@ -1102,9 +1102,9 @@ MonoBehaviour:
   dialogue:
     dialogueLines:
     - _character:
-        _name: Studente
+        _name: Student
         _icon: {fileID: 21300000, guid: 182e3062d4cf19140bcbdcb8718ad8bb, type: 3}
-      _line: Sto perdendo troppo tempo... Aspetta, son passati solo 5 minuti?
+      _line: I'm wasting too much time... Wait, it's only been 5 minutes?
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
 --- !u!4 &229398540 stripped
@@ -4399,7 +4399,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (E) Parla
+  m_text: (E) Talk
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7194,7 +7194,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (E) Raccogli
+  m_text: '(E) Pick up
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9427,7 +9429,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (E) Parla
+  m_text: (E) Talk
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9769,7 +9771,7 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1770893230}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
@@ -11218,7 +11220,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (E) Parla
+  m_text: (E) Talk
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -11810,9 +11812,9 @@ MonoBehaviour:
   dialogue:
     dialogueLines:
     - _character:
-        _name: Studente
+        _name: Student
         _icon: {fileID: 21300000, guid: 0cedc7269f00f724f860dce49ddb8af8, type: 3}
-      _line: 'Ma se chiedessi una foto piedi a image creator? '
+      _line: What if I asked for a foot pic from the image creator?
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
 --- !u!65 &2004299320
@@ -12089,7 +12091,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (E) Parla
+  m_text: (E) Talk
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

@@ -611,10 +611,10 @@ MonoBehaviour:
   dialogue:
     dialogueLines:
     - _character:
-        _name: Studente
+        _name: Student
         _icon: {fileID: 21300000, guid: 0cedc7269f00f724f860dce49ddb8af8, type: 3}
-      _line: "Un cretino in aula 1 ha appena comprato il mio corso \"Rich and well
-        endowed\" per 1500\u20AC"
+      _line: "Some idiot in room 1 just bought my course \"Rich and well endowed\"
+        for 1500\u20AC"
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
 --- !u!65 &67431950
@@ -700,7 +700,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (E) Parla
+  m_text: (E) Talk
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1386,7 +1386,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (E) Raccogli
+  m_text: (E) Pick up
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1520,7 +1520,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (E) Parla
+  m_text: (E) Talk
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2105,7 +2105,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (E) Parla
+  m_text: (E) Talk
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2621,9 +2621,9 @@ MonoBehaviour:
   dialogue:
     dialogueLines:
     - _character:
-        _name: Studente
+        _name: Student
         _icon: {fileID: 21300000, guid: 828ed8af017b3454b95dbcc0031494bb, type: 3}
-      _line: Tutto sto tempo in questa posizione e la skin da penitente fa pure schifo...
+      _line: All this time in this position and the penitent skin looks like crap...
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
 --- !u!65 &429080370
@@ -5385,7 +5385,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (E) Parla
+  m_text: (E) Talk
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -10575,9 +10575,9 @@ MonoBehaviour:
   dialogue:
     dialogueLines:
     - _character:
-        _name: Studente
+        _name: Student
         _icon: {fileID: 21300000, guid: edd167d6f8bde5542896f4645e3bf4f8, type: 3}
-      _line: Questa lavagna ha degli strani riflessi verdi
+      _line: This blackboard has some weird green reflections
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
 --- !u!65 &1746317702
@@ -10813,7 +10813,7 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1770893230}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
@@ -11062,9 +11062,9 @@ MonoBehaviour:
   dialogue:
     dialogueLines:
     - _character:
-        _name: Studente
+        _name: Student
         _icon: {fileID: 21300000, guid: bea458bfbcff0454288023f177e4129a, type: 3}
-      _line: Shhh Raga arriva la mia scena preferita
+      _line: Shhh guys, my favorite scene is coming up
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
 --- !u!65 &1830669856

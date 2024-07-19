@@ -608,9 +608,9 @@ MonoBehaviour:
   dialogue:
     dialogueLines:
     - _character:
-        _name: Studente
+        _name: Student
         _icon: {fileID: 21300000, guid: 182e3062d4cf19140bcbdcb8718ad8bb, type: 3}
-      _line: Mi prendo... solo un minuto... di pausa.... zzz...
+      _line: "I'll just take... one minute... break... zzz\u2026"
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
 --- !u!65 &45933781
@@ -812,9 +812,9 @@ MonoBehaviour:
   dialogue:
     dialogueLines:
     - _character:
-        _name: Studente
+        _name: Student
         _icon: {fileID: 21300000, guid: 7390c5a0708f8a84a858573655cafbb1, type: 3}
-      _line: "\xC8 tutto cos\xEC... fantastico... potrei rimanerci per sempre..."
+      _line: "Everything's so... amazing... I could stay here forever\u2026"
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
 --- !u!65 &91994033
@@ -2295,7 +2295,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (E) Parla
+  m_text: (E) Talk
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3412,10 +3412,15 @@ MonoBehaviour:
   dialogue:
     dialogueLines:
     - _character:
-        _name: Studente
+        _name: Student
         _icon: {fileID: 21300000, guid: 49d2552dd6a9c5f4c84b5be873224273, type: 3}
-      _line: "Oooh \xE8 uscita l'espansione MDMA nel pacchetto droghe pesanti, ci
-        voleva tanto?"
+      _line: Ooooh, the expansion 'Sweat and Happiness Plum Cake'  has been released,
+        finally!
+    - _character:
+        _name: Student
+        _icon: {fileID: 21300000, guid: 49d2552dd6a9c5f4c84b5be873224273, type: 3}
+      _line: It was exactly what was missing from the 'Sweets with Incredible Psychoactive
+        Effects' pack
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
 --- !u!65 &467850891
@@ -4066,9 +4071,9 @@ MonoBehaviour:
   dialogue:
     dialogueLines:
     - _character:
-        _name: Studente
+        _name: Student
         _icon: {fileID: 21300000, guid: edd167d6f8bde5542896f4645e3bf4f8, type: 3}
-      _line: Implementeranno mai i raggi x?
+      _line: Will they ever implement X-rays?
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
 --- !u!65 &547792681
@@ -4703,9 +4708,9 @@ MonoBehaviour:
   dialogue:
     dialogueLines:
     - _character:
-        _name: Studente
+        _name: Student
         _icon: {fileID: 21300000, guid: 61f32f38636dc914985219f2b5f1e86c, type: 3}
-      _line: Mi sembra di avere tempo infinito...
+      _line: " I feel like I have infinite time\u2026"
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
 --- !u!1 &566561019
@@ -5690,7 +5695,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (E) Parla
+  m_text: (E) Talk
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8767,12 +8772,12 @@ MonoBehaviour:
   dialogue:
     dialogueLines:
     - _character:
-        _name: Studente
+        _name: Student
         _icon: {fileID: 21300000, guid: 9e697c58cda8bd2438511f129b3c5f94, type: 3}
-      _line: Ma i bagni non erano qui una volta, che si sia buggato qualcosa? ma
-        va dai
+      _line: "Wait a minute, bathrooms weren't positioned here before, did something
+        bug out? Nah, come on\u2026"
     - _character:
-        _name: Studente
+        _name: Student
         _icon: {fileID: 21300000, guid: 9e697c58cda8bd2438511f129b3c5f94, type: 3}
       _line: pssss.....
   _prompt: NPC
@@ -9175,7 +9180,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (E) Parla
+  m_text: (E) Talk
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -11018,7 +11023,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (E) Parla
+  m_text: (E) Talk
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -11152,7 +11157,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (E) Parla
+  m_text: (E) Talk
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -11286,7 +11291,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (E) Parla
+  m_text: (E) Talk
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -11425,7 +11430,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (E) Parla
+  m_text: (E) Talk
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -11986,7 +11991,7 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1503390286}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
@@ -12988,7 +12993,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Chiusa a chiave
+  m_text: Locked
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -13301,9 +13306,9 @@ MonoBehaviour:
   dialogue:
     dialogueLines:
     - _character:
-        _name: Studente
+        _name: Student
         _icon: {fileID: 21300000, guid: 0cedc7269f00f724f860dce49ddb8af8, type: 3}
-      _line: "\"Raccogli le mele nelle aule M\"? Che razza di secondaria \xE8?"
+      _line: '"Collect apples in the M rooms"? What kind of side quest is this?'
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
 --- !u!65 &1594958619
@@ -16805,10 +16810,10 @@ MonoBehaviour:
   dialogue:
     dialogueLines:
     - _character:
-        _name: Studente
+        _name: Student
         _icon: {fileID: 21300000, guid: edd167d6f8bde5542896f4645e3bf4f8, type: 3}
-      _line: "Cagare al poli \xE8 sempre un piacere, nelle M poi onestamente \xE8
-        forse meglio che a casa"
+      _line: "Taking a dump at the polytechnic is always a pleasure, honestly maybe
+        even better   \r                        than at home in the M rooms\r\n"
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
 --- !u!65 &1989509961
@@ -17682,7 +17687,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (E) Parla
+  m_text: (E) Talk
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
