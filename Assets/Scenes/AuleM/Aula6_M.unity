@@ -180,7 +180,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (E) Parla
+  m_text: (E) Talk
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -772,9 +772,9 @@ MonoBehaviour:
   dialogue:
     dialogueLines:
     - _character:
-        _name: Studente
+        _name: Student
         _icon: {fileID: 21300000, guid: 8abebb220c37cf44b97c4fe5f9de9f21, type: 3}
-      _line: "Credo proprio che rester\xF2 qui per un bel p\xF2, \xE8 cos\xEC magnifico..."
+      _line: I think I'll stay here for a while, it's so magnificent...
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
 --- !u!65 &125941106
@@ -855,7 +855,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (E) Parla
+  m_text: (E) Talk
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1020,6 +1020,9 @@ PrefabInstance:
       addedObject: {fileID: 131450470}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: efa2ff1e42054ce499ecb837ec624fa0, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 131450476}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: efa2ff1e42054ce499ecb837ec624fa0, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 131450474}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: efa2ff1e42054ce499ecb837ec624fa0, type: 3}
       insertIndex: -1
@@ -1099,16 +1102,37 @@ MonoBehaviour:
   dialogue:
     dialogueLines:
     - _character:
-        _name: Studente
+        _name: Student
         _icon: {fileID: 21300000, guid: 9e697c58cda8bd2438511f129b3c5f94, type: 3}
-      _line: 'Possibile che possa stare su qualsiasi social ma non riesco a contattare
-        nessuno al di fuori di qui? '
+      _line: Is it possible that I can be on any social media but can't contact anyone
+        outside of here?
     - _character:
-        _name: Studente
+        _name: Student
         _icon: {fileID: 21300000, guid: 9e697c58cda8bd2438511f129b3c5f94, type: 3}
-      _line: Che strano...
+      _line: That's so weird
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
+--- !u!65 &131450476
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 131450469}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.4475653, y: 2.9253352, z: 1.6679091}
+  m_Center: {x: -0.045366485, y: 0.9626604, z: 0.0995886}
 --- !u!1 &170018685
 GameObject:
   m_ObjectHideFlags: 0
@@ -1512,10 +1536,10 @@ MonoBehaviour:
   dialogue:
     dialogueLines:
     - _character:
-        _name: Studente
+        _name: Student
         _icon: {fileID: 21300000, guid: a41aa0b804c3a02458ebfa701e226fa7, type: 3}
-      _line: "Se quella merda di yoshi mi lancia un altro guscio lo scanno, quant'\xE8
-        ver'Iddio LO SCANNO!"
+      _line: If that damn Yoshi throws another shell at me, I swear to God I'LL KILL
+        HIM!
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
 --- !u!65 &223202372
@@ -2698,7 +2722,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (E) Parla
+  m_text: (E) Talk
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5228,10 +5252,10 @@ MonoBehaviour:
   dialogue:
     dialogueLines:
     - _character:
-        _name: Studente
+        _name: Student
         _icon: {fileID: 21300000, guid: 9e697c58cda8bd2438511f129b3c5f94, type: 3}
-      _line: "Ho paura ad uscire da queste aule, c'\xE8 un maniaco appostato in cortile
-        alla ricerca di furry"
+      _line: I'm scared to leave these rooms, there's a maniac lurking in the courtyard
+        looking for furries
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
 --- !u!65 &785293366
@@ -5741,7 +5765,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (E) Parla
+  m_text: (E) Talk
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6145,19 +6169,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6167146292460915879, guid: 6f9308a9ad3eccc48a77142fbad86f27, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6167146292460915879, guid: 6f9308a9ad3eccc48a77142fbad86f27, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6167146292460915879, guid: 6f9308a9ad3eccc48a77142fbad86f27, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 44.625748
       objectReference: {fileID: 0}
     - target: {fileID: 6167146292460915879, guid: 6f9308a9ad3eccc48a77142fbad86f27, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -42.73655
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6535,13 +6559,14 @@ MonoBehaviour:
   dialogue:
     dialogueLines:
     - _character:
-        _name: Studente
+        _name: Student
         _icon: {fileID: 21300000, guid: 828ed8af017b3454b95dbcc0031494bb, type: 3}
-      _line: No raga basta, ci vada qualcun altro con la skin di paperino in mensa
+      _line: No guys, that's enough, someone else go to the cafeteria in the Donald
+        Duck skin
     - _character:
-        _name: Studente
+        _name: Student
         _icon: {fileID: 21300000, guid: 828ed8af017b3454b95dbcc0031494bb, type: 3}
-      _line: C'era un matto che pensava fossi paperino per davvero
+      _line: There was a crazy guy who thought I was actually Donald Duck!
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
 --- !u!65 &1116016749
@@ -8329,7 +8354,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (E) Raccogli
+  m_text: (E) Pick up
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8717,7 +8742,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (E) Raccogli
+  m_text: (E) Pick up
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -10426,8 +10451,8 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1690620149}
   m_LocalRotation: {x: -0.000000029150906, y: 0.30037415, z: 0.00000024944896, w: 0.9538215}
-  m_LocalPosition: {x: 0, y: 0, z: 6.3}
-  m_LocalScale: {x: 0.03774433, y: 0.012337145, z: 0.09112386}
+  m_LocalPosition: {x: 0, y: 0, z: 1.9}
+  m_LocalScale: {x: 0.02448216, y: 0.008002261, z: 0.059105806}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1561801917}
@@ -10435,7 +10460,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: -62.602, y: 92.799, z: -9.684}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 2.5, y: 3}
+  m_AnchoredPosition: {x: -2.6, y: 2.7}
   m_SizeDelta: {x: 928.3333, y: 761.3333}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1696016882
@@ -10656,7 +10681,7 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1770893230}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
@@ -11529,7 +11554,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (E) Parla
+  m_text: (E) Talk
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
