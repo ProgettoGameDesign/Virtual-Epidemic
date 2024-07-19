@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics.Tracing;
 using Cinemachine;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -9,11 +10,12 @@ public class Door : MonoBehaviour, InteractInterface
     [SerializeField] private string _prompt;
     [SerializeField] Animator _animator;
     [SerializeField] private GameObject CanvasPorta3;
+    //[SerializeField] private Transform _nuovoTarget;
     public string InteractionPrompt => _prompt;
     //private Vector3 _spawnPosition;
     public SceneState _sceneState;
     public GameObject virtualCamera;
-    private float rotationSpeed = 0.7f;
+    private float rotationSpeed = 0.75f;
 
     public bool Interact(Interactor interactor)
     {
@@ -103,16 +105,17 @@ public class Door : MonoBehaviour, InteractInterface
         Quaternion targetRotation = Quaternion.Euler(20, -90, 0);
         float elapsedTime = 0f;
         CinemachineVirtualCamera cameraComponent = virtualCamera.GetComponent<CinemachineVirtualCamera>();
+        //cameraComponent.Follow = _nuovoTarget;
         float startFOV = cameraComponent.m_Lens.FieldOfView;
         float targetFOV = 22;
 
         while (elapsedTime < 1.8f)
         {
-            virtualCamera.transform.rotation = Quaternion.Slerp(initialRotation, targetRotation, elapsedTime / 1.8f);
+            virtualCamera.transform.rotation = Quaternion.Slerp(initialRotation, targetRotation, elapsedTime * rotationSpeed);
             cameraComponent.m_Lens.FieldOfView = Mathf.Lerp(startFOV, targetFOV, elapsedTime / 1.8f);
             elapsedTime += Time.deltaTime;
             yield return null;
-        }
+        } 
 
         virtualCamera.transform.rotation = targetRotation; // Assicurati che la rotazione finale sia esattamente quella target
         SceneManager.LoadScene("Corridoio_M");
