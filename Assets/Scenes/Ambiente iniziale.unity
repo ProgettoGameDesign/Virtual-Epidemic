@@ -199,13 +199,13 @@ MonoBehaviour:
   dialogue:
     dialogueLines:
     - _character:
-        _name: Studente
+        _name: Student
         _icon: {fileID: 21300000, guid: 61f32f38636dc914985219f2b5f1e86c, type: 3}
       _line: '"hawk tuah! and spit on that thang you get me?" '
     - _character:
-        _name: Studente
+        _name: Student
         _icon: {fileID: 21300000, guid: 61f32f38636dc914985219f2b5f1e86c, type: 3}
-      _line: "ma \xE8 da un'ora che guardo questo reel, basta "
+      _line: I've been watching this reel for an hour, enough already
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
 --- !u!65 &5763506
@@ -2172,9 +2172,9 @@ MonoBehaviour:
   dialogue:
     dialogueLines:
     - _character:
-        _name: Studente
+        _name: Student
         _icon: {fileID: 21300000, guid: 0cedc7269f00f724f860dce49ddb8af8, type: 3}
-      _line: I colori del cielo sono incredibili oggi
+      _line: The colors of the sky are incredible today
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
 --- !u!65 &47204999
@@ -4540,7 +4540,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (E) parla
+  m_text: (E) Talk
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4674,7 +4674,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (E) parla
+  m_text: (E) Talk
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5167,7 +5167,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (E) parla
+  m_text: (E) Talk
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5306,7 +5306,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (E) parla
+  m_text: (E) Talk
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5459,9 +5459,9 @@ MonoBehaviour:
   dialogue:
     dialogueLines:
     - _character:
-        _name: Studente
+        _name: Student
         _icon: {fileID: 21300000, guid: 9e697c58cda8bd2438511f129b3c5f94, type: 3}
-      _line: Non mi vedranno mai quei cretini
+      _line: Those idiots will never see me
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
 --- !u!65 &184102588
@@ -6051,7 +6051,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Accesso bloccato
+  m_text: Locked
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6469,10 +6469,10 @@ MonoBehaviour:
   dialogue:
     dialogueLines:
     - _character:
-        _name: Studente
+        _name: Student
         _icon: {fileID: 21300000, guid: d2e70fe592b0bf347a0ece1a5b830530, type: 3}
-      _line: Son qua appostato da una vita, possibile che non passi neanche un furry
-        da spiare?
+      _line: "I've been hiding here forever, is it possible not a single furry has
+        passed by for me to spy on?    \r"
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
 --- !u!65 &225703869
@@ -7140,7 +7140,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (E) parla
+  m_text: (E) Talk
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7279,7 +7279,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Accesso bloccato
+  m_text: Locked
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9137,9 +9137,9 @@ MonoBehaviour:
   dialogue:
     dialogueLines:
     - _character:
-        _name: Studente
+        _name: Student
         _icon: {fileID: 21300000, guid: 49d2552dd6a9c5f4c84b5be873224273, type: 3}
-      _line: Ma quei due scemi non si vergognano a stare qua in costume?
+      _line: Don't those two idiots feel embarrassed to be here in swimsuits?
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
 --- !u!65 &301385900
@@ -9873,47 +9873,45 @@ MonoBehaviour:
   dialogue:
     dialogueLines:
     - _character:
-        _name: Studente
+        _name: Student
         _icon: {fileID: 21300000, guid: e5989e5d368734e42a2a6cba0e59507d, type: 3}
-      _line: "psss\u2026 psss\u2026"
+      _line: "Psss\u2026 psss\u2026"
     - _character:
-        _name: Studente
+        _name: Student
         _icon: {fileID: 21300000, guid: e5989e5d368734e42a2a6cba0e59507d, type: 3}
-      _line: "S-sig. G-Gastani Frinzi? Mi \xE8 stato detto di venirle incontro per
-        darle qualche informazione... "
+      _line: M-Mr. G-Gastani Frinzi? I was told to meet you to give you some information
     - _character:
-        _name: Studente
+        _name: Student
         _icon: {fileID: 21300000, guid: e5989e5d368734e42a2a6cba0e59507d, type: 3}
-      _line: M-mi chiamo G-Gino...
-    - _character:
-        _name: Gino
-        _icon: {fileID: 21300000, guid: e5989e5d368734e42a2a6cba0e59507d, type: 3}
-      _line: 'I-Il prof Scottino pare sia rinchiuso nel suo ufficio nelle aule T. '
+      _line: m-my name is G-Gino
     - _character:
         _name: Gino
         _icon: {fileID: 21300000, guid: e5989e5d368734e42a2a6cba0e59507d, type: 3}
-      _line: P-provi a parlare prima con i professori Nerra e Schiavetti
+      _line: P-Professor Scottino seems to be locked up in his office in the T building
     - _character:
         _name: Gino
         _icon: {fileID: 21300000, guid: e5989e5d368734e42a2a6cba0e59507d, type: 3}
-      _line: L-loro dovrebbero riuscire a darle una mano
+      _line: t-try talking to Professors Nerra and Schiavetti first
     - _character:
         _name: Gino
         _icon: {fileID: 21300000, guid: e5989e5d368734e42a2a6cba0e59507d, type: 3}
-      _line: "O-ora scappo, la mia copertura \xE8 saltata, non voglio r-rimanere
-        infetto."
+      _line: t-they should be able to help you out
     - _character:
         _name: Gino
         _icon: {fileID: 21300000, guid: e5989e5d368734e42a2a6cba0e59507d, type: 3}
-      _line: B-BUONA FORTUNA!
+      _line: n-now I gotta run, my cover's blown, I don't want to get i-infected
     - _character:
-        _name: Isp. Gastani Frinzi
+        _name: Gino
+        _icon: {fileID: 21300000, guid: e5989e5d368734e42a2a6cba0e59507d, type: 3}
+      _line: G-GOOD LUCK!
+    - _character:
+        _name: Insp. Gastani Frinzi
         _icon: {fileID: 21300000, guid: 97a54f358f771a7468420273816f4b6d, type: 3}
-      _line: Aspetta un attimo! chi ti ha detto di aiutarmi?
+      _line: Wait a minute! Who told you to help me?
     - _character:
-        _name: Isp. Gastani Frinzi
+        _name: Insp. Gastani Frinzi
         _icon: {fileID: 21300000, guid: 97a54f358f771a7468420273816f4b6d, type: 3}
-      _line: Nessuno dovrebbe sapere della mia presenza qui!
+      _line: No one should know I'm here!
 --- !u!1001 &370135838
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13408,9 +13406,9 @@ MonoBehaviour:
   dialogue:
     dialogueLines:
     - _character:
-        _name: Studente
+        _name: Student
         _icon: {fileID: 21300000, guid: bea458bfbcff0454288023f177e4129a, type: 3}
-      _line: "Chiss\xE0 se anche oggi incontro Paperino in mensa\n"
+      _line: I wonder if I'll run into Donald Duck in the cafeteria again today
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
 --- !u!1001 &567411543
@@ -14720,7 +14718,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (E) parla
+  m_text: (E) Talk
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -16146,9 +16144,9 @@ MonoBehaviour:
   dialogue:
     dialogueLines:
     - _character:
-        _name: Studente
+        _name: Student
         _icon: {fileID: 21300000, guid: 8abebb220c37cf44b97c4fe5f9de9f21, type: 3}
-      _line: L'ultimo episodio poi mi alzo, lo giuro
+      _line: One more episode and then I'll get up, I swear
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
 --- !u!65 &743341133
@@ -16894,7 +16892,7 @@ MonoBehaviour:
   dialogue:
     dialogueLines:
     - _character:
-        _name: Studente
+        _name: Student
         _icon: {fileID: 21300000, guid: 2f3082cb0c507544e8a62ed4db7e725a, type: 3}
       _line: "e tippe e tappe e tipidid\xE0..."
   _prompt: NPC
@@ -19705,7 +19703,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (E) parla
+  m_text: (E) Talk
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -20127,9 +20125,9 @@ MonoBehaviour:
   dialogue:
     dialogueLines:
     - _character:
-        _name: Studente
+        _name: Student
         _icon: {fileID: 21300000, guid: a41aa0b804c3a02458ebfa701e226fa7, type: 3}
-      _line: "\xC8 fantastico stare qui in costume"
+      _line: It's awesome being here in a swimsuit
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
 --- !u!65 &908099821
@@ -20444,7 +20442,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (E) parla
+  m_text: (E) Talk
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -27036,7 +27034,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (E) parla
+  m_text: (E) Talk
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -30163,9 +30161,9 @@ MonoBehaviour:
   dialogue:
     dialogueLines:
     - _character:
-        _name: Studente
+        _name: Student
         _icon: {fileID: 21300000, guid: 182e3062d4cf19140bcbdcb8718ad8bb, type: 3}
-      _line: Ho giocato troppo mi sa che sto per vomitare...
+      _line: I played too much, I think I'm gonna throw up...
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
 --- !u!114 &1163957174
@@ -30276,7 +30274,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (E) parla
+  m_text: (E) Talk
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -42852,10 +42850,10 @@ MonoBehaviour:
   dialogue:
     dialogueLines:
     - _character:
-        _name: Studente
+        _name: Student
         _icon: {fileID: 21300000, guid: edd167d6f8bde5542896f4645e3bf4f8, type: 3}
-      _line: Se rimango 45 minuti in questa posizione dovrei sbloccare la skin da
-        penitente
+      _line: If I stay in this position for 45 minutes, I should unlock the penitent
+        skin
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
 --- !u!65 &1562252968
@@ -47156,7 +47154,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (E) parla
+  m_text: (E) Talk
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -47612,7 +47610,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (E) parla
+  m_text: (E) Talk
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -47794,7 +47792,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Accesso bloccato
+  m_text: Locked
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -47938,7 +47936,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (E) parla
+  m_text: (E) Talk
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -49156,7 +49154,7 @@ MonoBehaviour:
   dialogue:
     dialogueLines:
     - _character:
-        _name: Studente
+        _name: Student
         _icon: {fileID: 21300000, guid: 828ed8af017b3454b95dbcc0031494bb, type: 3}
       _line: ronf... ronf...
   _prompt: NPC
@@ -52202,9 +52200,9 @@ MonoBehaviour:
   dialogue:
     dialogueLines:
     - _character:
-        _name: Studente
+        _name: Student
         _icon: {fileID: 21300000, guid: fb3409e81d2846649a27a822cfbb5fbb, type: 3}
-      _line: Queste zampe da leopardo delle nevi mi stanno da dio sinceramente
+      _line: These snow leopard paws look amazing on me, honestly
   _prompt: NPC
   sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
 --- !u!65 &2090920389
