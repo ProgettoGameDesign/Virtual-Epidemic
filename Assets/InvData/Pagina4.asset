@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <IsStackable>k__BackingField: 0
   <MaxStackSize>k__BackingField: 1
-  <Name>k__BackingField: Pagina_4
-  <Description>k__BackingField: Una pagina di diario di uno studente, ma quale ventenne
-    al giorno d'oggi scrive ancora su un diario?
+  <Name>k__BackingField: Page 4
+  <Description>k__BackingField: A diary page from a student, but what twenty-something
+    still writes in a diary these days?
   <ItemImage>k__BackingField: {fileID: 21300000, guid: 4ca627bc87fedf640a6d9f71199257c7, type: 3}
   <prefab>k__BackingField: {fileID: 9107984436484510385, guid: 59240cf65a26bc64292712b25126a3dc, type: 3}
   <DefaultParametersList>k__BackingField: []
