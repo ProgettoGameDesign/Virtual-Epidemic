@@ -12,12 +12,12 @@ public class Door : MonoBehaviour, InteractInterface
     [SerializeField] private string _prompt;
     [SerializeField] Animator _animator;
     [SerializeField] private GameObject CanvasPorta3;
-    //[SerializeField] private Transform _nuovoTarget;
+    [SerializeField] private GameObject _canvasFadeToBlack;
     public string InteractionPrompt => _prompt;
     //private Vector3 _spawnPosition;
     public SceneState _sceneState;
     public GameObject virtualCamera;
-    private float rotationSpeed = 0.75f;
+    private float rotationSpeed = 0.6f;
 
     public bool Interact(Interactor interactor)
     {
@@ -33,7 +33,11 @@ public class Door : MonoBehaviour, InteractInterface
             {
                 _sceneState.blockMovementPlayer = true;
                 _animator.SetBool("aperto", true);
-                if (SceneManager.GetActiveScene().name == "Ambiente iniziale") StartCoroutine(RotateCamera());
+                if (SceneManager.GetActiveScene().name == "Ambiente iniziale") 
+                {
+                    StartCoroutine(RotateCamera());
+                    _canvasFadeToBlack.SetActive(true);
+                }
                 else StartCoroutine(LoadNewScene("Corridoio_M"));
 
                 //AudioManager.instance.PlayOneShot(FMODEvents.instance.openDoor, this.transform.position);
