@@ -90,10 +90,12 @@ public class PauseMenu : MonoBehaviour
     public void MainMenuButton()
     {
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        //ResetGame();
         SceneManager.LoadScene(0); //per andare al MainMenu
         PauseMenuCanvas.SetActive(false);
         Time.timeScale = 1f;
         Paused = false;
+        
     }
     
     private void PlaySoundShow()
@@ -102,5 +104,10 @@ public class PauseMenu : MonoBehaviour
         eventInstance.setParameterByName("Type", 3);
         eventInstance.start();
         eventInstance.release();
+    }
+    public void ResetGame()
+    {
+        Debug.Log("corretto");
+        sceneState.ResetData();
     }
 }

@@ -49,7 +49,7 @@ public class Contatore : MonoBehaviour, InteractInterface
             gameObject.GetComponent<CanvasActive>().enabled = false;
             //canvasContatore.SetActive(false);
             SoundCoperchio();
-            textcanvas.GetComponentInChildren<TextMeshProUGUI>().text = "(E) Accendi";
+            textcanvas.GetComponentInChildren<TextMeshProUGUI>().text = "(E) LightUp";
         }
         else
         {
