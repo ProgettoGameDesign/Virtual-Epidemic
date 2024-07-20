@@ -666,9 +666,46 @@ MonoBehaviour:
         _icon: {fileID: 21300000, guid: 23ee087e89d2bcf46bfd8c181248b4b1, type: 3}
       _line: . . . . .
     - _character:
+        _name: Prof. Nerra
+        _icon: {fileID: 21300000, guid: 23ee087e89d2bcf46bfd8c181248b4b1, type: 3}
+      _line: Orson Welles... is that really you?
+    - _character:
+        _name: Insp. Gastani Frinzi
+        _icon: {fileID: 21300000, guid: 97a54f358f771a7468420273816f4b6d, type: 3}
+      _line: ' Professor Nerra, are you alright? You need to help me figure out who
+        the culprit is. '
+    - _character:
+        _name: Insp. Gastani Frinzi
+        _icon: {fileID: 21300000, guid: 97a54f358f771a7468420273816f4b6d, type: 3}
+      _line: Time is running out!
+    - _character:
         _name: Nerra
         _icon: {fileID: 21300000, guid: 23ee087e89d2bcf46bfd8c181248b4b1, type: 3}
-      _line: Orson Welles.... sei proprio tu ?
+      _line: Oh, I don't remember anything
+    - _character:
+        _name: Nerra
+        _icon: {fileID: 21300000, guid: 23ee087e89d2bcf46bfd8c181248b4b1, type: 3}
+      _line: Only an oppressive thesis student, Nic Tosto, I think
+    - _character:
+        _name: Nerra
+        _icon: {fileID: 21300000, guid: 23ee087e89d2bcf46bfd8c181248b4b1, type: 3}
+      _line: But why am I still here at the polytechnic? Strange, Everything seems
+        so fake here...
+    - _character:
+        _name: Insp. Gastani Frinzi
+        _icon: {fileID: 21300000, guid: 97a54f358f771a7468420273816f4b6d, type: 3}
+      _line: 'Hmm, you must still be very confused.
+
+'
+    - _character:
+        _name: Insp. Gastani Frinzi
+        _icon: {fileID: 21300000, guid: 97a54f358f771a7468420273816f4b6d, type: 3}
+      _line: I don't have time to waste, I'll continue investigating on my own
+    - _character:
+        _name: Nerra
+        _icon: {fileID: 21300000, guid: 23ee087e89d2bcf46bfd8c181248b4b1, type: 3}
+      _line: Hey, is that my camera? Oh, but what does it matter now, my head is
+        spinning
   musichina: {fileID: 294642996}
   path: event:/Transitions
 --- !u!1 &126267890
@@ -8233,27 +8270,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2025439121459738180, guid: da8d6495f5bd430449e88a12b6439d77, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2025439121459738180, guid: da8d6495f5bd430449e88a12b6439d77, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2025439121459738180, guid: da8d6495f5bd430449e88a12b6439d77, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 160
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2025439121459738180, guid: da8d6495f5bd430449e88a12b6439d77, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 160
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2025439121459738180, guid: da8d6495f5bd430449e88a12b6439d77, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2025439121459738180, guid: da8d6495f5bd430449e88a12b6439d77, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2891282810409729202, guid: da8d6495f5bd430449e88a12b6439d77, type: 3}
       propertyPath: m_AnchorMax.y
@@ -9124,7 +9161,7 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1770893230}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
