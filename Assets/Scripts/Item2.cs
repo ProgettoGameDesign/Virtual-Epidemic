@@ -16,7 +16,7 @@ public class Item2 : MonoBehaviour, InteractInterface
     {
         if (_prompt == "Telecamera")
         {
-            
+            playerData.pickedCamera = true;
             tutorialVideoCamera.SwitchActive();
         }
         //Debug.Log(item1);
