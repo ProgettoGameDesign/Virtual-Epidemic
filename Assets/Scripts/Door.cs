@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics.Tracing;
 using Cinemachine;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Door : MonoBehaviour, InteractInterface
 {
@@ -55,6 +57,9 @@ public class Door : MonoBehaviour, InteractInterface
                 if (_sceneState._hasKey == true)
 
                 {
+                    Button button = CanvasPorta3.GetComponentInChildren<Button>();
+                    button.GetComponentInChildren<TextMeshProUGUI>().text = "Used Key";
+                    CanvasPorta3.SetActive(true);
                     _sceneState.blockMovementPlayer = true;
                     _animator.SetBool("aperto", true);
                     StartCoroutine(LoadNewScene("Aula3_M"));

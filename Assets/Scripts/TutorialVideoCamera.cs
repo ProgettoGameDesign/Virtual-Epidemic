@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -10,6 +11,7 @@ public class TutorialVideoCamera : MonoBehaviour
     [SerializeField] SceneState sceneState;
     void Update()
     {
+
         if (canvasTutorial.activeSelf == true)
         {
             menu.SetActive(false);
@@ -24,4 +26,5 @@ public class TutorialVideoCamera : MonoBehaviour
         canvasTutorial.SetActive(!canvasTutorial.activeSelf);
         sceneState.blockMovementPlayer = !sceneState.blockMovementPlayer;
     }
+    
 }

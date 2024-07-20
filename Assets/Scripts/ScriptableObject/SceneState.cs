@@ -8,6 +8,7 @@ public class SceneState : ScriptableObject
     public Vector3 lastPosition_AI = new Vector3(0,0,0);
     public Vector3 lastPosition_CorridoioM = new Vector3(0,0,0);
     public bool _torchActive;
+    public bool pickedCamera;
     public bool _hasKey;
     public bool _lightup;
     public Color _currentcolor;
@@ -29,6 +30,7 @@ public class SceneState : ScriptableObject
         lastPosition_AI = Vector3.zero; 
         lastPosition_CorridoioM = Vector3.zero;
         _torchActive = false;
+        pickedCamera = false;
         _hasKey = false;
         _lightup = false;
         _ambient = Color.black;

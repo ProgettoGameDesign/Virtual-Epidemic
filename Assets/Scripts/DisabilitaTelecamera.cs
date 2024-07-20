@@ -11,17 +11,11 @@ public class DisabilitaTelecamera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(sceneState._torchActive == true)
+        if(sceneState.pickedCamera == true)
         {
             telecameraScena.SetActive(false);
             //_torciaCamera.SetActive(true);
 
         }
-        /*
-        if(sceneState._torchActive == false)
-        {
-            _torciaCamera.SetActive(false);
-
-        }*/
     }
 }
