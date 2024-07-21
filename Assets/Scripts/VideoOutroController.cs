@@ -17,7 +17,7 @@ public class VideoOutroController : MonoBehaviour
         videoPlayer.Play();
 
         // Collega l'evento al metodo che verrà chiamato quando il video sarà finito
-        Invoke("OnVideoEnd", 17);
+        Invoke("OnVideoEnd", 33);
 
         // Imposta la texture del video sul RawImage
         videoPlayer.prepareCompleted += OnVideoPrepared;
