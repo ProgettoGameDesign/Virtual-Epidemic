@@ -68,6 +68,7 @@ public class TPM_characterController : MonoBehaviour
         UpdateSound();
         if(playerData.blockMovementPlayer)
         {
+            _animator.SetBool("Run", false);
             _inputSpeed = 0;
             return;
         }
