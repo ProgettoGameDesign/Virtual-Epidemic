@@ -2264,7 +2264,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Play the game
+  m_text: Play
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 88c67faf360270444a96b51e16e4b0a1, type: 2}
   m_sharedMaterial: {fileID: 1501709097503745491, guid: 88c67faf360270444a96b51e16e4b0a1, type: 2}
@@ -2301,7 +2301,7 @@ MonoBehaviour:
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
-  m_characterSpacing: -11.4
+  m_characterSpacing: -10
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0

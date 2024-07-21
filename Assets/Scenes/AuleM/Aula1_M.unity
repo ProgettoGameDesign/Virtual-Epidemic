@@ -3212,6 +3212,7 @@ MonoBehaviour:
   _prompt: Door-M
   _animator: {fileID: 615878554}
   CanvasPorta3: {fileID: 0}
+  _canvasFadeToBlack: {fileID: 0}
   _sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
   virtualCamera: {fileID: 0}
 --- !u!1001 &627256830
@@ -12096,7 +12097,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Chiudi
+  m_text: Close
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 88c67faf360270444a96b51e16e4b0a1, type: 2}
   m_sharedMaterial: {fileID: 1501709097503745491, guid: 88c67faf360270444a96b51e16e4b0a1, type: 2}
@@ -12696,6 +12697,7 @@ MonoBehaviour:
   _prompt: Door-M
   _animator: {fileID: 6792984009754030881}
   CanvasPorta3: {fileID: 0}
+  _canvasFadeToBlack: {fileID: 0}
   _sceneState: {fileID: 0}
   virtualCamera: {fileID: 0}
 --- !u!114 &6792984009754030880

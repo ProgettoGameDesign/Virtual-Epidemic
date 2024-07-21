@@ -4353,6 +4353,7 @@ MonoBehaviour:
   _prompt: Door-M1
   _animator: {fileID: 548143783}
   CanvasPorta3: {fileID: 0}
+  _canvasFadeToBlack: {fileID: 0}
   _sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
   virtualCamera: {fileID: 0}
 --- !u!114 &548143780
@@ -4613,6 +4614,7 @@ MonoBehaviour:
   _prompt: Door-M6
   _animator: {fileID: 551406558}
   CanvasPorta3: {fileID: 0}
+  _canvasFadeToBlack: {fileID: 0}
   _sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
   virtualCamera: {fileID: 0}
 --- !u!95 &551406558
@@ -11835,6 +11837,7 @@ MonoBehaviour:
   _prompt: Door-M4
   _animator: {fileID: 1461681579}
   CanvasPorta3: {fileID: 0}
+  _canvasFadeToBlack: {fileID: 0}
   _sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
   virtualCamera: {fileID: 0}
 --- !u!95 &1461681579
@@ -13319,6 +13322,7 @@ MonoBehaviour:
   _prompt: Exit
   _animator: {fileID: 0}
   CanvasPorta3: {fileID: 0}
+  _canvasFadeToBlack: {fileID: 0}
   _sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
   virtualCamera: {fileID: 0}
 --- !u!65 &1567873335
@@ -14908,7 +14912,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Chiudi
+  m_text: Close
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 88c67faf360270444a96b51e16e4b0a1, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -16726,6 +16730,7 @@ MonoBehaviour:
   _prompt: Door-M2
   _animator: {fileID: 1950721292}
   CanvasPorta3: {fileID: 0}
+  _canvasFadeToBlack: {fileID: 0}
   _sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
   virtualCamera: {fileID: 0}
 --- !u!95 &1950721292
@@ -17338,6 +17343,7 @@ MonoBehaviour:
   _prompt: Door-M5
   _animator: {fileID: 2028111614}
   CanvasPorta3: {fileID: 0}
+  _canvasFadeToBlack: {fileID: 0}
   _sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
   virtualCamera: {fileID: 0}
 --- !u!95 &2028111614
@@ -17551,6 +17557,7 @@ MonoBehaviour:
   _prompt: Door-M3
   _animator: {fileID: 2053060247}
   CanvasPorta3: {fileID: 1259471045}
+  _canvasFadeToBlack: {fileID: 0}
   _sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
   virtualCamera: {fileID: 0}
 --- !u!95 &2053060247
