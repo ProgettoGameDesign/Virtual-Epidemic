@@ -955,7 +955,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97d507bc0cff39d43bbe93ada2642eae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeTime: 88
+  changeTime: 69
   sceneName: Ambiente iniziale
 --- !u!4 &975996974
 Transform:
