@@ -15,7 +15,7 @@ public class SubsScript : MonoBehaviour
 
     IEnumerator TheSequence()
     {
-        yield return new WaitForSeconds(0.13f);
+        yield return new WaitForSeconds(3.33f);
         textBox.GetComponent<TextMeshProUGUI>().text = "Hello Inspector Gastani Frinzi";
         yield return new WaitForSeconds(1.71f);
         textBox.GetComponent<TextMeshProUGUI>().text = "";
