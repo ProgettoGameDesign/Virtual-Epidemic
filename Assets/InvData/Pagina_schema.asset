@@ -15,8 +15,8 @@ MonoBehaviour:
   <IsStackable>k__BackingField: 0
   <MaxStackSize>k__BackingField: 1
   <Name>k__BackingField: Page with Color Scheme
-  <Description>k__BackingField: Una pagina di diario di uno studente, ma quale ventenne
-    al giorno d'oggi scrive ancora su un diario?
+  <Description>k__BackingField: A diary page from a student. There's a color scheme
+    depicted on it, and the ink is very strange. The colors are particularly vivid.
   <ItemImage>k__BackingField: {fileID: 21300000, guid: 548619f0854de0a479ba26458bd50c57, type: 3}
   <prefab>k__BackingField: {fileID: 6693965405696759545, guid: 11a4cfc07aceaa44ca4dce6caaeba066, type: 3}
   <DefaultParametersList>k__BackingField: []
