@@ -245,19 +245,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6167146292460915879, guid: 6f9308a9ad3eccc48a77142fbad86f27, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6167146292460915879, guid: 6f9308a9ad3eccc48a77142fbad86f27, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6167146292460915879, guid: 6f9308a9ad3eccc48a77142fbad86f27, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 44.625748
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6167146292460915879, guid: 6f9308a9ad3eccc48a77142fbad86f27, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -42.73655
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18193,6 +18193,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1371647394}
     m_Modifications:
+    - target: {fileID: 2268883813372064838, guid: ebfe658582a207149a9fa44a1acb2bcd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.052087
+      objectReference: {fileID: 0}
     - target: {fileID: 2384413024215389151, guid: ebfe658582a207149a9fa44a1acb2bcd, type: 3}
       propertyPath: m_Name
       value: Cartello aula 5
@@ -18847,6 +18851,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1371647394}
     m_Modifications:
+    - target: {fileID: 698519680107020722, guid: 0ef0ec30480ece24d9d709112e820384, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.052087
+      objectReference: {fileID: 0}
     - target: {fileID: 1653179257625849301, guid: 0ef0ec30480ece24d9d709112e820384, type: 3}
       propertyPath: m_LocalPosition.x
       value: -9.643383
@@ -18947,6 +18955,10 @@ PrefabInstance:
     - target: {fileID: 4379924454801126676, guid: bb46b644a6ace854185bfaf26256d8db, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5228584390653981757, guid: bb46b644a6ace854185bfaf26256d8db, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.052087
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
