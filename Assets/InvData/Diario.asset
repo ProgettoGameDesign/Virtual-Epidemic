@@ -15,7 +15,8 @@ MonoBehaviour:
   <IsStackable>k__BackingField: 0
   <MaxStackSize>k__BackingField: 1
   <Name>k__BackingField: Diary
-  <Description>k__BackingField: This is the diary.
+  <Description>k__BackingField: The diary of a student, from the heading it seems
+    to belong to a certain Nic Tosto. Some pages seem to have been torn out
   <ItemImage>k__BackingField: {fileID: 21300000, guid: 8d52c51dcc6a4904a8a316bd040a9185, type: 3}
   <prefab>k__BackingField: {fileID: -8679921383154817045, guid: e581f3fcb554b404ebb20e97478e5633, type: 3}
   <DefaultParametersList>k__BackingField: []
