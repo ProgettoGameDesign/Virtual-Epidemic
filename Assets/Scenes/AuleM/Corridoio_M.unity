@@ -18578,6 +18578,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1371647394}
     m_Modifications:
+    - target: {fileID: 3306275697807801058, guid: 0dc63b3812534ea4ba6fbec2a10d0b57, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.552087
+      objectReference: {fileID: 0}
     - target: {fileID: 7321343804531850976, guid: 0dc63b3812534ea4ba6fbec2a10d0b57, type: 3}
       propertyPath: m_LocalPosition.x
       value: -11.233383
@@ -18588,7 +18592,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7321343804531850976, guid: 0dc63b3812534ea4ba6fbec2a10d0b57, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -6.0741296
+      value: -6.071
       objectReference: {fileID: 0}
     - target: {fileID: 7321343804531850976, guid: 0dc63b3812534ea4ba6fbec2a10d0b57, type: 3}
       propertyPath: m_LocalRotation.w
@@ -18731,7 +18735,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 348364953289866874, guid: 8de98e295d2a7024ba702708a682be80, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -6.07293
+      value: -6.0698004
       objectReference: {fileID: 0}
     - target: {fileID: 348364953289866874, guid: 8de98e295d2a7024ba702708a682be80, type: 3}
       propertyPath: m_LocalRotation.w
@@ -18765,6 +18769,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cartello aula 2
       objectReference: {fileID: 0}
+    - target: {fileID: 8108274974131647511, guid: 8de98e295d2a7024ba702708a682be80, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.552087
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18778,6 +18786,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1371647394}
     m_Modifications:
+    - target: {fileID: 3480785947894732677, guid: 25c043371052e544da4ad93d180cb756, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.552087
+      objectReference: {fileID: 0}
     - target: {fileID: 6932173493683941113, guid: 25c043371052e544da4ad93d180cb756, type: 3}
       propertyPath: m_Name
       value: Cartello aula 6
@@ -18792,7 +18804,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7746147090561545283, guid: 25c043371052e544da4ad93d180cb756, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -6.0741296
+      value: -6.071
       objectReference: {fileID: 0}
     - target: {fileID: 7746147090561545283, guid: 25c043371052e544da4ad93d180cb756, type: 3}
       propertyPath: m_LocalRotation.w
