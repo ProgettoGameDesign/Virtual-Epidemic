@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <IsStackable>k__BackingField: 0
   <MaxStackSize>k__BackingField: 1
-  <Name>k__BackingField: Video Camera
+  <Name>k__BackingField: ColorCamera
   <Description>k__BackingField: A very peculiar camera, it has an integrated flashlight
     with different colored lights, it seems dirty with cigarette ash
   <ItemImage>k__BackingField: {fileID: 21300000, guid: da61a4f42358a0e40838256d8fef38af, type: 3}

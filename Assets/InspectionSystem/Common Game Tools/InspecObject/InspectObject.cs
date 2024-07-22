@@ -36,61 +36,60 @@ namespace CGT
         private void OnEnable()
         {
             if (Application.isPlaying)
+            {
                 initialPosition = new Vector3(90, 180, 0); // Ruotato di 90 gradi sull'asse X
                 transform.localEulerAngles = initialPosition;
-
+            }
         }
 
         void Update()
         {
-#if UNITY_EDITOR
             if (lettura == false)
             {
+#if UNITY_EDITOR
                 if (!Application.isPlaying)
-                            {
-                                initialPosition = transform.localEulerAngles;
-                                if (InspectManager.instance.autoCullingMask)
-                                    SetLayerRecursively(InspectManager.instance.GetLayerInspect());
-                            }
-                #endif 
+                {
+                    initialPosition = transform.localEulerAngles;
+                    if (InspectManager.instance.autoCullingMask)
+                        SetLayerRecursively(InspectManager.instance.GetLayerInspect());
+                }
+#endif
 
-                            float horizontalRotation = horizontalSpeed * Input.GetAxis("Mouse X");
-                            float verticalRotation = verticalSpeed * Input.GetAxis("Mouse Y");
+                float horizontalRotation = horizontalSpeed * Input.GetAxis("Mouse X");
+                float verticalRotation = verticalSpeed * Input.GetAxis("Mouse Y");
 
-                            if (Mathf.Abs(horizontalRotation) > Mathf.Abs(verticalRotation))
-                                verticalRotation = 0;
-                            else
-                                horizontalRotation = 0;
+                if (Mathf.Abs(horizontalRotation) > Mathf.Abs(verticalRotation))
+                    verticalRotation = 0;
+                else
+                    horizontalRotation = 0;
 
-                            Vector3 pivotPoint = transform.position + pivotOffset;
+                Vector3 pivotPoint = transform.position + pivotOffset;
 
-                            if (Input.GetMouseButton(0))
-                            {
-                                if (horizontalRotation != 0)
-                                    transform.RotateAround(pivotPoint, Vector3.up, -horizontalRotation);
-                                else
-                                    transform.RotateAround(pivotPoint, Vector3.right, verticalRotation);
-                            }
+                if (Input.GetMouseButton(0))
+                {
+                    if (horizontalRotation != 0)
+                        transform.RotateAround(pivotPoint, Vector3.up, -horizontalRotation);
+                    else
+                        transform.RotateAround(pivotPoint, Vector3.right, verticalRotation);
+                }
+                else if (Input.GetMouseButtonDown(1))
+                {
+                    transform.localEulerAngles = initialPosition;
+                    InspectManager.instance.StopInspecting();
+                    chiudiApriInventario.SwitchActive();
+                }
 
-                            else if (Input.GetMouseButtonDown(1))
-                            {
-                                transform.localEulerAngles = initialPosition;
-                                InspectManager.instance.StopInspecting();
-                                chiudiApriInventario.SwitchActive();
-                            }
-
-                            if (Input.GetAxis("Mouse ScrollWheel") < 0)
-                            {
-                                if (InspectManager.instance.inspectCamera.fieldOfView < maxFOV)
-                                    InspectManager.instance.inspectCamera.fieldOfView += zoomSpeed;
-                            }
-                            if (Input.GetAxis("Mouse ScrollWheel") > 0)
-                            {
-                                if (InspectManager.instance.inspectCamera.fieldOfView > minFOV)
-                                    InspectManager.instance.inspectCamera.fieldOfView -= zoomSpeed;
-                            }
+                if (Input.GetAxis("Mouse ScrollWheel") < 0)
+                {
+                    if (InspectManager.instance.inspectCamera.fieldOfView < maxFOV)
+                        InspectManager.instance.inspectCamera.fieldOfView += zoomSpeed;
+                }
+                if (Input.GetAxis("Mouse ScrollWheel") > 0)
+                {
+                    if (InspectManager.instance.inspectCamera.fieldOfView > minFOV)
+                        InspectManager.instance.inspectCamera.fieldOfView -= zoomSpeed;
+                }
             }
-            
         }
 
         public void SetLayerRecursively(int layerNumber)
