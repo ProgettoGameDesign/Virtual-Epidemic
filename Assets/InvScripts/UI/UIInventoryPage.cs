@@ -72,8 +72,8 @@ public class UIInventoryPage : MonoBehaviour
 
     internal void UpdateDescription(int itemIndex, Sprite itemImage, ItemSO itemSO, string name, string description)
     {
-        
-        itemDescription.SetDescription(itemImage, itemSO, name, description);
+        //Debug.Log(itemSO.Name);
+        itemDescription.SetDescription(itemImage, itemSO, itemSO.Name, description);
         DeselectAllItems();
         listOfUIItems[itemIndex].Select();
         inspectorItemMio.AcquisisciNome(name);
