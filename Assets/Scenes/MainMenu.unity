@@ -1623,7 +1623,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd4425af40ef99d4fb68d2cf2343a618, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  volumesDisabled: 0
+  sceneState: {fileID: 11400000, guid: b7e16b0bbae65664c8335a40dbc052e5, type: 2}
 --- !u!4 &253745110
 Transform:
   m_ObjectHideFlags: 0

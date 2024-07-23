@@ -14,8 +14,8 @@ public class VolumeRegister : MonoBehaviour
         {
             PostProcessingManager.Instance.RegisterVolume(_volume);
 
-            // Disattiva il volume se volumesDisabled è true
-            if (PostProcessingManager.Instance.volumesDisabled)
+            // Disattiva il volume se volumesDisabled è true nel SceneState
+            if (PostProcessingManager.Instance.sceneState != null && PostProcessingManager.Instance.sceneState.volumesDisabled)
             {
                 _volume.enabled = false;
             }

@@ -10,7 +10,7 @@ public class PostProcessingManager : MonoBehaviour
 
     // Lista di tutti i volumi di post-processing nelle scene
     private List<PostProcessVolume> postProcessVolumes = new List<PostProcessVolume>();
-    public bool volumesDisabled = false;
+    public SceneState sceneState; // Aggiungi un riferimento al SceneState
 
     private void Awake()
     {
@@ -26,6 +26,31 @@ public class PostProcessingManager : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        UpdateVolumeStates();
+    }
+
+    private void Update()
+    {
+        UpdateVolumeStates();
+    }
+
+    private void UpdateVolumeStates()
+    {
+        if (sceneState != null)
+        {
+            if (sceneState.volumesDisabled)
+            {
+                DisableAllVolumes();
+            }
+            else
+            {
+                EnableAllVolumes();
+            }
+        }
+    }
+
     // Metodo per registrare un volume di post-processing
     public void RegisterVolume(PostProcessVolume volume)
     {
@@ -35,7 +60,7 @@ public class PostProcessingManager : MonoBehaviour
             Debug.Log("Volume registrato: " + volume.name);
 
             // Disattiva il volume se volumesDisabled è true
-            if (volumesDisabled)
+            if (sceneState != null && sceneState.volumesDisabled)
             {
                 volume.enabled = false;
             }
@@ -70,7 +95,13 @@ public class PostProcessingManager : MonoBehaviour
             volume.enabled = false;
             Debug.Log("Volume disattivato: " + volume.name);
         }
-        volumesDisabled = true;
+
+        if (sceneState != null)
+        {
+            sceneState.volumesDisabled = true;
+            Debug.Log("SceneState volumesDisabled set to true.");
+        }
+
     }
 
     // Metodo per attivare tutti i volumi di post-processing
@@ -80,9 +111,14 @@ public class PostProcessingManager : MonoBehaviour
         {
             volume.enabled = true;
         }
-        volumesDisabled = false;
-    }
 
+        if (sceneState != null)
+        {
+            sceneState.volumesDisabled = false;
+            Debug.Log("SceneState volumesDisabled set to false.");
+        }
+
+    }
     // Metodo chiamato quando una scena viene caricata
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
